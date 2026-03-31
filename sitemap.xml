@@ -70,15 +70,26 @@
       <image:loc>https://robinloths.com/images/campus-bedroom.jpg</image:loc>
       <image:title>Campus I apartment bedroom — furnished student housing Paraguay</image:title>
     </image:image>
-    <!-- About / Press -->
+    <!-- Robin Loths personal photos — for Google Images & personal brand SEO -->
     <image:image>
       <image:loc>https://robinloths.com/images/robin-portrait.jpg</image:loc>
-      <image:title>Robin Loths — real estate entrepreneur Asunción Paraguay</image:title>
-      <image:caption>Robin Loths, founder of Stuttgart Capital E.A.S., Asunción Paraguay</image:caption>
+      <image:title>Robin Loths — entrepreneur and real estate investor, Asunción Paraguay</image:title>
+      <image:caption>Robin Loths, German-born entrepreneur, founder of Stuttgart Capital E.A.S. and developer of Park Lofts Tower in Asunción, Paraguay. Featured in Forbes Paraguay.</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://robinloths.com/images/robin-construction.jpg</image:loc>
-      <image:title>Robin Loths on-site at Park Lofts Tower construction</image:title>
+      <image:title>Robin Loths at Park Lofts Tower construction site — Asunción Paraguay</image:title>
+      <image:caption>Robin Loths visiting the Park Lofts Tower construction site in Asunción, Paraguay. A US$10 million luxury development by Stuttgart Capital E.A.S.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://robinloths.com/images/robin-tv.jpg</image:loc>
+      <image:title>Robin Loths on 5Días TV — Inversiones: De Europa a Paraguay</image:title>
+      <image:caption>Robin Loths interviewed on 5Días television in Paraguay discussing European investment flows into Latin America.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://robinloths.com/images/robin-magazine.jpg</image:loc>
+      <image:title>Robin Loths on 5DÍAS Real Estate magazine cover — 5DÍAS Power Player Paraguay</image:title>
+      <image:caption>Robin Loths featured on the cover of 5DÍAS Real Estate magazine. Named a 5DÍAS Power Player among Paraguay's top 100 financial executives.</image:caption>
     </image:image>
   </url>
 </urlset>

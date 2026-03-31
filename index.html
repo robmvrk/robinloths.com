@@ -57,6 +57,9 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="rating" content="general">
 
+    <!-- Primary image hint for scrapers, AI indexers, and social previews -->
+    <link rel="image_src" href="https://robinloths.com/images/robin-portrait.jpg">
+
     <!-- Structured Data: Organization -->
     <script type="application/ld+json">
     {
@@ -105,25 +108,160 @@
     }
     </script>
 
-    <!-- Structured Data: Person (Robin Loths) -->
+    <!-- Structured Data: Person (Robin Loths) — entity anchor for Google Knowledge Graph -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "Person",
+        "@id": "https://robinloths.com/#robin-loths",
         "name": "Robin Loths",
-        "url": "https://robinloths.com/#about",
-        "image": "https://robinloths.com/images/robin-portrait.jpg",
-        "jobTitle": "Real Estate Entrepreneur & Founder",
-        "description": "German-born entrepreneur and medical student based in Asunción, Paraguay. Founder of Stuttgart Capital E.A.S. Featured in Forbes Paraguay. Holds diplomas in Securities Markets and Financial Derivatives from Bolsa de Valores de Asunción.",
+        "givenName": "Robin",
+        "familyName": "Loths",
+        "url": "https://robinloths.com",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://robinloths.com/#about"
+        },
+        "image": {
+            "@type": "ImageObject",
+            "@id": "https://robinloths.com/images/robin-portrait.jpg",
+            "url": "https://robinloths.com/images/robin-portrait.jpg",
+            "contentUrl": "https://robinloths.com/images/robin-portrait.jpg",
+            "name": "Robin Loths — entrepreneur and real estate investor in Asunción Paraguay",
+            "description": "Portrait of Robin Loths, German-born entrepreneur and founder of Stuttgart Capital E.A.S., based in Asunción, Paraguay",
+            "representativeOfPage": true
+        },
+        "jobTitle": "Entrepreneur & Real Estate Investor",
+        "description": "Robin Loths is a German-born entrepreneur and medical student based in Asunción, Paraguay. He is the founder of Stuttgart Capital E.A.S., developer of Park Lofts Tower — a US$10 million luxury residential project. Featured in Forbes Paraguay and named a 5DÍAS Power Player among Paraguay's top 100 financial executives. Holds two diplomas from the Bolsa de Valores de Asunción: Diplomado en Mercado de Valores (2023) and Diplomado en Derivados Financieros (2025).",
         "worksFor": {
             "@type": "Organization",
             "name": "Stuttgart Capital E.A.S.",
             "url": "https://robinloths.com"
         },
-        "knowsLanguage": ["English", "German", "Spanish"],
+        "homeLocation": {
+            "@type": "Place",
+            "name": "Asunción, Paraguay",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Asunción",
+                "addressCountry": "PY"
+            }
+        },
         "nationality": {"@type": "Country", "name": "Germany"},
-        "sameAs": ["https://www.linkedin.com/in/robinloths/"]
+        "knowsLanguage": [
+            {"@type": "Language", "name": "English"},
+            {"@type": "Language", "name": "German"},
+            {"@type": "Language", "name": "Spanish"}
+        ],
+        "knowsAbout": [
+            "Real Estate Investment",
+            "Paraguay Property Market",
+            "Financial Markets",
+            "Securities Trading",
+            "Financial Derivatives",
+            "Pre-construction Investment",
+            "Latin American Real Estate"
+        ],
+        "hasCredential": [
+            {
+                "@type": "EducationalOccupationalCredential",
+                "name": "Diplomado en Mercado de Valores",
+                "credentialCategory": "diploma",
+                "recognizedBy": {
+                    "@type": "Organization",
+                    "name": "Bolsa de Valores de Asunción"
+                },
+                "dateCreated": "2023"
+            },
+            {
+                "@type": "EducationalOccupationalCredential",
+                "name": "Diplomado en Derivados Financieros",
+                "credentialCategory": "diploma",
+                "recognizedBy": {
+                    "@type": "Organization",
+                    "name": "Bolsa de Valores de Asunción"
+                },
+                "dateCreated": "2025"
+            }
+        ],
+        "award": "5DÍAS Power Player — Top 100 Financial Executives Paraguay",
+        "subjectOf": [
+            {
+                "@type": "Article",
+                "name": "Park Lofts marca nuevo hito en el real estate local con ambicioso proyecto de US$ 10 millones",
+                "url": "https://www.forbes.com.py/especiales/park-lofts-marca-nuevo-hito-real-estate-local-ambicioso-proyecto-us-10-millones-n75403",
+                "publisher": {"@type": "Organization", "name": "Forbes Paraguay"},
+                "isPartOf": {"@type": "Periodical", "name": "Forbes"}
+            },
+            {
+                "@type": "TVEpisode",
+                "name": "Inversiones: De Europa a Paraguay",
+                "description": "Robin Loths featured on 5Días TV discussing international capital flows into Paraguay",
+                "partOfSeries": {"@type": "TVSeries", "name": "5Días TV"}
+            },
+            {
+                "@type": "PublicationIssue",
+                "name": "5DÍAS Real Estate — Cover Feature",
+                "isPartOf": {"@type": "Periodical", "name": "5DÍAS Paraguay"}
+            }
+        ],
+        "sameAs": [
+            "https://www.linkedin.com/in/robinloths/",
+            "https://www.forbes.com.py/especiales/park-lofts-marca-nuevo-hito-real-estate-local-ambicioso-proyecto-us-10-millones-n75403"
+        ]
     }
+    </script>
+
+    <!-- Structured Data: ImageObject — Robin Loths photos for Google Images indexing -->
+    <script type="application/ld+json">
+    [
+        {
+            "@context": "https://schema.org",
+            "@type": "ImageObject",
+            "@id": "https://robinloths.com/images/robin-portrait.jpg",
+            "url": "https://robinloths.com/images/robin-portrait.jpg",
+            "contentUrl": "https://robinloths.com/images/robin-portrait.jpg",
+            "name": "Robin Loths portrait — entrepreneur and founder Stuttgart Capital Paraguay",
+            "description": "Official portrait of Robin Loths, German-born real estate entrepreneur and founder of Stuttgart Capital E.A.S., based in Asunción, Paraguay. Developer of Park Lofts Tower.",
+            "author": {"@type": "Person", "@id": "https://robinloths.com/#robin-loths"},
+            "about": {"@type": "Person", "@id": "https://robinloths.com/#robin-loths"},
+            "representativeOfPage": true,
+            "license": "https://robinloths.com"
+        },
+        {
+            "@context": "https://schema.org",
+            "@type": "ImageObject",
+            "@id": "https://robinloths.com/images/robin-construction.jpg",
+            "url": "https://robinloths.com/images/robin-construction.jpg",
+            "contentUrl": "https://robinloths.com/images/robin-construction.jpg",
+            "name": "Robin Loths on-site at Park Lofts Tower construction — Asunción Paraguay",
+            "description": "Robin Loths visiting the Park Lofts Tower construction site in Asunción, Paraguay. Park Lofts Tower is a US$10 million luxury residential development.",
+            "about": {"@type": "Person", "@id": "https://robinloths.com/#robin-loths"},
+            "license": "https://robinloths.com"
+        },
+        {
+            "@context": "https://schema.org",
+            "@type": "ImageObject",
+            "@id": "https://robinloths.com/images/robin-tv.jpg",
+            "url": "https://robinloths.com/images/robin-tv.jpg",
+            "contentUrl": "https://robinloths.com/images/robin-tv.jpg",
+            "name": "Robin Loths on 5Días TV — Inversiones: De Europa a Paraguay",
+            "description": "Robin Loths being interviewed on 5Días television in Paraguay, discussing international investment flows and European capital in Latin America.",
+            "about": {"@type": "Person", "@id": "https://robinloths.com/#robin-loths"},
+            "license": "https://robinloths.com"
+        },
+        {
+            "@context": "https://schema.org",
+            "@type": "ImageObject",
+            "@id": "https://robinloths.com/images/robin-magazine.jpg",
+            "url": "https://robinloths.com/images/robin-magazine.jpg",
+            "contentUrl": "https://robinloths.com/images/robin-magazine.jpg",
+            "name": "Robin Loths on 5DÍAS Real Estate magazine cover — Paraguay",
+            "description": "Robin Loths featured on the cover of 5DÍAS Real Estate magazine, Paraguay's leading business publication.",
+            "about": {"@type": "Person", "@id": "https://robinloths.com/#robin-loths"},
+            "license": "https://robinloths.com"
+        }
+    ]
     </script>
 
     <!-- Structured Data: Listings -->
@@ -2088,7 +2226,10 @@
             <div class="feature-grid">
                 <div class="reveal">
                     <!-- Founder photo -->
-                    <div style="border-radius: 12px; overflow: hidden; height: 520px; background: var(--dark-3) url('images/robin-portrait.jpg') center 8% / cover no-repeat;" role="img" aria-label="Robin Loths real estate entrepreneur Asunción Paraguay"></div>
+                    <div style="border-radius: 12px; overflow: hidden; height: 520px; background: var(--dark-3) url('images/robin-portrait.jpg') center 8% / cover no-repeat; position: relative;" role="img" aria-label="Robin Loths real estate entrepreneur Asunción Paraguay">
+                        <!-- Crawlable img for Google Images — visually hidden behind background -->
+                        <img src="images/robin-portrait.jpg" alt="Robin Loths — German-born entrepreneur, founder of Stuttgart Capital E.A.S., real estate investor in Asunción Paraguay" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;pointer-events:none;" aria-hidden="true" loading="eager">
+                    </div>
                 </div>
                 <div class="reveal reveal-delay-1">
                     <span class="section-tag">The Founder</span>
@@ -2131,13 +2272,13 @@
             <!-- Press photo strip -->
             <div class="press-strip" style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; margin-top: 32px;">
                 <div class="amenity-item reveal" data-label="On-Site at Construction" style="height: 220px; grid-column: auto;">
-                    <img src="images/robin-construction.jpg" alt="Robin Loths on-site at Park Lofts Tower construction" loading="lazy" style="object-fit: cover; width: 100%; height: 100%; object-position: center 22%;">
+                    <img src="images/robin-construction.jpg" alt="Robin Loths on-site at Park Lofts Tower construction site, Asunción Paraguay — Stuttgart Capital E.A.S." loading="lazy" style="object-fit: cover; width: 100%; height: 100%; object-position: center 22%;">
                 </div>
                 <div class="amenity-item reveal reveal-delay-1" data-label="5D&iacute;as TV Interview" style="height: 220px; grid-column: auto;">
-                    <img src="images/robin-tv.jpg" alt="Robin Loths on 5Días television Paraguay" loading="lazy" style="object-fit: cover; width: 100%; height: 100%; object-position: 28% center;">
+                    <img src="images/robin-tv.jpg" alt="Robin Loths interviewed on 5Días TV Paraguay — Inversiones: De Europa a Paraguay" loading="lazy" style="object-fit: cover; width: 100%; height: 100%; object-position: 28% center;">
                 </div>
                 <div class="amenity-item reveal reveal-delay-2" data-label="5D&iacute;as Real Estate Cover" style="height: 220px; grid-column: auto;">
-                    <img src="images/robin-magazine.jpg" alt="Robin Loths on 5Días Real Estate magazine cover" loading="lazy" style="object-fit: cover; width: 100%; height: 100%; object-position: center 5%;">
+                    <img src="images/robin-magazine.jpg" alt="Robin Loths on the cover of 5DÍAS Real Estate magazine Paraguay — 5DÍAS Power Player top 100 financial executives" loading="lazy" style="object-fit: cover; width: 100%; height: 100%; object-position: center 5%;">
                 </div>
             </div>
 
