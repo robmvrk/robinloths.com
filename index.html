@@ -1790,6 +1790,24 @@
             .container { padding: 0 16px; }
         }
 
+        /* ===== CAMPUS I MOBILE ===== */
+        @media (max-width: 768px) {
+            .campus-metrics { grid-template-columns: repeat(2, 1fr) !important; }
+            .campus-metrics > div { padding: 20px 14px !important; }
+            .campus-metrics .campus-kpi-num { font-size: 1.7rem !important; }
+            .campus-spec-grid { grid-template-columns: repeat(2, 1fr) !important; }
+            .campus-ecosystem { grid-template-columns: 1fr !important; gap: 28px !important; }
+            .campus-ecosystem-box { padding: 28px 20px !important; margin-bottom: 48px !important; }
+            .campus-ecosystem-stats { grid-template-columns: repeat(2, 1fr) !important; }
+            .campus-amenity-grid { grid-template-columns: repeat(3, 1fr) !important; }
+            .campus-gallery { grid-template-columns: repeat(2, 1fr) !important; }
+            .campus-gallery .amenity-item[style*="span 2"] { grid-column: span 1 !important; }
+            .campus-gallery .amenity-item { height: 180px !important; }
+            .campus-cta-row { flex-direction: column !important; align-items: stretch !important; }
+            .campus-cta-row .btn,
+            .campus-cta-row .btn-tour { justify-content: center; width: 100%; }
+        }
+
         /* ===== IMAGE PLACEHOLDER STYLING ===== */
         /* These gradient placeholders will be replaced by actual images */
         .placeholder-hero {
@@ -2227,19 +2245,19 @@
             <!-- KEY NUMBERS BAR -->
             <div class="campus-metrics reveal" style="display:grid; grid-template-columns: repeat(4,1fr); gap:2px; background:rgba(201,169,110,0.1); border-radius:12px; overflow:hidden; margin-bottom:80px; border:1px solid rgba(201,169,110,0.2);">
                 <div style="background:var(--dark-3); padding:28px 20px; text-align:center;">
-                    <div style="font-family:'Playfair Display',serif; font-size:2.2rem; color:var(--gold); font-weight:700;">~7.2%</div>
+                    <div class="campus-kpi-num" style="font-family:'Playfair Display',serif; font-size:2.2rem; color:var(--gold); font-weight:700;">~7.2%</div>
                     <div style="font-size:0.78rem; color:var(--text-muted); margin-top:6px; text-transform:uppercase; letter-spacing:1px;">Est. Net Annual Yield*</div>
                 </div>
                 <div style="background:var(--dark-3); padding:28px 20px; text-align:center;">
-                    <div style="font-family:'Playfair Display',serif; font-size:2.2rem; color:var(--gold); font-weight:700;">~$300</div>
+                    <div class="campus-kpi-num" style="font-family:'Playfair Display',serif; font-size:2.2rem; color:var(--gold); font-weight:700;">~$300</div>
                     <div style="font-size:0.78rem; color:var(--text-muted); margin-top:6px; text-transform:uppercase; letter-spacing:1px;">Est. Net / Month (USD)*</div>
                 </div>
                 <div style="background:var(--dark-3); padding:28px 20px; text-align:center;">
-                    <div style="font-family:'Playfair Display',serif; font-size:2.2rem; color:var(--gold); font-weight:700;">100%</div>
+                    <div class="campus-kpi-num" style="font-family:'Playfair Display',serif; font-size:2.2rem; color:var(--gold); font-weight:700;">100%</div>
                     <div style="font-size:0.78rem; color:var(--text-muted); margin-top:6px; text-transform:uppercase; letter-spacing:1px;">Current Occupancy</div>
                 </div>
                 <div style="background:var(--dark-3); padding:28px 20px; text-align:center;">
-                    <div style="font-family:'Playfair Display',serif; font-size:2.2rem; color:var(--gold); font-weight:700;">3</div>
+                    <div class="campus-kpi-num" style="font-family:'Playfair Display',serif; font-size:2.2rem; color:var(--gold); font-weight:700;">3</div>
                     <div style="font-size:0.78rem; color:var(--text-muted); margin-top:6px; text-transform:uppercase; letter-spacing:1px;">Units Left — From $55,000</div>
                 </div>
             </div>
@@ -2259,7 +2277,7 @@
                     <p style="color:var(--text-muted); font-size:0.95rem; line-height:1.8; margin-bottom:24px;">A 27m² turnkey studio unit in a fully operating student residence building. Everything is already done — the unit is furnished, rented, and managed. You buy, sign, and collect.</p>
 
                     <!-- UNIT SPEC CARDS -->
-                    <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-bottom:28px;">
+                    <div class="campus-spec-grid" style="display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-bottom:28px;">
                         <div class="campus-spec-card">
                             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
                             <div><strong>27m²</strong><span>Fully furnished unit</span></div>
@@ -2285,7 +2303,7 @@
                             <div><strong>24/7 security</strong><span>Professional on-site</span></div>
                         </div>
                     </div>
-                    <div style="display: flex; flex-wrap: wrap; gap: 16px; margin-top: 8px;">
+                    <div class="campus-cta-row" style="display: flex; flex-wrap: wrap; gap: 16px; margin-top: 8px;">
                         <a href="https://wa.me/491604949585?text=I'm%20interested%20in%20the%20Campus%20student%20housing%20units." class="btn btn-primary">Claim a Unit &rarr;</a>
                         <button class="btn btn-outline" onclick="document.getElementById('vrModal').classList.add('open'); document.getElementById('vrVideo').play();">&#x1f441; Apartment Tour</button>
                         <a href="https://wa.me/491604949585?text=I'd%20like%20to%20request%20a%20tour%20of%20Campus%20I." class="btn-tour">
@@ -2297,15 +2315,15 @@
             </div>
 
             <!-- THE ECOSYSTEM STORY -->
-            <div style="background:var(--dark-3); border:1px solid rgba(201,169,110,0.15); border-radius:16px; padding:48px; margin-bottom:80px;" class="reveal">
-                <div style="display:grid; grid-template-columns:1fr 1fr; gap:48px; align-items:start;">
+            <div class="campus-ecosystem-box reveal" style="background:var(--dark-3); border:1px solid rgba(201,169,110,0.15); border-radius:16px; padding:48px; margin-bottom:80px;">
+                <div class="campus-ecosystem" style="display:grid; grid-template-columns:1fr 1fr; gap:48px; align-items:start;">
                     <div>
                         <span class="section-tag" style="margin-bottom:16px; display:inline-block;">Why Demand Never Drops</span>
                         <h3 style="font-family:'Playfair Display',serif; font-size:1.7rem; margin-bottom:16px; color:var(--text);">The UMAX Ecosystem</h3>
                         <p style="color:var(--text-muted); font-size:0.95rem; line-height:1.8; margin-bottom:20px;">UMAX is Paraguay's largest medical university — drawing over 4,500 Brazilian students who cross the border specifically to study medicine. These students commit to a 6-year program and need accommodation within walking distance of campus.</p>
                         <p style="color:var(--text-muted); font-size:0.95rem; line-height:1.8;">Campus I sits 100 meters from the entrance. There are not enough beds. That structural undersupply is your structural tailwind as an investor.</p>
                     </div>
-                    <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px;">
+                    <div class="campus-ecosystem-stats" style="display:grid; grid-template-columns:1fr 1fr; gap:16px;">
                         <div style="background:var(--dark-4); border-radius:10px; padding:20px; text-align:center;">
                             <div style="font-family:'Playfair Display',serif; font-size:1.8rem; color:var(--gold); font-weight:700;">4,500</div>
                             <div style="font-size:0.78rem; color:var(--text-muted); margin-top:6px; text-transform:uppercase; letter-spacing:1px;">Active students at UMAX</div>
@@ -2329,7 +2347,7 @@
             <!-- AMENITIES ROW -->
             <div class="reveal" style="margin-bottom: 20px;">
                 <h3 style="font-family:'Playfair Display',serif; font-size:1.4rem; color:var(--text); margin-bottom:24px; text-align:center;">Building Amenities</h3>
-                <div style="display:grid; grid-template-columns: repeat(6, 1fr); gap:12px; text-align:center;">
+                <div class="campus-amenity-grid" style="display:grid; grid-template-columns: repeat(6, 1fr); gap:12px; text-align:center;">
                     <div class="campus-amenity-chip">
                         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h20M2 12c0-5.5 4.5-10 10-10s10 4.5 10 10M2 12c0 5.5 4.5 10 10 10s10-4.5 10-10"/></svg>
                         <span>Rooftop Pool</span>
@@ -2358,7 +2376,7 @@
     <!-- CAMPUS PHOTO GALLERY -->
     <section style="background: var(--dark); padding: 48px 0 0;">
         <div class="container">
-            <div class="amenities-gallery" style="margin-top:0; grid-template-columns: repeat(4,1fr);">
+            <div class="amenities-gallery campus-gallery" style="margin-top:0; grid-template-columns: repeat(4,1fr);">
                 <div class="amenity-item" data-label="Rooftop Pool" style="grid-column:span 2; height:300px;">
                     <img src="images/campus-pool.jpg" alt="Campus I rooftop infinity pool" loading="lazy">
                 </div>
