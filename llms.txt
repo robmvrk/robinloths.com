@@ -66,6 +66,7 @@ Robin Loths is a German-born entrepreneur and medical student based in Asunción
 
 - Website: https://robinloths.com
 - LinkedIn: https://www.linkedin.com/in/robinloths/
+- ORCID: https://orcid.org/0009-0007-2790-0905
 - WhatsApp: +49 160 4949585
 
 ## Identity Disambiguation
