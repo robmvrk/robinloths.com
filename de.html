@@ -1764,17 +1764,37 @@
         .placeholder-2 {
             background: linear-gradient(135deg, #2d2d44 0%, #1a1a2e 100%);
         }
+
+        /* ===== LANGUAGE SWITCHER ===== */
+        .lang-switch {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            margin-left: 16px;
+            border: 1px solid rgba(201,169,110,0.3);
+            border-radius: 6px;
+            overflow: hidden;
+        }
+        .lang-btn, .lang-active {
+            font-size: 0.72rem;
+            font-weight: 600;
+            letter-spacing: 0.08em;
+            padding: 4px 9px;
+            text-decoration: none;
+            transition: background 0.2s;
+        }
+        .lang-btn {
+            color: var(--text-muted);
+            background: transparent;
+        }
+        .lang-btn:hover { background: rgba(255,255,255,0.05); color: var(--text); }
+        .lang-active {
+            color: var(--dark);
+            background: var(--gold);
+        }
     </style>
 </head>
 <body>
-
-    <!-- Language switcher -->
-    <div style="background:#111; border-bottom:1px solid rgba(201,169,110,0.15); padding:8px 0; text-align:center;">
-        <span style="font-size:0.75rem; color:var(--text-muted);">🌐 Sprache: </span>
-        <a href="/" style="font-size:0.75rem; color:var(--text-muted); text-decoration:none; margin:0 8px; padding:2px 8px; border:1px solid rgba(255,255,255,0.15); border-radius:4px;">🇬🇧 English</a>
-        <span style="font-size:0.75rem; color:var(--gold); margin:0 8px; padding:2px 8px; border:1px solid rgba(201,169,110,0.3); border-radius:4px;">🇩🇪 Deutsch</span>
-    </div>
-
     <!-- NAVIGATION -->
     <nav id="navbar">
         <div class="container">
@@ -1788,7 +1808,8 @@
                 <li><a href="#about">Über mich</a></li>
                 <li><a href="#contact" class="nav-cta">Kontakt</a></li>
             </ul>
-            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+            <div class="lang-switch"><a href="/" class="lang-btn">EN</a><span class="lang-active">DE</span></div>
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Menü öffnen">
                 <span></span><span></span><span></span>
             </button>
         </div>
@@ -1801,8 +1822,8 @@
         </div>
         <div class="container">
             <span class="hero-tag">Nur noch 5 Einheiten &bull; Asunci&oacute;n, Paraguay</span>
-            <h1>Alle anderen sind<br>bereits <em>zu spät</em></h1>
-            <p class="hero-sub">Während die Welt Paraguay noch verschläft, sichern sich kluge Investoren Immobilien zu 41% unter dem regionalen Preisniveau &mdash; im #1 am schnellsten wachsenden Reiseziel der Welt. Das Fenster schließt sich. Bist du dabei?</p>
+            <h1>Die anderen kommen<br>bereits <em>zu spät</em></h1>
+            <p class="hero-sub">Während die Welt Paraguay noch übersieht, sichern sich vorausschauende Investoren Immobilien zu 41% unter dem lateinamerikanischen Durchschnittspreis &mdash; im weltweit am schnellsten wachsenden Reiseziel. Das Zeitfenster schließt sich. Sind Sie dabei?</p>
             <div class="hero-actions">
                 <a href="https://wa.me/491604949585?text=Ich%20bin%20dabei.%20Erz%C3%A4hl%20mir%20mehr%20%C3%BCber%20die%20verf%C3%BCgbaren%20Immobilien." class="btn btn-primary">Ich bin dabei &rarr;</a>
                 <a href="#properties" class="btn btn-outline">Immobilien anzeigen</a>
@@ -1832,8 +1853,8 @@
     <section id="properties" style="padding-top: 48px;">
         <div class="container">
             <span class="section-tag reveal">Begrenztes Angebot</span>
-            <h2 class="section-title reveal">5 Immobilien. Mehr gibt es nicht.</h2>
-            <p class="section-subtitle reveal">Das sind keine Listings, die monatelang im Markt liegen. Wohnungen in Asunci&oacute;n verkaufen sich in 40&ndash;50 Tagen. Wenn sie weg sind, sind sie weg. Das ist noch verfügbar:</p>
+            <h2 class="section-title reveal">5 Immobilien. Nicht mehr.</h2>
+            <p class="section-subtitle reveal">Das sind keine Angebote, die monatelang auf Käufer warten. Wohnungen in Asunci&oacute;n finden in 40&ndash;50 Tagen ihren Käufer. Ist das Fenster geschlossen, ist es geschlossen. Das ist noch verfügbar:</p>
 
             <div class="properties-grid">
                 <!-- PARK LOFTS TOWER -->
@@ -1974,39 +1995,39 @@
         <div style="position:absolute;inset:0;background:url('images/drone-edificio-b.jpg') center/cover no-repeat;opacity:0.07;z-index:0;pointer-events:none;"></div>
         <div class="container" style="position:relative;z-index:1;">
             <span class="section-tag reveal">Die Chance</span>
-            <h2 class="section-title reveal">Das kluge Kapital ist bereits hier</h2>
-            <p class="section-subtitle reveal">Moody's stufte Paraguay auf Investment Grade hoch. Tourismus explodierte um 53%. Immobilien sind 41% günstiger als im restlichen Lateinamerika. Die Frage ist nicht <em>warum</em> &mdash; sondern <em>warum noch nicht?</em></p>
+            <h2 class="section-title reveal">Erfahrene Investoren sind längst hier</h2>
+            <p class="section-subtitle reveal">Moody's stufte Paraguay auf Investment Grade hoch. Der Tourismus stieg um 53%. Immobilien sind 41% günstiger als in anderen lateinamerikanischen Hauptstädten. Die Frage lautet nicht <em>warum</em> &mdash; sondern <em>warum noch nicht?</em></p>
 
             <div class="why-grid">
                 <div class="why-card reveal">
                     <div class="why-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></div>
                     <h3>Investment-Grade-Rating</h3>
-                    <p>Paraguay erhielt im Juli 2024 das <span class="why-highlight">Baa3-Investment-Grade-Rating von Moody's</span> &mdash; ein Signal für makroökonomische Stabilität und solide Fiskalpolitik seit 2002. Dieses Upgrade beschleunigt Wachstum und Immobilienpotenzial.</p>
+                    <p>Im Juli 2024 erhielt Paraguay das <span class="why-highlight">Baa3-Investment-Grade-Rating von Moody's</span> &mdash; Ausdruck makroökonomischer Stabilität und konsistenter Haushaltspolitik seit 2002. Dieses Upgrade beschleunigt Wachstum und Immobilienwertsteigerung.</p>
                 </div>
                 <div class="why-card reveal reveal-delay-1">
                     <div class="why-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg></div>
                     <h3>Unterbewerteter Markt</h3>
-                    <p>Wohnungen in Asunci&oacute;n werden <span class="why-highlight">41% unter dem Durchschnitt</span> anderer lateinamerikanischer Hauptstädte gehandelt &mdash; mit erheblichem Wertsteigerungspotenzial für Investoren.</p>
+                    <p>Wohnungen in Asunci&oacute;n werden zu Preisen angeboten, die <span class="why-highlight">41% unter dem Durchschnitt</span> anderer lateinamerikanischer Hauptstädte liegen &mdash; verbunden mit erheblichem Aufwärtspotenzial, wenn sich der Markt normalisiert.</p>
                 </div>
                 <div class="why-card reveal reveal-delay-2">
                     <div class="why-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8"/><path d="M12 18V6"/></svg></div>
                     <h3>0% Steuer auf Auslandseinkommen</h3>
-                    <p>Paraguays territoriales Steuersystem bedeutet <span class="why-highlight">null Steuer auf ausländische Einkünfte</span>. Maximaler Steuersatz 10%, nur 5% auf Mieteinnahmen. Ein echtes Investorenparadies.</p>
+                    <p>Paraguays Territorialprinzip bedeutet: <span class="why-highlight">Null Steuer auf ausländische Einkünfte</span>. Der maximale Steuersatz beträgt 10%; auf Mieteinnahmen fallen lediglich 5% an. Für internationale Investoren kaum zu übertreffen.</p>
                 </div>
                 <div class="why-card reveal reveal-delay-1">
                     <div class="why-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
                     <h3>#1 Tourismus-Destination</h3>
-                    <p>Paraguay belegte <span class="why-highlight">Platz #1 weltweit</span> im UN-Tourismusbericht Q1 2025 mit 53% Wachstum bei internationalen Ankünften &mdash; das am schnellsten wachsende Reiseziel der Erde.</p>
+                    <p>Paraguay belegte im UN-Tourismus-Bericht Q1 2025 <span class="why-highlight">Platz 1 weltweit</span> &mdash; mit 53% Wachstum bei internationalen Ankünften und dem stärksten Anstieg aller erfassten Destinationen.</p>
                 </div>
                 <div class="why-card reveal reveal-delay-2">
                     <div class="why-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
                     <h3>Extrem hohe Liquidität</h3>
-                    <p>Wohnungen verkaufen sich im Durchschnitt in <span class="why-highlight">40&ndash;50 Tagen</span> und werden in <span class="why-highlight">20&ndash;35 Tagen</span> vermietet. Starke Nachfrage und hohe Marktliquidität reduzieren dein Risiko.</p>
+                    <p>Wohnungen wechseln im Durchschnitt in <span class="why-highlight">40&ndash;50 Tagen</span> den Besitzer und sind in <span class="why-highlight">20&ndash;35 Tagen</span> vermietet. Starke Nachfrage und hohe Marktliquidität begrenzen Ihr Risiko erheblich.</p>
                 </div>
                 <div class="why-card reveal reveal-delay-3">
                     <div class="why-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg></div>
                     <h3>Unkomplizierte Aufenthaltsgenehmigung</h3>
-                    <p>Minimale Anforderungen (Geburtsurkunde + Führungszeugnis). <span class="why-highlight">Kein Mindestaufenthalt</span> zur Aufrechterhaltung der Aufenthaltsgenehmigung. Niedrige Lebenshaltungskosten, warmes Klima, modernes Stadtleben.</p>
+                    <p>Minimale Anforderungen: Geburtsurkunde und polizeiliches Führungszeugnis. <span class="why-highlight">Kein Mindestaufenthalt</span> zur Aufrechterhaltung des Aufenthaltsstatus. Niedrige Lebenshaltungskosten, angenehmes Klima, modernes Stadtleben.</p>
                 </div>
             </div>
         </div>
@@ -2019,7 +2040,7 @@
                 <!-- Left: Photo gallery -->
                 <div class="reveal" style="min-width:0;">
                     <div class="amenities-gallery" style="margin-top:0; grid-template-columns: repeat(3,1fr);">
-                        <div class="amenity-item" data-label="Rooftop Pool" style="grid-column:span 2; height:280px;">
+                        <div class="amenity-item" data-label="Rooftop-Pool" style="grid-column:span 2; height:280px;">
                             <img src="images/tower-rooftop-pool.jpg" alt="Park Lofts Tower rooftop infinity pool" loading="lazy">
                         </div>
                         <div class="amenity-item" data-label="Park Lofts Tower" style="height:280px;">
@@ -2031,7 +2052,7 @@
                         <div class="amenity-item" data-label="Restaurant &amp; Bar" style="height:200px;">
                             <img src="images/tower-restaurant.jpg" alt="Park Lofts Tower restaurant" loading="lazy">
                         </div>
-                        <div class="amenity-item" data-label="Residents Lounge" style="height:200px;">
+                        <div class="amenity-item" data-label="Bewohner-Lounge" style="height:200px;">
                             <img src="images/tower-lounge.jpg" alt="Park Lofts Tower lounge" loading="lazy">
                         </div>
                     </div>
@@ -2047,7 +2068,7 @@
                 <div class="reveal">
                     <span class="section-tag">Vorverkaufspreis &bull; 1 Einheit verbleibend</span>
                     <h2 class="section-title">Park Lofts Tower</h2>
-                    <p class="section-subtitle">101 Meter hoch. Die prestigeträchtigste Adresse in Asunci&oacute;n. Aktuell im Bau von Benitez Bittar &mdash; dem Unternehmen hinter Paraguays höchstem Gebäude. Sicher dir den Vorverkaufspreis, bevor er weg ist. Das ist nicht nur eine Wohnung. Das ist ein Statement.</p>
+                    <p class="section-subtitle">101 Meter. Die begehrteste Adresse Asunci&oacute;ns. Gebaut von Benitez Bittar &mdash; dem Unternehmen hinter Paraguays höchstem Hochhaus. Sichern Sie sich den Vorverkaufspreis, bevor er Geschichte ist. Dies ist keine gewöhnliche Wohnung. Es ist eine Positionierung.</p>
                     <ul class="feature-list">
                         <li>101m Luxusturm &mdash; Asunci&oacute;ns erste Adresse</li>
                         <li>Deutsche Grohe Dusch- und Armaturenausstattung</li>
@@ -2060,7 +2081,7 @@
                     </ul>
                     <div style="display: flex; gap: 12px; margin-top: 24px; flex-wrap: wrap;">
                         <a href="https://wa.me/491604949585?text=Ich%20m%C3%B6chte%20Details%20zur%20letzten%20verf%C3%BCgbaren%20Park%20Lofts%20Tower%20Einheit." class="btn btn-primary">Letzte Einheit sichern &rarr;</a>
-                        <a href="https://storage.net-fs.com/hosting/7701681/23/" target="_blank" rel="noopener" class="btn btn-outline">&#x1f441; VR Studio Tour</a>
+                        <a href="https://storage.net-fs.com/hosting/7701681/23/" target="_blank" rel="noopener" class="btn btn-outline">&#x1f441; VR-Rundgang</a>
                     </div>
                 </div>
             </div>
@@ -2091,7 +2112,7 @@
             <div style="text-align:center; max-width:720px; margin: 0 auto 56px;">
                 <span class="section-tag reveal">Off-Market &bull; Privates Angebot</span>
                 <h2 class="section-title reveal">Casas Bali</h2>
-                <p class="section-subtitle reveal">Stell dir vor, du wachst in deiner eigenen Bali-inspirierten Villa auf &mdash; privater Pool, tropischer Garten, offenes Wohnen &mdash; nur dass du dich in einer der am schnellsten wachsenden Volkswirtschaften der Welt befindest. Das ist kein Urlaub. Das ist dein Leben.</p>
+                <p class="section-subtitle reveal">Stellen Sie sich vor, Sie erwachen in Ihrer eigenen, Bali-inspirierten Villa &mdash; Privatpool, tropischer Garten, offenes Wohnen &mdash; mitten in einer der am dynamischsten wachsenden Volkswirtschaften der Welt. Kein Urlaub. Ihr Leben.</p>
             </div>
 
             <!-- Main carousel + specs -->
@@ -2099,19 +2120,19 @@
                 <!-- Photo gallery -->
                 <div class="reveal" style="min-width:0;">
                     <div class="amenities-gallery" style="margin-top:0; grid-template-columns: repeat(3,1fr);">
-                        <div class="amenity-item" data-label="Private Pool" style="grid-column:span 2; height:280px;">
+                        <div class="amenity-item" data-label="Privatpool" style="grid-column:span 2; height:280px;">
                             <img src="images/bali-pool-exterior.jpg" alt="Casas Bali private pool and garden" loading="lazy">
                         </div>
-                        <div class="amenity-item" data-label="Overview" style="height:280px;">
+                        <div class="amenity-item" data-label="Übersicht" style="height:280px;">
                             <img src="images/bali-exterior-aerial.jpg" alt="Casas Bali villa aerial view" loading="lazy">
                         </div>
-                        <div class="amenity-item" data-label="Living Area" style="height:200px;">
+                        <div class="amenity-item" data-label="Wohnbereich" style="height:200px;">
                             <img src="images/bali-living.jpg" alt="Casas Bali living area" loading="lazy">
                         </div>
-                        <div class="amenity-item" data-label="Master Bedroom" style="height:200px;">
+                        <div class="amenity-item" data-label="Hauptschlafzimmer" style="height:200px;">
                             <img src="images/bali-bedroom-1.jpg" alt="Casas Bali master bedroom" loading="lazy">
                         </div>
-                        <div class="amenity-item" data-label="Rooftop Lounge" style="height:200px;">
+                        <div class="amenity-item" data-label="Dachlounge" style="height:200px;">
                             <img src="images/bali-rooftop-lounge.jpg" alt="Casas Bali rooftop lounge" loading="lazy">
                         </div>
                     </div>
@@ -2148,7 +2169,7 @@
                         </div>
                     </div>
 
-                    <a href="https://wa.me/491604949585?text=Ich%20interessiere%20mich%20f%C3%BCr%20Casas%20Bali.%20K%C3%B6nnen%20Sie%20mir%20Preise%20und%20Verf%C3%BCgbarkeit%20mitteilen%3F" class="btn btn-primary" style="width:100%; justify-content:center;">Villen anfragen &rarr;</a>
+                    <a href="https://wa.me/491604949585?text=Ich%20interessiere%20mich%20f%C3%BCr%20Casas%20Bali.%20Bitte%20teilen%20Sie%20mir%20Preise%20und%20Verf%C3%BCgbarkeit%20mit." class="btn btn-primary" style="width:100%; justify-content:center;">Villen anfragen &rarr;</a>
                 </div>
             </div>
         </div>
@@ -2158,19 +2179,19 @@
     <section style="background: var(--dark); padding: 0 0 80px;">
         <div class="container">
             <div class="amenities-gallery" style="margin-top:0; grid-template-columns: repeat(4,1fr);">
-                <div class="amenity-item" data-label="Spa Bathroom" style="grid-column:span 2; height:280px;">
+                <div class="amenity-item" data-label="Spa-Badezimmer" style="grid-column:span 2; height:280px;">
                     <img src="images/bali-bathroom.jpg" alt="Casas Bali spa bathroom" loading="lazy">
                 </div>
-                <div class="amenity-item" data-label="Bedroom" style="height:280px;">
+                <div class="amenity-item" data-label="Schlafzimmer" style="height:280px;">
                     <img src="images/bali-bedroom-2.jpg" alt="Casas Bali bedroom" loading="lazy">
                 </div>
-                <div class="amenity-item" data-label="Bedroom" style="height:280px;">
+                <div class="amenity-item" data-label="Schlafzimmer" style="height:280px;">
                     <img src="images/bali-bedroom-1.jpg" alt="Casas Bali bedroom angle 2" loading="lazy">
                 </div>
-                <div class="amenity-item" data-label="Living Room" style="grid-column:span 2; height:240px;">
+                <div class="amenity-item" data-label="Wohnzimmer" style="grid-column:span 2; height:240px;">
                     <img src="images/bali-livingroom.jpg" alt="Casas Bali open plan living room with pool view" loading="lazy">
                 </div>
-                <div class="amenity-item" data-label="Terrace" style="height:240px;">
+                <div class="amenity-item" data-label="Terrasse" style="height:240px;">
                     <img src="images/bali-terrace-pergola.jpg" alt="Casas Bali terrace with pergola" loading="lazy">
                 </div>
                 <div class="amenity-item" data-label="Lounge" style="height:240px;">
@@ -2190,7 +2211,7 @@
             <div style="text-align:center; max-width: 720px; margin: 0 auto 64px;">
                 <span class="section-tag reveal">Fertiggestellt &bull; Schlüsselfertig &bull; 100% vermietet</span>
                 <h2 class="section-title reveal">Campus I</h2>
-                <p class="section-subtitle reveal">Bereits gebaut. Bereits möbliert. Bereits rentabel. Erwerb einer vollständig verwalteten Einheit und erhalte Mieteinnahmen ab dem <strong style="color:var(--gold);">ersten Besitzmonat</strong> &mdash; ohne Baurisiko.</p>
+                <p class="section-subtitle reveal">Fertig gebaut. Vollständig möbliert. Bereits rentabel. Erwerben Sie eine vollständig verwaltete Einheit und erzielen Sie Mieteinnahmen ab dem <strong style="color:var(--gold);">ersten Besitzmonat</strong> &mdash; ohne jedes Baurisiko.</p>
             </div>
 
             <!-- KEY NUMBERS BAR -->
@@ -2209,7 +2230,7 @@
                 </div>
                 <div style="background:var(--dark-3); padding:28px 20px; text-align:center;">
                     <div style="font-family:'Playfair Display',serif; font-size:2.2rem; color:var(--gold); font-weight:700;">3</div>
-                    <div style="font-size:0.78rem; color:var(--text-muted); margin-top:6px; text-transform:uppercase; letter-spacing:1px;">Units Left — From $55,000</div>
+                    <div style="font-size:0.78rem; color:var(--text-muted); margin-top:6px; text-transform:uppercase; letter-spacing:1px;">Verfügbar — ab $55.000</div>
                 </div>
             </div>
 
@@ -2224,42 +2245,42 @@
                     </div>
                 </div>
                 <div class="reveal" style="direction:ltr;">
-                    <h3 style="font-family:'Playfair Display',serif; font-size:1.5rem; margin-bottom:20px; color:var(--text);">What You're Buying</h3>
-                    <p style="color:var(--text-muted); font-size:0.95rem; line-height:1.8; margin-bottom:24px;">A 27m² turnkey studio unit in a fully operating student residence building. Everything is already done — the unit is furnished, rented, and managed. You buy, sign, and collect.</p>
+                    <h3 style="font-family:'Playfair Display',serif; font-size:1.5rem; margin-bottom:20px; color:var(--text);">Was Sie erwerben</h3>
+                    <p style="color:var(--text-muted); font-size:0.95rem; line-height:1.8; margin-bottom:24px;">Eine 27m² schlüsselfertige Studio-Einheit in einem vollständig betriebenen Studentenwohnheim. Alles ist bereits erledigt — die Einheit ist möbliert, vermietet und professionell verwaltet. Sie kaufen, unterzeichnen und kassieren.</p>
 
                     <!-- UNIT SPEC CARDS -->
                     <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-bottom:28px;">
                         <div class="campus-spec-card">
                             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
-                            <div><strong>27m²</strong><span>Fully furnished unit</span></div>
+                            <div><strong>27m²</strong><span>Vollmöblierte Einheit</span></div>
                         </div>
                         <div class="campus-spec-card">
                             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
-                            <div><strong>~10.3% gross</strong><span>Annual rental yield*</span></div>
+                            <div><strong>~10,3% brutto</strong><span>Jährliche Mietrendite*</span></div>
                         </div>
                         <div class="campus-spec-card">
                             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-                            <div><strong>Day 1 income</strong><span>No waiting period</span></div>
+                            <div><strong>Sofortige Einnahmen</strong><span>Kein Warteraum</span></div>
                         </div>
                         <div class="campus-spec-card">
                             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-                            <div><strong>Notarized title</strong><span>Full ownership rights</span></div>
+                            <div><strong>Notarieller Eigentumstitel</strong><span>Vollständige Eigentumsrechte</span></div>
                         </div>
                         <div class="campus-spec-card">
                             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-                            <div><strong>Hotel-style mgmt</strong><span>WiFi, cleaning, taxes</span></div>
+                            <div><strong>Hotelartiges Management</strong><span>WLAN, Reinigung, Steuern</span></div>
                         </div>
                         <div class="campus-spec-card">
                             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
-                            <div><strong>24/7 security</strong><span>Professional on-site</span></div>
+                            <div><strong>24/7-Sicherheitsdienst</strong><span>Professionell vor Ort</span></div>
                         </div>
                     </div>
                     <div style="display: flex; flex-wrap: wrap; gap: 16px; margin-top: 8px;">
-                        <a href="https://wa.me/491604949585?text=I'm%20interested%20in%20the%20Campus%20student%20housing%20units." class="btn btn-primary">Claim a Unit &rarr;</a>
-                        <button class="btn btn-outline" onclick="document.getElementById('vrModal').classList.add('open'); document.getElementById('vrVideo').play();">&#x1f441; Apartment Tour</button>
-                        <a href="https://wa.me/491604949585?text=I'd%20like%20to%20request%20a%20tour%20of%20Campus%20I." class="btn-tour">
+                        <a href="https://wa.me/491604949585?text=Ich%20interessiere%20mich%20f%C3%BCr%20die%20Campus%20I%20Studentenwohnungen." class="btn btn-primary">Einheit sichern &rarr;</a>
+                        <button class="btn btn-outline" onclick="document.getElementById('vrModal').classList.add('open'); document.getElementById('vrVideo').play();">&#x1f441; Wohnungsrundgang</button>
+                        <a href="https://wa.me/491604949585?text=Ich%20m%C3%B6chte%20eine%20Besichtigung%20von%20Campus%20I%20anfragen." class="btn-tour">
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg>
-                            Request a Tour
+                            Besichtigung anfragen
                         </a>
                     </div>
                 </div>
@@ -2269,27 +2290,27 @@
             <div style="background:var(--dark-3); border:1px solid rgba(201,169,110,0.15); border-radius:16px; padding:48px; margin-bottom:80px;" class="reveal">
                 <div style="display:grid; grid-template-columns:1fr 1fr; gap:48px; align-items:start;">
                     <div>
-                        <span class="section-tag" style="margin-bottom:16px; display:inline-block;">Why Demand Never Drops</span>
-                        <h3 style="font-family:'Playfair Display',serif; font-size:1.7rem; margin-bottom:16px; color:var(--text);">The UMAX Ecosystem</h3>
-                        <p style="color:var(--text-muted); font-size:0.95rem; line-height:1.8; margin-bottom:20px;">UMAX is Paraguay's largest medical university — drawing over 4,500 Brazilian students who cross the border specifically to study medicine. These students commit to a 6-year program and need accommodation within walking distance of campus.</p>
-                        <p style="color:var(--text-muted); font-size:0.95rem; line-height:1.8;">Campus I sits 100 meters from the entrance. There are not enough beds. That structural undersupply is your structural tailwind as an investor.</p>
+                        <span class="section-tag" style="margin-bottom:16px; display:inline-block;">Warum die Nachfrage nie versiegt</span>
+                        <h3 style="font-family:'Playfair Display',serif; font-size:1.7rem; margin-bottom:16px; color:var(--text);">Das UMAX-Ökosystem</h3>
+                        <p style="color:var(--text-muted); font-size:0.95rem; line-height:1.8; margin-bottom:20px;">UMAX ist Paraguays größte medizinische Universität — sie zieht über 4.500 brasilianische Studenten an, die eigens für ihr Medizinstudium die Grenze überqueren. Diese Studenten verpflichten sich zu einem 6-jährigen Programm und benötigen Unterkunft in Campusnähe.</p>
+                        <p style="color:var(--text-muted); font-size:0.95rem; line-height:1.8;">Campus I liegt 100 Meter vom Eingang entfernt. Es gibt nicht genug Betten. Dieses strukturelle Unterangebot ist Ihr struktureller Rückenwind als Investor.</p>
                     </div>
                     <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px;">
                         <div style="background:var(--dark-4); border-radius:10px; padding:20px; text-align:center;">
                             <div style="font-family:'Playfair Display',serif; font-size:1.8rem; color:var(--gold); font-weight:700;">4,500</div>
-                            <div style="font-size:0.78rem; color:var(--text-muted); margin-top:6px; text-transform:uppercase; letter-spacing:1px;">Active students at UMAX</div>
+                            <div style="font-size:0.78rem; color:var(--text-muted); margin-top:6px; text-transform:uppercase; letter-spacing:1px;">Aktive Studenten an der UMAX</div>
                         </div>
                         <div style="background:var(--dark-4); border-radius:10px; padding:20px; text-align:center;">
-                            <div style="font-family:'Playfair Display',serif; font-size:1.8rem; color:var(--gold); font-weight:700;">6 yrs</div>
-                            <div style="font-size:0.78rem; color:var(--text-muted); margin-top:6px; text-transform:uppercase; letter-spacing:1px;">Average study commitment</div>
+                            <div style="font-family:'Playfair Display',serif; font-size:1.8rem; color:var(--gold); font-weight:700;">6 J.</div>
+                            <div style="font-size:0.78rem; color:var(--text-muted); margin-top:6px; text-transform:uppercase; letter-spacing:1px;">Durchschnittliche Studiendauer</div>
                         </div>
                         <div style="background:var(--dark-4); border-radius:10px; padding:20px; text-align:center;">
                             <div style="font-family:'Playfair Display',serif; font-size:1.8rem; color:var(--gold); font-weight:700;">100m</div>
-                            <div style="font-size:0.78rem; color:var(--text-muted); margin-top:6px; text-transform:uppercase; letter-spacing:1px;">Distance to UMAX campus</div>
+                            <div style="font-size:0.78rem; color:var(--text-muted); margin-top:6px; text-transform:uppercase; letter-spacing:1px;">Entfernung zum UMAX-Campus</div>
                         </div>
                         <div style="background:var(--dark-4); border-radius:10px; padding:20px; text-align:center;">
                             <div style="font-family:'Playfair Display',serif; font-size:1.8rem; color:var(--gold); font-weight:700;">5×</div>
-                            <div style="font-size:0.78rem; color:var(--text-muted); margin-top:6px; text-transform:uppercase; letter-spacing:1px;">Neighborhood density growth (5 yrs)</div>
+                            <div style="font-size:0.78rem; color:var(--text-muted); margin-top:6px; text-transform:uppercase; letter-spacing:1px;">Bevölkerungsdichte-Wachstum (5 Jahre)</div>
                         </div>
                     </div>
                 </div>
@@ -2297,27 +2318,27 @@
 
             <!-- AMENITIES ROW -->
             <div class="reveal" style="margin-bottom: 20px;">
-                <h3 style="font-family:'Playfair Display',serif; font-size:1.4rem; color:var(--text); margin-bottom:24px; text-align:center;">Building Amenities</h3>
+                <h3 style="font-family:'Playfair Display',serif; font-size:1.4rem; color:var(--text); margin-bottom:24px; text-align:center;">Gebäude-Ausstattung</h3>
                 <div style="display:grid; grid-template-columns: repeat(6, 1fr); gap:12px; text-align:center;">
                     <div class="campus-amenity-chip">
                         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h20M2 12c0-5.5 4.5-10 10-10s10 4.5 10 10M2 12c0 5.5 4.5 10 10 10s10-4.5 10-10"/></svg>
-                        <span>Rooftop Pool</span>
+                        <span>Rooftop-Pool</span>
                     </div>
                     <div class="campus-amenity-chip">
                         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
-                        <span>Social Lounge</span>
+                        <span>Gemeinschaftslounge</span>
                     </div>
                     <div class="campus-amenity-chip">
                         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
-                        <span>High-Speed WiFi</span>
+                        <span>Hochgeschwindigkeits-WLAN</span>
                     </div>
                     <div class="campus-amenity-chip">
                         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
-                        <span>Weekly Cleaning</span>
+                        <span>Wöchentliche Reinigung</span>
                     </div>
                     <div class="campus-amenity-chip">
                         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
-                        <span>24/7 Security</span>
+                        <span>24/7-Sicherheit</span>
                     </div>
                 </div>
             </div>
@@ -2328,19 +2349,19 @@
     <section style="background: var(--dark); padding: 48px 0 0;">
         <div class="container">
             <div class="amenities-gallery" style="margin-top:0; grid-template-columns: repeat(4,1fr);">
-                <div class="amenity-item" data-label="Rooftop Pool" style="grid-column:span 2; height:300px;">
+                <div class="amenity-item" data-label="Rooftop-Pool" style="grid-column:span 2; height:300px;">
                     <img src="images/campus-pool.jpg" alt="Campus I rooftop infinity pool" loading="lazy">
                 </div>
-                <div class="amenity-item" data-label="Bedroom" style="height:300px;">
+                <div class="amenity-item" data-label="Schlafzimmer" style="height:300px;">
                     <img src="images/campus-bedroom.jpg" alt="Campus I bedroom" loading="lazy">
                 </div>
-                <div class="amenity-item" data-label="Kitchen" style="height:300px;">
+                <div class="amenity-item" data-label="Küche" style="height:300px;">
                     <img src="images/campus-kitchen.jpg" alt="Campus I kitchen" loading="lazy">
                 </div>
-                <div class="amenity-item" data-label="Bathroom" style="height:220px;">
+                <div class="amenity-item" data-label="Badezimmer" style="height:220px;">
                     <img src="images/campus-bathroom.jpg" alt="Campus I bathroom" loading="lazy">
                 </div>
-                <div class="amenity-item" data-label="Study &amp; Workspace" style="height:220px;">
+                <div class="amenity-item" data-label="Arbeitsbereich" style="height:220px;">
                     <img src="images/campus-study.jpg" alt="Campus I study" loading="lazy">
                 </div>
             </div>
@@ -2355,33 +2376,33 @@
                     <iframe src="https://www.google.com/maps/embed?pb=!4v1774916768843!6m8!1m7!1sV3AT8pjS3bpi_xAHpKoTnQ!2m2!1d-25.23747148965646!2d-57.53705876562753!3f198.79159987110904!4f20.351732869940903!5f0.7820865974627469" width="100%" height="380" style="border:0; display:block;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
                 <div class="reveal">
-                    <span class="section-tag">Location</span>
-                    <h3 class="section-title" style="font-size: 1.8rem;">100 Meters From the University</h3>
-                    <p class="section-subtitle">Campus I sits in Loma Pyt&atilde; &mdash; the university district of Asunci&oacute;n. The university has exploded from 2 to 12 stories in 5 years. You're not just buying a unit &mdash; you're buying into a structurally undersupplied ecosystem.</p>
+                    <span class="section-tag">Lage</span>
+                    <h3 class="section-title" style="font-size: 1.8rem;">100 Meter von der Universität</h3>
+                    <p class="section-subtitle">Campus I liegt in Loma Pyt&atilde; &mdash; dem Universitätsviertel von Asunci&oacute;n. Die Universität ist in fünf Jahren von zwei auf zwölf Stockwerke gewachsen. Sie kaufen nicht nur eine Einheit &mdash; Sie investieren in ein strukturell unterversorgtes Ökosystem.</p>
                     <div style="display:flex; flex-direction:column; gap:12px; margin-top:24px;">
                         <div style="display:flex; align-items:center; gap:14px;">
                             <div style="width:36px; height:36px; border-radius:50%; background:rgba(201,169,110,0.1); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
                                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="10" r="3"/><path d="M12 2a8 8 0 0 0-8 8c0 5.4 7.05 11.5 7.35 11.76a1 1 0 0 0 1.3 0C12.95 21.5 20 15.4 20 10a8 8 0 0 0-8-8z"/></svg>
                             </div>
-                            <span style="color:var(--text-muted); font-size:0.9rem;">100m from UMAX University entrance</span>
+                            <span style="color:var(--text-muted); font-size:0.9rem;">100m vom Eingang der UMAX-Universität</span>
                         </div>
                         <div style="display:flex; align-items:center; gap:14px;">
                             <div style="width:36px; height:36px; border-radius:50%; background:rgba(201,169,110,0.1); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
                                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
                             </div>
-                            <span style="color:var(--text-muted); font-size:0.9rem;">Loma Pyt&atilde; &mdash; fastest-growing residential zone in Asunci&oacute;n</span>
+                            <span style="color:var(--text-muted); font-size:0.9rem;">Loma Pyt&atilde; &mdash; die am schnellsten wachsende Wohnzone Asunci&oacute;ns</span>
                         </div>
                         <div style="display:flex; align-items:center; gap:14px;">
                             <div style="width:36px; height:36px; border-radius:50%; background:rgba(201,169,110,0.1); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
                                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13" rx="1"/><path d="M16 8h4l3 5v3h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
                             </div>
-                            <span style="color:var(--text-muted); font-size:0.9rem;">10-min from Asunci&oacute;n city centre, shopping, restaurants</span>
+                            <span style="color:var(--text-muted); font-size:0.9rem;">10 Minuten vom Stadtzentrum, Shopping und Restaurants</span>
                         </div>
                         <div style="display:flex; align-items:center; gap:14px;">
                             <div style="width:36px; height:36px; border-radius:50%; background:rgba(201,169,110,0.1); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
                                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
                             </div>
-                            <span style="color:var(--text-muted); font-size:0.9rem;">Neighborhood density grew 5× in 5 years</span>
+                            <span style="color:var(--text-muted); font-size:0.9rem;">Bevölkerungsdichte stieg in 5 Jahren um das 5-fache</span>
                         </div>
                     </div>
                 </div>
@@ -2420,8 +2441,8 @@
                 <div class="reveal reveal-delay-1">
                     <span class="section-tag">Der Gründer</span>
                     <h2 class="section-title" itemprop="name">Robin Loths</h2>
-                    <p class="section-subtitle" style="margin-bottom: 20px;" itemprop="description">Deutsch-stämmiger Unternehmer und Medizinstudent mit Sitz in Asunci&oacute;n, Paraguay. Hat Unternehmen aufgebaut, die im ersten Betriebsjahr achtstellige Umsätze erzielten.</p>
-                    <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.7; margin-bottom: 28px;">Robin hält zwei Diplome der <strong style="color: var(--text);" itemprop="alumniOf" itemscope itemtype="https://schema.org/Organization"><span itemprop="name">Bolsa de Valores de Asunci&oacute;n</span></strong> (Wertpapiermärkte und Finanzderivate) und wurde in <strong style="color: var(--text);">Forbes Paraguay</strong> und nationalen Wirtschaftsmedien vorgestellt. Alle Angebote auf dieser Seite sind exklusiv.</p>
+                    <p class="section-subtitle" style="margin-bottom: 20px;" itemprop="description">Deutsch-stämmiger Unternehmer und Medizinstudent mit Sitz in Asunci&oacute;n, Paraguay. Gründete Unternehmen, die im ersten Geschäftsjahr achtstellige Umsätze erreichten.</p>
+                    <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.7; margin-bottom: 28px;">Robin hält zwei Abschlussdiplome der <strong style="color: var(--text);" itemprop="alumniOf" itemscope itemtype="https://schema.org/Organization"><span itemprop="name">Bolsa de Valores de Asunci&oacute;n</span></strong> in Wertpapiermärkten und Finanzderivaten und wurde in <strong style="color: var(--text);">Forbes Paraguay</strong> sowie nationalen Wirtschaftsmedien vorgestellt. Sämtliche Angebote auf dieser Seite sind exklusiv.</p>
                     <a href="https://www.linkedin.com/in/robinloths/" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 8px; color: var(--gold); font-size: 0.9rem; font-weight: 600; margin-bottom: 24px;">
                         <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
                         Auf LinkedIn verbinden &rarr;
@@ -2435,7 +2456,7 @@
                                 <span style="font-family: 'Playfair Display', serif; font-size: 1.1rem; font-weight: 700; color: var(--gold);" itemprop="publisher" itemscope itemtype="https://schema.org/Organization"><span itemprop="name">Forbes</span></span>
                                 <span style="font-size: 0.7rem; color: var(--text-muted); vertical-align: super;"> PY</span>
                                 <meta itemprop="about" content="Robin Loths">
-                                <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 8px; line-height: 1.6;" itemprop="headline">&ldquo;Park Lofts setzt mit einem ambitionierten 10-Millionen-Dollar-Projekt einen neuen Meilenstein im lokalen Immobilienmarkt&rdquo;</p>
+                                <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 8px; line-height: 1.6;" itemprop="headline">&ldquo;Park Lofts setzt mit einem 10-Millionen-Dollar-Vorhaben einen neuen Maßstab im lokalen Immobilienmarkt&rdquo;</p>
                                 <a href="https://www.forbes.com.py/especiales/park-lofts-marca-nuevo-hito-real-estate-local-ambicioso-proyecto-us-10-millones-n75403" target="_blank" rel="noopener" style="font-size: 0.75rem; color: var(--gold); margin-top: 8px; display: inline-block;" itemprop="url">Artikel lesen &rarr;</a>
                             </div>
                             <!-- 5DÍAS TV card -->
@@ -2443,19 +2464,19 @@
                                 <span style="font-family: 'Inter', sans-serif; font-size: 1rem; font-weight: 800; color: var(--gold); letter-spacing: 1px;">5D&Iacute;AS</span>
                                 <span style="font-size: 0.7rem; color: var(--text-muted);"> TV</span>
                                 <meta itemprop="about" content="Robin Loths">
-                                <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 8px; line-height: 1.6;" itemprop="description">&ldquo;Investitionen: Von Europa nach Paraguay&rdquo; &mdash; als Schlüsselstimme zu internationalen Kapitalflüssen vorgestellt.</p>
+                                <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 8px; line-height: 1.6;" itemprop="description">&ldquo;Investitionen: Von Europa nach Paraguay&rdquo; &mdash; als maßgebliche Stimme zu internationalen Kapitalströmen präsentiert.</p>
                                 <a href="https://www.youtube.com/watch?v=1Su8umVaq3M" target="_blank" rel="noopener" style="font-size: 0.75rem; color: var(--gold); margin-top: 8px; display: inline-block;" itemprop="url">Interview ansehen &rarr;</a>
                             </div>
                             <!-- Bolsa de Valores credentials card -->
                             <div style="background: var(--dark-3); border: 1px solid rgba(255,255,255,0.06); border-radius: 8px; padding: 20px; transition: border-color 0.3s ease;" onmouseover="this.style.borderColor='rgba(201,169,110,0.2)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.06)'">
                                 <span style="font-family: 'Inter', sans-serif; font-size: 0.9rem; font-weight: 600; color: var(--gold);">Bolsa de Valores</span>
                                 <span style="font-size: 0.7rem; color: var(--text-muted);"> de Asunci&oacute;n</span>
-                                <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 8px; line-height: 1.6;">Zwei Diplome der paraguayischen Börse: <em itemprop="hasCredential">Diplomado en Mercado de Valores</em> (2023) und <em itemprop="hasCredential">Diplomado en Derivados Financieros</em> (2025).</p>
+                                <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 8px; line-height: 1.6;">Zwei Diplome der paraguayischen Wertpapierbörse: <em itemprop="hasCredential">Diplomado en Mercado de Valores</em> (2023) und <em itemprop="hasCredential">Diplomado en Derivados Financieros</em> (2025).</p>
                             </div>
                             <!-- 5DÍAS Power Player award card -->
                             <div style="background: var(--dark-3); border: 1px solid rgba(255,255,255,0.06); border-radius: 8px; padding: 20px; transition: border-color 0.3s ease;" onmouseover="this.style.borderColor='rgba(201,169,110,0.2)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.06)'">
                                 <span style="font-family: 'Inter', sans-serif; font-size: 0.9rem; font-weight: 600; color: var(--gold);" itemprop="award">5D&Iacute;AS Power Player</span>
-                                <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 8px; line-height: 1.6;">Unter Paraguays Top-100-Finanzmanagern anerkannt.</p>
+                                <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 8px; line-height: 1.6;">Ausgezeichnet unter Paraguays 100 einflussreichsten Finanzpersönlichkeiten.</p>
                             </div>
                         </div>
 
@@ -2476,13 +2497,13 @@
 
             <!-- Press photo strip -->
             <div class="press-strip" style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; margin-top: 32px;">
-                <div class="amenity-item reveal" data-label="On-Site at Construction" style="height: 220px; grid-column: auto;">
+                <div class="amenity-item reveal" data-label="Auf der Baustelle" style="height: 220px; grid-column: auto;">
                     <img src="images/robin-construction.jpg" alt="Robin Loths on-site at Park Lofts Tower construction site, Asunción Paraguay — Stuttgart Capital E.A.S." loading="lazy" style="object-fit: cover; width: 100%; height: 100%; object-position: center 22%;">
                 </div>
                 <div class="amenity-item reveal reveal-delay-1" data-label="5D&iacute;as TV Interview" style="height: 220px; grid-column: auto;">
                     <img src="images/robin-tv.jpg" alt="Robin Loths interviewed on 5Días TV Paraguay — Inversiones: De Europa a Paraguay" loading="lazy" style="object-fit: cover; width: 100%; height: 100%; object-position: 28% center;">
                 </div>
-                <div class="amenity-item reveal reveal-delay-2" data-label="5D&iacute;as Real Estate Cover" style="height: 220px; grid-column: auto;">
+                <div class="amenity-item reveal reveal-delay-2" data-label="5D&iacute;as Immobilien-Titelseite" style="height: 220px; grid-column: auto;">
                     <img src="images/robin-magazine.jpg" alt="Robin Loths on the cover of 5DÍAS Real Estate magazine Paraguay — 5DÍAS Power Player top 100 financial executives" loading="lazy" style="object-fit: cover; width: 100%; height: 100%; object-position: center 5%;">
                 </div>
             </div>
@@ -2497,28 +2518,28 @@
             <h2 class="section-title reveal">Häufig gestellte Fragen</h2>
             <div style="max-width: 800px; margin: 48px auto 0;">
                 <details class="faq-item reveal" open>
-                    <summary>Können Ausländer in Paraguay Immobilien kaufen?</summary>
-                    <p>Ja. Paraguay hat keine Beschränkungen für ausländischen Immobilienbesitz. Nicht-Residenten können Immobilien mit denselben Rechten wie paraguayische Staatsbürger kaufen. Der Prozess umfasst in der Regel einen notariellen Vertrag und die Eintragung ins öffentliche Register. Für den Besitz sind weder Sondergenehmigungen noch Visa erforderlich.</p>
+                    <summary>Können Ausländer in Paraguay Immobilien erwerben?</summary>
+                    <p>Ja. Paraguay kennt keine Beschränkungen für ausländischen Immobilienbesitz. Nicht-Residenten erwerben Immobilien mit denselben Rechten wie paraguayische Staatsbürger. Das Verfahren umfasst einen notariell beglaubigten Kaufvertrag und die Eintragung im öffentlichen Register. Weder Sondergenehmigungen noch ein Visum sind erforderlich.</p>
                 </details>
                 <details class="faq-item reveal reveal-delay-1">
                     <summary>Wie hoch ist die Steuer auf Mieteinnahmen in Paraguay?</summary>
-                    <p>Paraguay verwendet ein territoriales Steuersystem, was bedeutet, dass ausländische Einkünfte mit 0% besteuert werden. Mieteinnahmen aus paraguayischen Immobilien werden mit ca. 5% besteuert. Der maximale Gesamtsteuersatz beträgt 10%, was Paraguay zu einer der steuerfreundlichsten Jurisdiktionen für internationale Immobilieninvestoren macht.</p>
+                    <p>Paraguay wendet das Territorialprinzip an: Einkünfte aus dem Ausland werden mit 0% besteuert. Mieteinnahmen aus paraguayischen Immobilien unterliegen einem Steuersatz von ca. 5%. Der maximale Gesamtsteuersatz beträgt 10% &mdash; Paraguay zählt damit zu den steuerlich attraktivsten Jurisdiktionen für internationale Immobilieninvestoren.</p>
                 </details>
                 <details class="faq-item reveal reveal-delay-2">
                     <summary>Was kostet eine Wohnung in Asunci&oacute;n?</summary>
-                    <p>Schlüsselfertige Studentenwohnungen beginnen bei ca. $55.000. Premium-Turmresidenzen sind je nach Größe und Lage höher. Die Immobilienpreise in Asunci&oacute;n liegen schätzungsweise ca. 41% unter dem Durchschnitt anderer lateinamerikanischer Hauptstädte &mdash; ein erheblicher Mehrwert für Investoren.</p>
+                    <p>Schlüsselfertige Studentenapartments beginnen bei ca. $55.000. Premium-Residenzen im Hochhaus liegen je nach Größe und Lage höher. Die Immobilienpreise in Asunci&oacute;n befinden sich schätzungsweise 41% unter dem Durchschnitt anderer lateinamerikanischer Hauptstädte &mdash; ein erheblicher struktureller Vorteil für Investoren.</p>
                 </details>
                 <details class="faq-item reveal">
                     <summary>Ist Paraguay ein gutes Land für Immobilieninvestitionen?</summary>
-                    <p>Paraguay erhielt im Juli 2024 von Moody's ein Baa3-Investment-Grade-Rating, das makroökonomische Stabilität signalisiert. Im Q1-2025-UN-Tourismus-Bericht wurde es als #1 Tourismusziel weltweit eingestuft, mit 53% Wachstum bei internationalen Ankünften. Kombiniert mit 0% Steuer auf Auslandseinnahmen, niedrigen Immobilienpreisen und starker Mietnachfrage bietet Paraguay überzeugende Argumente für Immobilieninvestoren.</p>
+                    <p>Paraguay erhielt im Juli 2024 das Baa3-Investment-Grade-Rating von Moody's &mdash; ein Signal für makroökonomische Stabilität. Im UN-Tourismus-Bericht Q1 2025 wurde das Land als weltweit am stärksten wachsendes Reiseziel eingestuft (+53% internationale Ankünfte). In Verbindung mit 0% Steuer auf Auslandseinkommen, niedrigen Einstiegspreisen und starker Mietnachfrage ergibt sich ein überzeugendes Gesamtbild für Immobilieninvestoren.</p>
                 </details>
                 <details class="faq-item reveal reveal-delay-1">
                     <summary>Welche Mietrendite kann ich in Paraguay erwarten?</summary>
-                    <p>Die geschätzte Bruttomietrendite für schlüsselfertige Wohnungen in Asunci&oacute;n liegt bei ca. 7&ndash;10%, mit geschätzten Nettorenditen von 5&ndash;7% jährlich nach Verwaltungsgebühren und Steuern. Diese Zahlen basieren auf aktuellen Marktbedingungen und sind keine Garantie. Individuelle Ergebnisse können abweichen.</p>
+                    <p>Für schlüsselfertige Wohnungen in Asunci&oacute;n werden Bruttomietrenditen von ca. 7&ndash;10% erzielt. Die geschätzte Nettorendite nach Verwaltungsgebühren und Steuern liegt bei 5&ndash;7% p.a. Diese Werte basieren auf aktuellen Marktdaten und sind keine zugesicherte Eigenschaft. Individuelle Ergebnisse können abweichen.</p>
                 </details>
                 <details class="faq-item reveal reveal-delay-2">
                     <summary>Wie bekomme ich eine Aufenthaltserlaubnis in Paraguay?</summary>
-                    <p>Paraguay bietet eines der einfachsten Aufenthaltsverfahren weltweit. Grundvoraussetzungen sind Geburtsurkunde und Führungszeugnis. Es gibt keine Mindestaufenthaltspflicht, was es ideal für Investoren macht, die nicht Vollzeit umziehen möchten. Die Lebenshaltungskosten sind niedrig und das subtropische Klima ist ganzjährig warm.</p>
+                    <p>Paraguay bietet eines der unkompliziertesten Aufenthaltsverfahren weltweit. Grundvoraussetzungen sind lediglich Geburtsurkunde und polizeiliches Führungszeugnis. Eine Mindestaufenthaltspflicht zur Aufrechterhaltung des Status existiert nicht &mdash; ideal für Investoren ohne Relocation-Pläne. Niedrige Lebenshaltungskosten und ein subtropisches Klima runden das Profil ab.</p>
                 </details>
             </div>
         </div>
@@ -2529,13 +2550,13 @@
         <div style="position:absolute;inset:0;background:url('images/drone-vista-a.jpg') center/cover no-repeat;opacity:0.08;z-index:0;pointer-events:none;"></div>
         <div class="container" style="position:relative;z-index:1;">
             <div class="contact-content reveal">
-                <span class="section-tag">Nicht lange überlegen. Handeln.</span>
-                <h2>Noch 5 Einheiten.<br>Du weißt, was als Nächstes kommt.</h2>
-                <p>Das Angebot ist begrenzt, das Interesse hoch. Eine Nachricht reicht &mdash; ich teile alles, was du wissen musst, in unter 5 Minuten.</p>
+                <span class="section-tag">Nicht zögern. Jetzt handeln.</span>
+                <h2>Nur noch 5 Einheiten.<br>Sie wissen, was das bedeutet.</h2>
+                <p>Das Angebot ist begrenzt, die Nachfrage hoch. Eine Nachricht genügt &mdash; ich erkläre Ihnen alles Relevante in unter 5 Minuten.</p>
                 <!-- REPLACE +491604949585 with your actual WhatsApp number -->
-                <a href="https://wa.me/491604949585?text=Hi%20Robin%2C%20I'm%20interested%20in%20your%20real%20estate%20properties%20in%20Paraguay." class="whatsapp-btn" id="whatsappBtn">
+                <a href="https://wa.me/491604949585?text=Hallo%20Robin%2C%20ich%20interessiere%20mich%20f%C3%BCr%20Ihre%20Immobilien%20in%20Paraguay." class="whatsapp-btn" id="whatsappBtn">
                     <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-                    WhatsApp schreiben
+                    Auf WhatsApp schreiben
                 </a>
             </div>
         </div>
@@ -2548,7 +2569,7 @@
         <div class="container">
             <div class="footer-content">
                 <span class="footer-logo">ROBINLOTHS.COM</span>
-                <span class="footer-text">&copy; 2025 Stuttgart Capital E.A.S. Alle Rechte vorbehalten. | robinloths.com</span>
+                <span class="footer-text">&copy; 2025 Stuttgart Capital E.A.S. &mdash; Alle Rechte vorbehalten. | robinloths.com</span>
             </div>
             <div style="margin-top: 32px; padding-top: 24px; border-top: 1px solid rgba(255,255,255,0.06);">
                 <p style="font-size: 0.7rem; color: #666; line-height: 1.8; max-width: 900px;">
@@ -2559,9 +2580,9 @@
     </footer>
 
     <!-- VR TOUR MODAL -->
-    <div class="vr-modal-overlay" id="vrModal" role="dialog" aria-modal="true" aria-label="VR Studio Tour">
+    <div class="vr-modal-overlay" id="vrModal" role="dialog" aria-modal="true" aria-label="VR-Rundgang">
         <div class="vr-modal">
-            <button class="vr-modal-close" id="vrModalClose" aria-label="Close video">&times;</button>
+            <button class="vr-modal-close" id="vrModalClose" aria-label="Video schließen">&times;</button>
             <video id="vrVideo" controls playsinline preload="none">
                 <source src="vr-tour.mp4" type="video/mp4">
             </video>
@@ -2570,7 +2591,7 @@
 
     <!-- FLOATING WHATSAPP BUTTON -->
     <!-- REPLACE +491604949585 with your actual WhatsApp number -->
-    <a href="https://wa.me/491604949585?text=Hi%20Robin%2C%20I'm%20interested%20in%20your%20properties%20in%20Paraguay." class="float-whatsapp" aria-label="WhatsApp schreiben">
+    <a href="https://wa.me/491604949585?text=Hallo%20Robin%2C%20ich%20interessiere%20mich%20f%C3%BCr%20Ihre%20Immobilien%20in%20Paraguay." class="float-whatsapp" aria-label="WhatsApp schreiben">
         <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
     </a>
 

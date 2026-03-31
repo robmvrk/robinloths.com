@@ -791,6 +791,12 @@
         }
         .nav-cta:hover { background: var(--gold-light); color: var(--dark) !important; }
 
+        .lang-switch { display: flex; align-items: center; gap: 4px; margin-left: 16px; border: 1px solid rgba(201,169,110,0.3); border-radius: 6px; overflow: hidden; }
+        .lang-btn, .lang-active { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.08em; padding: 4px 9px; text-decoration: none; transition: background 0.2s; }
+        .lang-btn { color: var(--text-muted); background: transparent; }
+        .lang-btn:hover { background: rgba(255,255,255,0.05); color: var(--text); }
+        .lang-active { color: var(--dark); background: var(--gold); }
+
         .mobile-toggle {
             display: none;
             flex-direction: column;
@@ -1778,13 +1784,6 @@
 </head>
 <body>
 
-    <!-- Language switcher -->
-    <div style="background:#111; border-bottom:1px solid rgba(201,169,110,0.15); padding:8px 0; text-align:center;">
-        <span style="font-size:0.75rem; color:var(--text-muted);">🌐 Language: </span>
-        <span style="font-size:0.75rem; color:var(--gold); margin:0 8px; padding:2px 8px; border:1px solid rgba(201,169,110,0.3); border-radius:4px;">🇬🇧 English</span>
-        <a href="/de.html" style="font-size:0.75rem; color:var(--text-muted); text-decoration:none; margin:0 8px; padding:2px 8px; border:1px solid rgba(255,255,255,0.15); border-radius:4px;">🇩🇪 Deutsch</a>
-    </div>
-
     <!-- NAVIGATION -->
     <nav id="navbar">
         <div class="container">
@@ -1797,6 +1796,7 @@
                 <li><a href="#why-paraguay">Why Paraguay</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#contact" class="nav-cta">Get in Touch</a></li>
+                <div class="lang-switch"><span class="lang-active">EN</span><a href="/de.html" class="lang-btn">DE</a></div>
             </ul>
             <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
                 <span></span><span></span><span></span>
