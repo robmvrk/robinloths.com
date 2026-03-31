@@ -1,0 +1,16 @@
+/* TEAM */
+Name: Robin Loths
+Title: Founder & Real Estate Entrepreneur
+Location: Asunción, Paraguay
+LinkedIn: https://www.linkedin.com/in/robinloths/
+
+/* ABOUT */
+Robin Loths is a German-born entrepreneur and medical student based in Asunción, Paraguay.
+Founder of Stuttgart Capital E.A.S. and developer of Park Lofts Tower (US$10M).
+Featured in Forbes Paraguay. 5DÍAS Power Player — top 100 financial executives in Paraguay.
+Holds diplomas in Securities Markets and Financial Derivatives from Bolsa de Valores de Asunción.
+
+/* SITE */
+Last update: 2026-03-31
+Language: English
+Standards: HTML5, Schema.org

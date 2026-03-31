@@ -60,6 +60,19 @@
     <!-- Primary image hint for scrapers, AI indexers, and social previews -->
     <link rel="image_src" href="https://robinloths.com/images/robin-portrait.jpg">
 
+    <!-- Identity anchors: help AI and social crawlers link this site to Robin Loths -->
+    <link rel="me" href="https://www.linkedin.com/in/robinloths/">
+    <link rel="me" href="https://robinloths.com">
+
+    <!-- Open Graph profile tags (used by AI scrapers that parse og: tags for person identity) -->
+    <meta property="profile:first_name" content="Robin">
+    <meta property="profile:last_name" content="Loths">
+    <meta property="profile:username" content="robinloths">
+
+    <!-- LLM crawler discovery hints -->
+    <link rel="alternate" type="text/plain" title="LLM-readable site summary" href="/llms.txt">
+    <link rel="humans" href="/humans.txt">
+
     <!-- Structured Data: Organization -->
     <script type="application/ld+json">
     {
@@ -85,7 +98,11 @@
             "@type": "Person",
             "name": "Robin Loths",
             "url": "https://www.linkedin.com/in/robinloths/",
-            "sameAs": ["https://www.linkedin.com/in/robinloths/"]
+            "sameAs": [
+                "https://www.linkedin.com/in/robinloths/",
+                "https://www.forbes.com.py/especiales/park-lofts-marca-nuevo-hito-real-estate-local-ambicioso-proyecto-us-10-millones-n75403",
+                "https://asunciontimes.com/paraguay-news/local-news/park-lofts-tower-redefining-luxury-urban-living-in-asuncion/"
+            ]
         },
         "areaServed": [
             {"@type": "Country", "name": "Paraguay"},
@@ -187,27 +204,67 @@
         "award": "5DÍAS Power Player — Top 100 Financial Executives Paraguay",
         "subjectOf": [
             {
-                "@type": "Article",
+                "@type": "NewsArticle",
                 "name": "Park Lofts marca nuevo hito en el real estate local con ambicioso proyecto de US$ 10 millones",
                 "url": "https://www.forbes.com.py/especiales/park-lofts-marca-nuevo-hito-real-estate-local-ambicioso-proyecto-us-10-millones-n75403",
                 "publisher": {"@type": "Organization", "name": "Forbes Paraguay"},
-                "isPartOf": {"@type": "Periodical", "name": "Forbes"}
+                "isPartOf": {"@type": "Periodical", "name": "Forbes"},
+                "about": {"@type": "Person", "@id": "https://robinloths.com/#robin-loths"}
             },
             {
                 "@type": "TVEpisode",
                 "name": "Inversiones: De Europa a Paraguay",
-                "description": "Robin Loths featured on 5Días TV discussing international capital flows into Paraguay",
-                "partOfSeries": {"@type": "TVSeries", "name": "5Días TV"}
+                "url": "https://www.youtube.com/watch?v=1Su8umVaq3M",
+                "description": "Robin Loths interviewed on 5Días TV Paraguay discussing European investment flows into Latin America",
+                "partOfSeries": {"@type": "TVSeries", "name": "5Días TV"},
+                "about": {"@type": "Person", "@id": "https://robinloths.com/#robin-loths"}
             },
             {
                 "@type": "PublicationIssue",
-                "name": "5DÍAS Real Estate — Cover Feature",
-                "isPartOf": {"@type": "Periodical", "name": "5DÍAS Paraguay"}
+                "name": "5DÍAS Real Estate — Cover Feature: Robin Loths",
+                "url": "https://issuu.com/editorialdenegocios.com/docs/5dx20feb2024",
+                "isPartOf": {"@type": "Periodical", "name": "5DÍAS Paraguay"},
+                "about": {"@type": "Person", "@id": "https://robinloths.com/#robin-loths"}
+            },
+            {
+                "@type": "NewsArticle",
+                "name": "Robin Loths: El mercado inmobiliario paraguayo ofrece rendimientos atractivos",
+                "url": "https://5dias.com.py/article/robin-loths-el-mercado-inmobiliario-paraguayo-ofrece-rendimientos-atractivos",
+                "publisher": {"@type": "Organization", "name": "5DÍAS Paraguay"},
+                "about": {"@type": "Person", "@id": "https://robinloths.com/#robin-loths"}
+            },
+            {
+                "@type": "Article",
+                "name": "De Alemania a Paraguay — Stuttgart Capital",
+                "url": "https://puntadelesteinternacional.com/de-alemania-a-paraguay-stuttgart-capital/",
+                "publisher": {"@type": "Organization", "name": "Punta del Este Internacional"},
+                "about": {"@type": "Person", "@id": "https://robinloths.com/#robin-loths"}
+            },
+            {
+                "@type": "NewsArticle",
+                "name": "Park Lofts Tower: Redefining Luxury Urban Living in Asunción",
+                "url": "https://asunciontimes.com/paraguay-news/local-news/park-lofts-tower-redefining-luxury-urban-living-in-asuncion/",
+                "publisher": {"@type": "Organization", "name": "Asunción Times"},
+                "about": {"@type": "Person", "@id": "https://robinloths.com/#robin-loths"}
+            },
+            {
+                "@type": "RadioEpisode",
+                "name": "Robin Loths — Radio Chaco Boreal Interview",
+                "url": "https://www.youtube.com/watch?v=FS4m5iWdtss",
+                "description": "Robin Loths interviewed on Radio Chaco Boreal, Paraguay, discussing real estate investment",
+                "partOfSeries": {"@type": "RadioSeries", "name": "Radio Chaco Boreal"},
+                "about": {"@type": "Person", "@id": "https://robinloths.com/#robin-loths"}
             }
         ],
         "sameAs": [
             "https://www.linkedin.com/in/robinloths/",
-            "https://www.forbes.com.py/especiales/park-lofts-marca-nuevo-hito-real-estate-local-ambicioso-proyecto-us-10-millones-n75403"
+            "https://www.forbes.com.py/especiales/park-lofts-marca-nuevo-hito-real-estate-local-ambicioso-proyecto-us-10-millones-n75403",
+            "https://issuu.com/editorialdenegocios.com/docs/5dx20feb2024",
+            "https://www.youtube.com/watch?v=1Su8umVaq3M",
+            "https://5dias.com.py/article/robin-loths-el-mercado-inmobiliario-paraguayo-ofrece-rendimientos-atractivos",
+            "https://puntadelesteinternacional.com/de-alemania-a-paraguay-stuttgart-capital/",
+            "https://asunciontimes.com/paraguay-news/local-news/park-lofts-tower-redefining-luxury-urban-living-in-asuncion/",
+            "https://www.youtube.com/watch?v=FS4m5iWdtss"
         ]
     }
     </script>
@@ -2220,7 +2277,22 @@
     </section>
 
     <!-- ABOUT / PRESS -->
-    <section id="about" style="background: var(--dark-2); position: relative;">
+    <section id="about" style="background: var(--dark-2); position: relative;" itemscope itemtype="https://schema.org/Person">
+        <meta itemprop="name" content="Robin Loths">
+        <meta itemprop="givenName" content="Robin">
+        <meta itemprop="familyName" content="Loths">
+        <meta itemprop="url" content="https://robinloths.com">
+        <meta itemprop="image" content="https://robinloths.com/images/robin-portrait.jpg">
+        <meta itemprop="nationality" content="German">
+        <meta itemprop="jobTitle" content="Entrepreneur & Real Estate Investor">
+        <meta itemprop="sameAs" content="https://www.linkedin.com/in/robinloths/">
+        <meta itemprop="sameAs" content="https://www.forbes.com.py/especiales/park-lofts-marca-nuevo-hito-real-estate-local-ambicioso-proyecto-us-10-millones-n75403">
+        <meta itemprop="sameAs" content="https://issuu.com/editorialdenegocios.com/docs/5dx20feb2024">
+        <meta itemprop="sameAs" content="https://www.youtube.com/watch?v=1Su8umVaq3M">
+        <meta itemprop="sameAs" content="https://5dias.com.py/article/robin-loths-el-mercado-inmobiliario-paraguayo-ofrece-rendimientos-atractivos">
+        <meta itemprop="sameAs" content="https://puntadelesteinternacional.com/de-alemania-a-paraguay-stuttgart-capital/">
+        <meta itemprop="sameAs" content="https://asunciontimes.com/paraguay-news/local-news/park-lofts-tower-redefining-luxury-urban-living-in-asuncion/">
+        <meta itemprop="sameAs" content="https://www.youtube.com/watch?v=FS4m5iWdtss">
         <div style="position: absolute; top: 0; left: 0; right: 0; height: 1px; background: linear-gradient(to right, transparent, rgba(201,169,110,0.3), transparent);"></div>
         <div class="container">
             <div class="feature-grid">
@@ -2233,9 +2305,9 @@
                 </div>
                 <div class="reveal reveal-delay-1">
                     <span class="section-tag">The Founder</span>
-                    <h2 class="section-title">Robin Loths</h2>
-                    <p class="section-subtitle" style="margin-bottom: 20px;">German-born entrepreneur and medical student based in Asunci&oacute;n, Paraguay. Has built companies reaching eight-figure sales within their first year of operation.</p>
-                    <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.7; margin-bottom: 28px;">Robin holds two diplomas from the <strong style="color: var(--text);">Bolsa de Valores de Asunci&oacute;n</strong> (Securities Markets and Financial Derivatives) and has been featured in <strong style="color: var(--text);">Forbes Paraguay</strong> and national business media. All listings on this site are exclusive.</p>
+                    <h2 class="section-title" itemprop="name">Robin Loths</h2>
+                    <p class="section-subtitle" style="margin-bottom: 20px;" itemprop="description">German-born entrepreneur and medical student based in Asunci&oacute;n, Paraguay. Has built companies reaching eight-figure sales within their first year of operation.</p>
+                    <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.7; margin-bottom: 28px;">Robin holds two diplomas from the <strong style="color: var(--text);" itemprop="alumniOf" itemscope itemtype="https://schema.org/Organization"><span itemprop="name">Bolsa de Valores de Asunci&oacute;n</span></strong> (Securities Markets and Financial Derivatives) and has been featured in <strong style="color: var(--text);">Forbes Paraguay</strong> and national business media. All listings on this site are exclusive.</p>
                     <a href="https://www.linkedin.com/in/robinloths/" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 8px; color: var(--gold); font-size: 0.9rem; font-weight: 600; margin-bottom: 24px;">
                         <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
                         Connect on LinkedIn &rarr;
@@ -2244,24 +2316,30 @@
                     <!-- Press highlights -->
                     <div style="border-top: 1px solid rgba(255,255,255,0.06); padding-top: 24px;">
                         <div class="press-cards" style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
-                            <div style="background: var(--dark-3); border: 1px solid rgba(255,255,255,0.06); border-radius: 8px; padding: 20px; transition: border-color 0.3s ease;" onmouseover="this.style.borderColor='rgba(201,169,110,0.2)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.06)'">
-                                <span style="font-family: 'Playfair Display', serif; font-size: 1.1rem; font-weight: 700; color: var(--gold);">Forbes</span>
+                            <!-- Forbes card — itemprop marks this as a citation about Robin Loths for AI scrapers -->
+                            <div style="background: var(--dark-3); border: 1px solid rgba(255,255,255,0.06); border-radius: 8px; padding: 20px; transition: border-color 0.3s ease;" onmouseover="this.style.borderColor='rgba(201,169,110,0.2)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.06)'" itemprop="subjectOf" itemscope itemtype="https://schema.org/NewsArticle">
+                                <span style="font-family: 'Playfair Display', serif; font-size: 1.1rem; font-weight: 700; color: var(--gold);" itemprop="publisher" itemscope itemtype="https://schema.org/Organization"><span itemprop="name">Forbes</span></span>
                                 <span style="font-size: 0.7rem; color: var(--text-muted); vertical-align: super;"> PY</span>
-                                <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 8px; line-height: 1.6;">&ldquo;Park Lofts marks a new milestone in local real estate with an ambitious US$&nbsp;10 million project&rdquo;</p>
-                                <a href="https://www.forbes.com.py/especiales/park-lofts-marca-nuevo-hito-real-estate-local-ambicioso-proyecto-us-10-millones-n75403" target="_blank" rel="noopener" style="font-size: 0.75rem; color: var(--gold); margin-top: 8px; display: inline-block;">Read article &rarr;</a>
+                                <meta itemprop="about" content="Robin Loths">
+                                <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 8px; line-height: 1.6;" itemprop="headline">&ldquo;Park Lofts marks a new milestone in local real estate with an ambitious US$&nbsp;10 million project&rdquo;</p>
+                                <a href="https://www.forbes.com.py/especiales/park-lofts-marca-nuevo-hito-real-estate-local-ambicioso-proyecto-us-10-millones-n75403" target="_blank" rel="noopener" style="font-size: 0.75rem; color: var(--gold); margin-top: 8px; display: inline-block;" itemprop="url">Read article &rarr;</a>
                             </div>
-                            <div style="background: var(--dark-3); border: 1px solid rgba(255,255,255,0.06); border-radius: 8px; padding: 20px; transition: border-color 0.3s ease;" onmouseover="this.style.borderColor='rgba(201,169,110,0.2)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.06)'">
+                            <!-- 5DÍAS TV card -->
+                            <div style="background: var(--dark-3); border: 1px solid rgba(255,255,255,0.06); border-radius: 8px; padding: 20px; transition: border-color 0.3s ease;" onmouseover="this.style.borderColor='rgba(201,169,110,0.2)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.06)'" itemprop="subjectOf" itemscope itemtype="https://schema.org/TVEpisode">
                                 <span style="font-family: 'Inter', sans-serif; font-size: 1rem; font-weight: 800; color: var(--gold); letter-spacing: 1px;">5D&Iacute;AS</span>
                                 <span style="font-size: 0.7rem; color: var(--text-muted);"> TV</span>
-                                <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 8px; line-height: 1.6;">&ldquo;Investments: From Europe to Paraguay&rdquo; &mdash; featured as a key voice on international capital flows.</p>
+                                <meta itemprop="about" content="Robin Loths">
+                                <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 8px; line-height: 1.6;" itemprop="description">&ldquo;Investments: From Europe to Paraguay&rdquo; &mdash; featured as a key voice on international capital flows.</p>
                             </div>
+                            <!-- Bolsa de Valores credentials card -->
                             <div style="background: var(--dark-3); border: 1px solid rgba(255,255,255,0.06); border-radius: 8px; padding: 20px; transition: border-color 0.3s ease;" onmouseover="this.style.borderColor='rgba(201,169,110,0.2)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.06)'">
                                 <span style="font-family: 'Inter', sans-serif; font-size: 0.9rem; font-weight: 600; color: var(--gold);">Bolsa de Valores</span>
                                 <span style="font-size: 0.7rem; color: var(--text-muted);"> de Asunci&oacute;n</span>
-                                <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 8px; line-height: 1.6;">Two diplomas from Paraguay's Stock Exchange: <em>Diplomado en Mercado de Valores</em> (2023) and <em>Diplomado en Derivados Financieros</em> (2025).</p>
+                                <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 8px; line-height: 1.6;">Two diplomas from Paraguay's Stock Exchange: <em itemprop="hasCredential">Diplomado en Mercado de Valores</em> (2023) and <em itemprop="hasCredential">Diplomado en Derivados Financieros</em> (2025).</p>
                             </div>
+                            <!-- 5DÍAS Power Player award card -->
                             <div style="background: var(--dark-3); border: 1px solid rgba(255,255,255,0.06); border-radius: 8px; padding: 20px; transition: border-color 0.3s ease;" onmouseover="this.style.borderColor='rgba(201,169,110,0.2)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.06)'">
-                                <span style="font-family: 'Inter', sans-serif; font-size: 0.9rem; font-weight: 600; color: var(--gold);">5D&Iacute;AS Power Player</span>
+                                <span style="font-family: 'Inter', sans-serif; font-size: 0.9rem; font-weight: 600; color: var(--gold);" itemprop="award">5D&Iacute;AS Power Player</span>
                                 <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 8px; line-height: 1.6;">Recognised among Paraguay&rsquo;s top 100 financial executives.</p>
                             </div>
                         </div>
