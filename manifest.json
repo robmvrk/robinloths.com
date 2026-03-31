@@ -1,0 +1,22 @@
+{
+  "name": "Robin Loths — Real Estate Investment Paraguay",
+  "short_name": "Robin Loths",
+  "description": "Buy turnkey apartments in Asunción, Paraguay from $55,000 with ~7% estimated net yield.",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#0a0a0a",
+  "theme_color": "#0a0a0a",
+  "lang": "en",
+  "icons": [
+    {
+      "src": "/images/favicon-32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}

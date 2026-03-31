@@ -10,6 +10,23 @@
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <link rel="canonical" href="https://robinloths.com/">
 
+    <!-- Favicon & App icons -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#0a0a0a">
+    <meta name="msapplication-TileColor" content="#0a0a0a">
+    <meta name="msapplication-TileImage" content="images/favicon-32.png">
+
+    <!-- Language targeting: English / German / Spanish investors -->
+    <link rel="alternate" hreflang="en" href="https://robinloths.com/">
+    <link rel="alternate" hreflang="de" href="https://robinloths.com/">
+    <link rel="alternate" hreflang="es" href="https://robinloths.com/">
+    <link rel="alternate" hreflang="x-default" href="https://robinloths.com/">
+
     <!-- Geo targeting -->
     <meta name="geo.region" content="PY">
     <meta name="geo.placename" content="Asunción">
@@ -27,6 +44,8 @@
     <meta property="og:image:alt" content="Aerial view of modern Asunción skyline — real estate investment in Paraguay">
     <meta property="og:site_name" content="Robin Loths — Real Estate Investment Paraguay">
     <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="de_DE">
+    <meta property="og:locale:alternate" content="es_PY">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
@@ -34,6 +53,9 @@
     <meta name="twitter:description" content="Turnkey apartments in Asunción from $55,000. ~7% estimated net yield. 0% tax on foreign income. Moody's Baa3. Only 5 units left.">
     <meta name="twitter:image" content="https://robinloths.com/images/og-image.jpg">
     <meta name="twitter:image:alt" content="Aerial view of modern Asunción skyline — real estate investment in Paraguay">
+    <meta name="twitter:creator" content="@robinloths">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="rating" content="general">
 
     <!-- Structured Data: Organization -->
     <script type="application/ld+json">
@@ -42,11 +64,19 @@
         "@type": "RealEstateAgent",
         "name": "Robin Loths — Stuttgart Capital E.A.S.",
         "url": "https://robinloths.com",
+        "logo": "https://robinloths.com/images/og-image.jpg",
+        "image": "https://robinloths.com/images/robin-portrait.jpg",
         "description": "Exclusive real estate listings in Asunción, Paraguay. Turnkey apartments from $55,000 with estimated ~7% net yield. 0% foreign income tax. Moody's Baa3 investment-grade rated.",
+        "priceRange": "$$$",
         "address": {
             "@type": "PostalAddress",
             "addressLocality": "Asunción",
             "addressCountry": "PY"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": -25.2637,
+            "longitude": -57.5759
         },
         "founder": {
             "@type": "Person",
@@ -54,10 +84,12 @@
             "url": "https://www.linkedin.com/in/robinloths/",
             "sameAs": ["https://www.linkedin.com/in/robinloths/"]
         },
-        "areaServed": {
-            "@type": "Country",
-            "name": "Paraguay"
-        },
+        "areaServed": [
+            {"@type": "Country", "name": "Paraguay"},
+            {"@type": "Country", "name": "Germany"},
+            {"@type": "Country", "name": "Austria"},
+            {"@type": "Country", "name": "Switzerland"}
+        ],
         "knowsLanguage": ["en", "de", "es"],
         "telephone": "+491604949585",
         "contactPoint": {
@@ -66,6 +98,30 @@
             "contactType": "sales",
             "availableLanguage": ["English", "German", "Spanish"]
         },
+        "sameAs": [
+            "https://www.linkedin.com/in/robinloths/",
+            "https://www.forbes.com.py/especiales/park-lofts-marca-nuevo-hito-real-estate-local-ambicioso-proyecto-us-10-millones-n75403"
+        ]
+    }
+    </script>
+
+    <!-- Structured Data: Person (Robin Loths) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Robin Loths",
+        "url": "https://robinloths.com/#about",
+        "image": "https://robinloths.com/images/robin-portrait.jpg",
+        "jobTitle": "Real Estate Entrepreneur & Founder",
+        "description": "German-born entrepreneur and medical student based in Asunción, Paraguay. Founder of Stuttgart Capital E.A.S. Featured in Forbes Paraguay. Holds diplomas in Securities Markets and Financial Derivatives from Bolsa de Valores de Asunción.",
+        "worksFor": {
+            "@type": "Organization",
+            "name": "Stuttgart Capital E.A.S.",
+            "url": "https://robinloths.com"
+        },
+        "knowsLanguage": ["English", "German", "Spanish"],
+        "nationality": {"@type": "Country", "name": "Germany"},
         "sameAs": ["https://www.linkedin.com/in/robinloths/"]
     }
     </script>
@@ -87,12 +143,21 @@
                     "name": "Park Lofts Tower Studio — Luxury Apartment Asunción",
                     "description": "Pre-construction luxury studio apartment in 101m landmark tower on Avenida Santa Teresa, Asunción. Rooftop infinity pool, cinema, premium amenities.",
                     "url": "https://robinloths.com/#park-lofts",
+                    "image": "https://robinloths.com/images/tower-exterior-top.jpg",
+                    "numberOfRooms": 1,
+                    "floorSize": {"@type": "QuantitativeValue", "value": 35, "unitCode": "MTK"},
                     "address": {
                         "@type": "PostalAddress",
                         "streetAddress": "Avenida Santa Teresa",
                         "addressLocality": "Asunción",
                         "addressRegion": "Central",
                         "addressCountry": "PY"
+                    },
+                    "offers": {
+                        "@type": "Offer",
+                        "priceCurrency": "USD",
+                        "availability": "https://schema.org/LimitedAvailability",
+                        "seller": {"@type": "Organization", "name": "Stuttgart Capital E.A.S."}
                     }
                 }
             },
@@ -104,12 +169,22 @@
                     "name": "Campus I Student Housing — Turnkey Investment Asunción",
                     "description": "Turnkey 27m² fully furnished apartments near UMAX university. Currently 100% occupied. Estimated ~7.2% net annual yield. From $55,000. Only 3 units left.",
                     "url": "https://robinloths.com/#campus",
+                    "image": "https://robinloths.com/images/campus-pool.jpg",
+                    "numberOfRooms": 1,
+                    "floorSize": {"@type": "QuantitativeValue", "value": 27, "unitCode": "MTK"},
                     "address": {
                         "@type": "PostalAddress",
                         "streetAddress": "Loma Pytã",
                         "addressLocality": "Asunción",
                         "addressRegion": "Central",
                         "addressCountry": "PY"
+                    },
+                    "offers": {
+                        "@type": "Offer",
+                        "price": 55000,
+                        "priceCurrency": "USD",
+                        "availability": "https://schema.org/LimitedAvailability",
+                        "seller": {"@type": "Organization", "name": "Stuttgart Capital E.A.S."}
                     }
                 }
             },
@@ -120,10 +195,47 @@
                     "@type": "House",
                     "name": "Casas Bali — Private Villas with Pool in Paraguay",
                     "description": "80m² Bali-inspired private villas with private garden and pool. Tropical living in Paraguay.",
-                    "url": "https://robinloths.com/#casas-bali"
+                    "url": "https://robinloths.com/#casas-bali",
+                    "image": "https://robinloths.com/images/bali-pool-exterior.jpg",
+                    "numberOfRooms": 2,
+                    "floorSize": {"@type": "QuantitativeValue", "value": 80, "unitCode": "MTK"},
+                    "amenityFeature": [
+                        {"@type": "LocationFeatureSpecification", "name": "Private Pool", "value": true},
+                        {"@type": "LocationFeatureSpecification", "name": "Private Garden", "value": true}
+                    ],
+                    "address": {
+                        "@type": "PostalAddress",
+                        "addressLocality": "Asunción",
+                        "addressCountry": "PY"
+                    },
+                    "offers": {
+                        "@type": "Offer",
+                        "priceCurrency": "USD",
+                        "availability": "https://schema.org/InStock",
+                        "seller": {"@type": "Organization", "name": "Stuttgart Capital E.A.S."}
+                    }
                 }
             }
         ]
+    }
+    </script>
+
+    <!-- Structured Data: VR Tour Video -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "VideoObject",
+        "name": "Park Lofts Tower — Virtual Reality Studio Tour",
+        "description": "Immersive 360° virtual reality tour of a Park Lofts Tower studio apartment. Explore the rooftop pool, coworking space, and premium amenities in Asunción, Paraguay.",
+        "thumbnailUrl": "https://robinloths.com/images/tower-rooftop-pool.jpg",
+        "contentUrl": "https://storage.net-fs.com/hosting/7701681/23/",
+        "embedUrl": "https://storage.net-fs.com/hosting/7701681/23/",
+        "uploadDate": "2026-01-01",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Stuttgart Capital E.A.S.",
+            "url": "https://robinloths.com"
+        }
     }
     </script>
 
@@ -134,7 +246,16 @@
         "@type": "WebSite",
         "name": "Robin Loths — Real Estate Investment Paraguay",
         "url": "https://robinloths.com",
-        "description": "Buy property in Asunción, Paraguay. Turnkey apartments from $55,000 with ~7% estimated net yield."
+        "description": "Buy property in Asunción, Paraguay. Turnkey apartments from $55,000 with ~7% estimated net yield.",
+        "inLanguage": ["en", "de", "es"],
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://robinloths.com/?q={search_term_string}"
+            },
+            "query-input": "required name=search_term_string"
+        }
     }
     </script>
 
@@ -212,7 +333,13 @@
     </script>
 
     <!-- Preload hero image for faster LCP -->
-    <link rel="preload" as="image" href="images/drone-edificio-b.jpg">
+    <link rel="preload" as="image" href="images/drone-edificio-b.jpg" fetchpriority="high">
+
+    <!-- DNS prefetch for third-party resources -->
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link rel="dns-prefetch" href="//maps.googleapis.com">
+    <link rel="dns-prefetch" href="//wa.me">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
