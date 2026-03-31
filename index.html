@@ -1299,12 +1299,30 @@
             }
             .mobile-toggle { display: flex; }
             .hero-stats { flex-direction: column; gap: 24px; }
+            .hero-actions { flex-direction: column; align-items: stretch; }
+            .hero-actions .btn { justify-content: center; }
+            .hero-actions .btn-tour { justify-content: center; }
             .properties-grid { grid-template-columns: 1fr; }
             .why-grid { grid-template-columns: 1fr; }
             .figures-grid { grid-template-columns: repeat(2, 1fr); }
             .amenities-gallery { grid-template-columns: 1fr; }
             .amenity-item:first-child { grid-column: span 1; }
-            section { padding: 80px 0; }
+            .press-strip { grid-template-columns: 1fr !important; }
+            .press-cards { grid-template-columns: 1fr !important; }
+            .footer-content { flex-direction: column; gap: 16px; text-align: center; }
+            .whatsapp-btn { width: 100%; justify-content: center; padding: 18px 24px; }
+            section { padding: 60px 0; }
+        }
+
+        @media (max-width: 480px) {
+            .figures-grid { grid-template-columns: 1fr; }
+            .hero h1 { font-size: 2.4rem; }
+            .section-title { font-size: 1.8rem; }
+            .financing-visual { padding: 32px 24px; }
+            .financing-visual .big-number { font-size: 3rem; }
+            .faq-item summary { font-size: 0.95rem; padding: 16px 20px; }
+            .faq-item p { padding: 0 20px 16px; }
+            .container { padding: 0 16px; }
         }
 
         /* ===== IMAGE PLACEHOLDER STYLING ===== */
@@ -1957,7 +1975,7 @@
 
                     <!-- Press highlights -->
                     <div style="border-top: 1px solid rgba(255,255,255,0.06); padding-top: 24px;">
-                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+                        <div class="press-cards" style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
                             <div style="background: var(--dark-3); border: 1px solid rgba(255,255,255,0.06); border-radius: 8px; padding: 20px; transition: border-color 0.3s ease;" onmouseover="this.style.borderColor='rgba(201,169,110,0.2)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.06)'">
                                 <span style="font-family: 'Playfair Display', serif; font-size: 1.1rem; font-weight: 700; color: var(--gold);">Forbes</span>
                                 <span style="font-size: 0.7rem; color: var(--text-muted); vertical-align: super;"> PY</span>
@@ -1984,7 +2002,7 @@
             </div>
 
             <!-- Press photo strip -->
-            <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; margin-top: 32px;">
+            <div class="press-strip" style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; margin-top: 32px;">
                 <div class="amenity-item reveal" data-label="On-Site at Construction" style="height: 220px; grid-column: auto;">
                     <img src="images/robin-construction.jpg" alt="Robin Loths on-site at Park Lofts Tower construction" loading="lazy" style="object-fit: cover; width: 100%; height: 100%; object-position: center 22%;">
                 </div>
