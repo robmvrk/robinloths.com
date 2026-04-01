@@ -986,6 +986,40 @@
             margin-right: auto;
         }
 
+        /* ===== YIELD COMPARE ===== */
+        .yield-compare {
+            margin-top: 56px; background: var(--dark-3);
+            border: 1px solid var(--border); border-radius: 14px;
+            overflow: hidden;
+        }
+        .yield-header { padding: 20px 28px; border-bottom: 1px solid var(--border); }
+        .yield-header p { font-size: 0.78rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 2px; }
+        .yield-rows { padding: 8px 0; }
+        .yield-row { display: grid; grid-template-columns: 180px 1fr 80px; align-items: center; gap: 16px; padding: 14px 28px; border-bottom: 1px solid rgba(255,255,255,0.04); }
+        .yield-row:last-child { border-bottom: none; }
+        .yield-row.highlight { background: rgba(201,169,110,0.06); }
+        .yield-instrument { font-size: 0.82rem; font-weight: 500; color: var(--text-muted); }
+        .yield-row.highlight .yield-instrument { color: var(--text); font-weight: 600; }
+        .yield-bar-wrap { background: rgba(255,255,255,0.06); border-radius: 4px; height: 8px; overflow: hidden; }
+        .yield-bar { height: 100%; border-radius: 4px; background: rgba(255,255,255,0.2); }
+        .yield-row.highlight .yield-bar { background: linear-gradient(to right, var(--gold), var(--gold-light)); }
+        .yield-pct { font-size: 0.85rem; font-weight: 700; color: var(--text-muted); text-align: right; }
+        .yield-row.highlight .yield-pct { color: var(--gold); }
+
+        /* ===== TAX CALLOUT ===== */
+        .tax-callout {
+            background: linear-gradient(135deg, rgba(201,169,110,0.08), rgba(201,169,110,0.03));
+            border: 1px solid rgba(201,169,110,0.25); border-radius: 12px;
+            padding: 32px 36px; margin-top: 48px;
+            display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 0;
+        }
+        .tax-col { text-align: center; padding: 0 20px; border-right: 1px solid rgba(201,169,110,0.15); }
+        .tax-col:last-child { border-right: none; }
+        .tax-rate { font-family: 'Playfair Display', serif; font-size: 2.4rem; font-weight: 700; color: var(--text); }
+        .tax-rate.accent { color: var(--gold); }
+        .tax-label { font-size: 0.72rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1.5px; margin-top: 6px; }
+        .tax-note { font-size: 0.78rem; color: var(--text-muted); margin-top: 8px; line-height: 1.5; }
+
         /* ===== WHY PARAGUAY ===== */
         #why-paraguay {
             background: var(--dark-2);
@@ -1805,6 +1839,12 @@
             .campus-cta-row { flex-direction: column !important; align-items: stretch !important; }
             .campus-cta-row .btn,
             .campus-cta-row .btn-tour { justify-content: center; width: 100%; }
+
+            /* Yield + tax mobile */
+            .yield-row { grid-template-columns: 120px 1fr 55px; gap: 10px; padding: 12px 16px; }
+            .tax-callout { grid-template-columns: 1fr; padding: 24px 20px; }
+            .tax-col { border-right: none; border-bottom: 1px solid rgba(201,169,110,0.15); padding: 16px 0; }
+            .tax-col:last-child { border-bottom: none; }
         }
 
         /* ===== IMAGE PLACEHOLDER STYLING ===== */
@@ -2137,6 +2177,63 @@
                         <a href="https://wa.me/491604949585?text=Ich%20m%C3%B6chte%20Details%20zur%20letzten%20verf%C3%BCgbaren%20Park%20Lofts%20Tower%20Einheit." class="btn btn-primary">Letzte Einheit sichern &rarr;</a>
                         <a href="https://storage.net-fs.com/hosting/7701681/23/" target="_blank" rel="noopener" class="btn btn-outline">&#x1f441; VR-Rundgang</a>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PARK LOFTS: YIELD + TAX COMPARISON -->
+    <section style="background: var(--dark-2); padding-top: 0; padding-bottom: 0;">
+        <div class="container" style="padding-bottom: 64px;">
+            <!-- Yield bar chart -->
+            <div class="yield-compare reveal">
+                <div class="yield-header">
+                    <p>Renditevergleich — Asunción Premiumimmobilie vs. gängige Anlageformen (geschätzt)</p>
+                </div>
+                <div class="yield-rows">
+                    <div class="yield-row highlight">
+                        <div class="yield-instrument">Park Lofts Tower</div>
+                        <div class="yield-bar-wrap"><div class="yield-bar" style="width: 100%;"></div></div>
+                        <div class="yield-pct">~8%</div>
+                    </div>
+                    <div class="yield-row">
+                        <div class="yield-instrument">MSCI World ETF (Ø 10J.)</div>
+                        <div class="yield-bar-wrap"><div class="yield-bar" style="width: 87%;"></div></div>
+                        <div class="yield-pct">~7%</div>
+                    </div>
+                    <div class="yield-row">
+                        <div class="yield-instrument">DE Wohnimmobilien</div>
+                        <div class="yield-bar-wrap"><div class="yield-bar" style="width: 37%;"></div></div>
+                        <div class="yield-pct">~3%</div>
+                    </div>
+                    <div class="yield-row">
+                        <div class="yield-instrument">Tagesgeld (DE, 2025)</div>
+                        <div class="yield-bar-wrap"><div class="yield-bar" style="width: 30%;"></div></div>
+                        <div class="yield-pct">~2,4%</div>
+                    </div>
+                    <div class="yield-row">
+                        <div class="yield-instrument">Bundesanleihe 10J.</div>
+                        <div class="yield-bar-wrap"><div class="yield-bar" style="width: 32%;"></div></div>
+                        <div class="yield-pct">~2,6%</div>
+                    </div>
+                </div>
+            </div>
+            <!-- Tax comparison -->
+            <div class="tax-callout reveal">
+                <div class="tax-col">
+                    <div class="tax-rate">42%</div>
+                    <div class="tax-label">Spitzensteuersatz — Deutschland</div>
+                    <div class="tax-note">Einkommensteuer zzgl. Solidaritätszuschlag auf ausländische Einkünfte</div>
+                </div>
+                <div class="tax-col">
+                    <div class="tax-rate accent">0%</div>
+                    <div class="tax-label">Steuer auf Auslandseinkommen — Paraguay</div>
+                    <div class="tax-note">Territorialprinzip: Einkünfte aus dem Ausland bleiben steuerfrei</div>
+                </div>
+                <div class="tax-col">
+                    <div class="tax-rate">5%</div>
+                    <div class="tax-label">Steuer auf Mieteinnahmen — Paraguay</div>
+                    <div class="tax-note">Für lokale Mieteinnahmen — max. Gesamtsteuerbelastung 10%</div>
                 </div>
             </div>
         </div>
