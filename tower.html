@@ -5,43 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Park Lofts Tower — 1 Unit Remaining | Asunción, Paraguay</title>
     <meta name="robots" content="noindex, nofollow">
+    <link rel="alternate" hreflang="en" href="https://robinloths.com/tower">
+    <link rel="alternate" hreflang="de" href="https://robinloths.com/tower-de">
+    <link rel="alternate" hreflang="x-default" href="https://robinloths.com/tower">
     <meta name="description" content="101-meter luxury tower in Asunción's premier address. Pre-construction pricing. 1 unit left. Built by Paraguay's largest construction firm. Contact us on WhatsApp.">
     <meta property="og:title" content="Park Lofts Tower — 1 Unit Remaining">
     <meta property="og:description" content="101m luxury tower. Asunción's most prestigious address. Pre-construction pricing still available.">
     <meta property="og:image" content="https://robinloths.com/images/tower-rooftop-pool.jpg">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <style>
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
         :root {
             --gold: #c9a96e;
             --gold-light: #e0c48a;
-            --dark: #070708;
-            --dark-2: #0e0e10;
-            --dark-3: #161618;
-            --dark-4: #1e1e21;
-            --text: #f0ede8;
-            --text-muted: rgba(240,237,232,0.55);
-            --border: rgba(201,169,110,0.15);
+            --gold-dim: rgba(201,169,110,0.12);
+            --dark: #000000;
+            --dark-2: #0a0a0a;
+            --dark-3: #111111;
+            --dark-4: #1a1a1a;
+            --text: #f5f5f7;
+            --text-secondary: rgba(245,245,247,0.72);
+            --text-muted: rgba(245,245,247,0.52);
+            --border: rgba(255,255,255,0.08);
+            --border-gold: rgba(201,169,110,0.28);
+            --radius-sm: 8px;
+            --radius-md: 12px;
+            --radius-lg: 20px;
+            --radius-xl: 28px;
         }
         html { scroll-behavior: smooth; }
-        body { background: var(--dark); color: var(--text); font-family: 'Inter', sans-serif; font-size: 16px; line-height: 1.6; overflow-x: hidden; }
+        body { background: var(--dark); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', Arial, sans-serif; font-size: 16px; line-height: 1.6; overflow-x: hidden; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 
         /* NAV */
         nav {
             position: fixed; top: 0; left: 0; right: 0; z-index: 100;
             display: flex; align-items: center; justify-content: space-between;
-            padding: 0 40px; height: 64px;
-            background: rgba(7,7,8,0.92); backdrop-filter: blur(12px);
-            border-bottom: 1px solid rgba(201,169,110,0.1);
+            padding: 0 40px; height: 56px;
+            background: rgba(0,0,0,0.82); backdrop-filter: saturate(180%) blur(24px);
+            -webkit-backdrop-filter: saturate(180%) blur(24px);
+            border-bottom: 1px solid var(--border);
         }
-        .nav-logo { font-family: 'Playfair Display', serif; font-size: 1.1rem; font-weight: 700; color: var(--text); letter-spacing: 1px; }
+        .nav-logo { font-size: 1.1rem; font-weight: 700; color: var(--text); letter-spacing: 1px; }
         .nav-logo span { color: var(--gold); }
         .nav-cta {
             display: inline-flex; align-items: center; gap: 8px;
             background: #25D366; color: #fff; font-size: 0.82rem; font-weight: 600;
-            padding: 9px 18px; border-radius: 6px; text-decoration: none;
+            padding: 9px 20px; border-radius: 980px; text-decoration: none;
             letter-spacing: 0.3px; transition: background 0.2s;
         }
         .nav-cta:hover { background: #1fba58; }
@@ -51,26 +59,26 @@
         .hero {
             min-height: 100vh; position: relative;
             display: flex; align-items: center;
-            background: var(--dark-2) url('https://robinloths.com/images/drone-edificio-b.jpg') center 30% / cover no-repeat;
+            background: var(--dark) url('https://robinloths.com/images/drone-edificio-b.jpg') center 30% / cover no-repeat;
         }
         .hero::after {
             content: ''; position: absolute; inset: 0;
-            background: linear-gradient(to right, rgba(7,7,8,0.88) 50%, rgba(7,7,8,0.4) 100%);
+            background: linear-gradient(to right, rgba(0,0,0,0.88) 50%, rgba(0,0,0,0.4) 100%);
         }
         .hero-content { position: relative; z-index: 1; max-width: 680px; padding: 120px 60px 80px; }
         .hero-eyebrow {
             display: inline-flex; align-items: center; gap: 8px;
-            background: rgba(201,169,110,0.12); border: 1px solid var(--border);
+            background: var(--gold-dim); border: 1px solid var(--border-gold);
             color: var(--gold); font-size: 0.72rem; font-weight: 600;
             letter-spacing: 2px; text-transform: uppercase; padding: 6px 14px;
-            border-radius: 4px; margin-bottom: 24px;
+            border-radius: 980px; margin-bottom: 24px;
         }
         .hero-eyebrow::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: var(--gold); animation: pulse 2s infinite; }
         @keyframes pulse { 0%,100%{opacity:1;} 50%{opacity:0.3;} }
         .hero h1 {
-            font-family: 'Playfair Display', serif;
             font-size: clamp(2.4rem, 5vw, 3.8rem);
-            font-weight: 700; line-height: 1.15;
+            font-weight: 800; line-height: 1.1;
+            letter-spacing: -0.04em;
             color: var(--text); margin-bottom: 20px;
         }
         .hero h1 span { color: var(--gold); }
@@ -79,14 +87,14 @@
         .btn-wa {
             display: inline-flex; align-items: center; gap: 10px;
             background: #25D366; color: #fff; font-size: 0.95rem; font-weight: 600;
-            padding: 14px 28px; border-radius: 8px; text-decoration: none;
-            transition: background 0.2s, transform 0.2s;
+            padding: 14px 28px; border-radius: 980px; text-decoration: none;
+            transition: background 0.2s, opacity 0.2s;
         }
-        .btn-wa:hover { background: #1fba58; transform: translateY(-1px); }
+        .btn-wa:hover { background: #1fba58; opacity: 0.92; }
         .btn-outline-white {
             display: inline-flex; align-items: center; gap: 8px;
             background: transparent; color: var(--text); font-size: 0.95rem; font-weight: 500;
-            padding: 14px 28px; border-radius: 8px; text-decoration: none;
+            padding: 14px 28px; border-radius: 980px; text-decoration: none;
             border: 1px solid rgba(255,255,255,0.2); transition: border-color 0.2s;
         }
         .btn-outline-white:hover { border-color: rgba(255,255,255,0.5); }
@@ -98,7 +106,7 @@
             background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.12);
             border-radius: 6px; padding: 5px 12px;
         }
-        .forbes-badge span { font-family: 'Playfair Display', serif; font-size: 0.95rem; font-weight: 700; color: var(--text); }
+        .forbes-badge span { font-size: 0.95rem; font-weight: 700; color: var(--text); }
         .forbes-badge small { font-size: 0.6rem; color: var(--text-muted); vertical-align: super; }
 
         /* STATS BAR */
@@ -112,23 +120,23 @@
             border-right: 1px solid var(--border);
         }
         .stat-item:last-child { border-right: none; }
-        .stat-number { font-family: 'Playfair Display', serif; font-size: 2.2rem; font-weight: 700; color: var(--gold); }
+        .stat-number { font-size: 2.2rem; font-weight: 700; color: var(--gold); }
         .stat-label { font-size: 0.72rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1.5px; margin-top: 4px; }
 
         /* SECTION DEFAULTS */
         section { padding: 90px 0; }
         .container { max-width: 1180px; margin: 0 auto; padding: 0 40px; }
         .section-tag {
-            display: inline-block; font-size: 0.7rem; font-weight: 600;
-            text-transform: uppercase; letter-spacing: 3px; color: var(--gold);
-            border: 1px solid var(--border); padding: 5px 12px; border-radius: 4px; margin-bottom: 16px;
+            display: inline-block; font-size: 0.68rem; font-weight: 600;
+            text-transform: uppercase; letter-spacing: 2px; color: var(--gold);
+            margin-bottom: 16px;
         }
-        .section-title { font-family: 'Playfair Display', serif; font-size: clamp(1.8rem, 3vw, 2.6rem); font-weight: 700; color: var(--text); margin-bottom: 16px; line-height: 1.25; }
+        .section-title { font-size: clamp(1.8rem, 3vw, 2.6rem); font-weight: 800; letter-spacing: -0.025em; color: var(--text); margin-bottom: 16px; line-height: 1.2; }
         .section-subtitle { font-size: 1rem; color: var(--text-muted); line-height: 1.8; max-width: 680px; }
 
         /* GALLERY */
         .amenity-item {
-            position: relative; overflow: hidden; border-radius: 10px;
+            position: relative; overflow: hidden; border-radius: 16px;
             background: var(--dark-3); cursor: pointer;
         }
         .amenity-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease; display: block; }
@@ -149,7 +157,7 @@
         /* PITCH SECTION */
         .pitch-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
         .pitch-visual {
-            border-radius: 12px; overflow: hidden; height: 540px;
+            border-radius: var(--radius-lg); overflow: hidden; height: 540px;
             background: url('https://robinloths.com/images/tower-exterior-full.jpg') center 10% / cover no-repeat;
         }
         .feature-list { list-style: none; margin-top: 24px; display: flex; flex-direction: column; gap: 12px; }
@@ -162,8 +170,8 @@
         /* AMENITIES */
         .amenities-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-top: 40px; }
         .amenity-card {
-            background: var(--dark-3); border: 1px solid rgba(255,255,255,0.06);
-            border-radius: 10px; padding: 24px 20px; text-align: center;
+            background: var(--dark-3); border: 1px solid var(--border);
+            border-radius: var(--radius-lg); padding: 24px 20px; text-align: center;
             transition: border-color 0.3s;
         }
         .amenity-card:hover { border-color: var(--border); }
@@ -172,10 +180,10 @@
         .amenity-card span { font-size: 0.75rem; color: var(--text-muted); }
 
         /* INVESTMENT NUMBERS */
-        .numbers-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; margin-top: 48px; border: 1px solid var(--border); border-radius: 12px; overflow: hidden; }
+        .numbers-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; margin-top: 48px; border: 1px solid var(--border); border-radius: var(--radius-lg); overflow: hidden; }
         .number-card { background: var(--dark-3); padding: 36px 28px; border-right: 1px solid var(--border); }
         .number-card:last-child { border-right: none; }
-        .number-card .num { font-family: 'Playfair Display', serif; font-size: 2.4rem; color: var(--gold); font-weight: 700; }
+        .number-card .num { font-size: 2.4rem; color: var(--gold); font-weight: 700; }
         .number-card .num-label { font-size: 0.78rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1.5px; margin-top: 6px; }
         .number-card .num-note { font-size: 0.75rem; color: var(--text-muted); margin-top: 10px; line-height: 1.6; }
 
@@ -187,18 +195,20 @@
         .location-point p { font-size: 0.88rem; color: var(--text-muted); line-height: 1.6; }
 
         /* WHY PARAGUAY */
-        .paraguay-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 48px; }
+        .paraguay-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; margin-top: 48px; }
         .paraguay-card {
-            background: var(--dark-3); border: 1px solid rgba(255,255,255,0.06);
-            border-radius: 12px; padding: 32px 24px;
+            background: var(--dark-3); border: 1px solid var(--border);
+            border-radius: var(--radius-lg); padding: 32px 24px;
+            transition: border-color 0.3s;
         }
+        .paraguay-card:hover { border-color: var(--border-gold); }
         .paraguay-card .icon { font-size: 1.6rem; margin-bottom: 16px; }
-        .paraguay-card h4 { font-family: 'Playfair Display', serif; font-size: 1.1rem; color: var(--text); margin-bottom: 10px; }
+        .paraguay-card h4 { font-size: 1.1rem; color: var(--text); margin-bottom: 10px; }
         .paraguay-card p { font-size: 0.85rem; color: var(--text-muted); line-height: 1.7; }
 
         /* FAQ */
         .faq-list { max-width: 780px; margin: 48px auto 0; display: flex; flex-direction: column; gap: 2px; }
-        details.faq-item { background: var(--dark-3); border-radius: 8px; overflow: hidden; border: 1px solid rgba(255,255,255,0.05); }
+        details.faq-item { background: var(--dark-3); border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border); }
         details.faq-item + details.faq-item { margin-top: 8px; }
         details.faq-item summary {
             padding: 20px 24px; font-size: 0.95rem; font-weight: 500; cursor: pointer;
@@ -211,16 +221,16 @@
         details.faq-item p { padding: 0 24px 20px; font-size: 0.88rem; color: var(--text-muted); line-height: 1.8; }
 
         /* FINAL CTA */
-        .final-cta { background: var(--dark-3); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); text-align: center; padding: 100px 40px; }
-        .final-cta h2 { font-family: 'Playfair Display', serif; font-size: clamp(2rem, 4vw, 3rem); font-weight: 700; margin-bottom: 16px; }
+        .final-cta { background: var(--dark); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); text-align: center; padding: 100px 40px; }
+        .final-cta h2 { font-size: clamp(2rem, 4vw, 3rem); font-weight: 700; margin-bottom: 16px; }
         .final-cta p { font-size: 1rem; color: var(--text-muted); max-width: 560px; margin: 0 auto 40px; line-height: 1.8; }
         .wa-big {
             display: inline-flex; align-items: center; gap: 14px;
             background: #25D366; color: #fff; font-size: 1.1rem; font-weight: 700;
-            padding: 18px 40px; border-radius: 10px; text-decoration: none;
-            transition: background 0.2s, transform 0.2s; margin-bottom: 16px;
+            padding: 18px 44px; border-radius: 980px; text-decoration: none;
+            transition: background 0.2s, opacity 0.2s; margin-bottom: 16px;
         }
-        .wa-big:hover { background: #1fba58; transform: translateY(-2px); }
+        .wa-big:hover { background: #1fba58; opacity: 0.92; }
         .wa-note { font-size: 0.78rem; color: var(--text-muted); }
 
         /* FOOTER */
@@ -262,6 +272,12 @@
             .container { padding: 0 20px; }
             section { padding: 64px 0; }
         }
+        @media (max-width: 480px) {
+            .hero-content { padding: 90px 20px 52px; }
+            .hero-ctas { flex-direction: column; }
+            .btn-wa, .btn-outline-white { width: 100%; justify-content: center; }
+            .stats-inner { grid-template-columns: 1fr 1fr; }
+        }
     </style>
 </head>
 <body>
@@ -278,8 +294,8 @@
 <!-- HERO -->
 <section class="hero">
     <div class="hero-content">
-        <div class="hero-eyebrow">1 Unit Remaining · Pre-Construction Price</div>
-        <h1>Asunción's <span>Most Prestigious</span> Address — At Developer Price</h1>
+        <div class="hero-eyebrow">1 Unit Remaining · ab $75,000 USD · Pre-Sale Price</div>
+        <h1>Paraguay Is Rising.<br><span>One Unit Left</span> — at $75,000 USD.</h1>
         <p class="hero-sub">Park Lofts Tower. 101 meters. Paraguay's landmark luxury tower, currently under construction by the country's largest builder. One unit left at pre-construction pricing — when it's gone, it's gone.</p>
         <div class="hero-ctas">
             <a href="https://wa.me/595983524888?text=Hi%2C%20I%20saw%20the%20video%20and%20I%27m%20interested%20in%20the%20last%20unit%20at%20Park%20Lofts%20Tower." class="btn-wa">
@@ -325,14 +341,14 @@
             <div class="stat-label">Est. Gross Yield</div>
         </div>
         <div class="stat-item reveal reveal-delay-3">
-            <div class="stat-number">Baa3</div>
-            <div class="stat-label">Moody's — Paraguay</div>
+            <div class="stat-number">$75k</div>
+            <div class="stat-label">Pre-Sale USD — 1 Unit Left</div>
         </div>
     </div>
 </div>
 
 <!-- GALLERY -->
-<section style="background: var(--dark-2); padding: 80px 0 0;">
+<section style="background: var(--dark); padding: 80px 0 0;">
     <div class="container">
         <span class="section-tag reveal">Inside the Tower</span>
         <h2 class="section-title reveal">World-Class Amenities.<br>101 Meters Above Asunción.</h2>
@@ -362,7 +378,7 @@
 </section>
 
 <!-- THE PITCH -->
-<section style="background: var(--dark-2);">
+<section style="background: var(--dark-3);">
     <div class="container">
         <div class="pitch-grid">
             <div class="pitch-visual reveal"></div>
@@ -418,7 +434,7 @@
 </section>
 
 <!-- LOCATION -->
-<section style="background: var(--dark-2);">
+<section style="background: var(--dark-3);">
     <div class="container">
         <div class="location-grid">
             <div class="reveal">
@@ -444,7 +460,7 @@
                     </div>
                 </div>
             </div>
-            <div class="reveal reveal-delay-1" style="border-radius: 12px; overflow: hidden; border: 1px solid var(--border);">
+            <div class="reveal reveal-delay-1" style="border-radius: var(--radius-lg); overflow: hidden; border: 1px solid var(--border);">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3606.5!2d-57.5637!3d-25.2867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjXCsDE3JzEyLjEiUyA1N8KwMzMnNDkuMyJX!5e0!3m2!1sen!2s!4v1" width="100%" height="420" style="border:0; display:block;" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </div>
@@ -462,8 +478,8 @@
         <div class="paraguay-grid">
             <div class="paraguay-card reveal">
                 <div class="icon">🏦</div>
-                <h4>Moody's Baa3</h4>
-                <p>Investment-grade credit rating issued July 2024 — signaling macroeconomic stability and institutional confidence in Paraguay's trajectory.</p>
+                <h4>Investment-Grade Rated</h4>
+                <p>Moody's Baa3 (July 2024) + S&amp;P BBB- (December 2025) — dual investment-grade ratings confirming Paraguay's macroeconomic stability and institutional credibility.</p>
             </div>
             <div class="paraguay-card reveal reveal-delay-1">
                 <div class="icon">✈️</div>
@@ -475,12 +491,51 @@
                 <h4>0% Foreign Tax</h4>
                 <p>Paraguay's territorial tax system means foreign-sourced income is taxed at zero. Maximum overall tax rate is just 10% — one of the lowest in the world.</p>
             </div>
+            <div class="paraguay-card reveal reveal-delay-3">
+                <div class="icon">🛂</div>
+                <h4>Paraguay Investor Pass — NEW</h4>
+                <p>New direct residency-by-investment program launched April 2026. From $150k (tourism) or $200k (real estate/stocks). Direct permanent residence — citizenship possible in 3 years.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- INVESTOR PASS CALLOUT -->
+<section style="background: var(--dark); padding: 80px 0;">
+    <div class="container">
+        <div class="reveal" style="border: 1px solid var(--border-gold); border-radius: var(--radius-xl); padding: 52px 56px; background: linear-gradient(135deg, rgba(201,169,110,0.06) 0%, rgba(0,0,0,0) 60%);">
+            <div style="display:inline-flex; align-items:center; gap:8px; background:rgba(201,169,110,0.12); border:1px solid var(--border-gold); border-radius:980px; padding:5px 14px; margin-bottom:24px;">
+                <span style="font-size:0.65rem; font-weight:700; text-transform:uppercase; letter-spacing:2px; color:var(--gold);">Breaking · April 2026</span>
+            </div>
+            <h2 style="font-size:clamp(1.6rem,3vw,2.4rem); font-weight:800; letter-spacing:-0.03em; margin-bottom:12px;">Paraguay Investor Pass</h2>
+            <p style="font-size:1rem; color:var(--text-secondary); max-width:640px; line-height:1.75; margin-bottom:40px;">Paraguay has launched a direct residency-by-investment pathway — making Park Lofts Tower not just a real estate play, but a potential gateway to a second residence and citizenship.</p>
+            <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin-bottom:40px;">
+                <div style="background:var(--dark-3); border:1px solid var(--border); border-radius:var(--radius-lg); padding:28px 24px;">
+                    <div style="font-size:1.6rem; font-weight:800; color:var(--gold); letter-spacing:-0.03em; margin-bottom:6px;">$150k</div>
+                    <div style="font-size:0.72rem; font-weight:700; text-transform:uppercase; letter-spacing:1.5px; color:var(--text-muted); margin-bottom:10px;">Tourism Investment</div>
+                    <div style="font-size:0.82rem; color:var(--text-secondary); line-height:1.6;">Direct permanent residence via tourism sector investment. Fastest route.</div>
+                </div>
+                <div style="background:var(--dark-3); border:1px solid var(--border-gold); border-radius:var(--radius-lg); padding:28px 24px;">
+                    <div style="font-size:1.6rem; font-weight:800; color:var(--gold); letter-spacing:-0.03em; margin-bottom:6px;">$200k</div>
+                    <div style="font-size:0.72rem; font-weight:700; text-transform:uppercase; letter-spacing:1.5px; color:var(--text-muted); margin-bottom:10px;">Real Estate Route</div>
+                    <div style="font-size:0.82rem; color:var(--text-secondary); line-height:1.6;">Qualify for permanent residence through real estate investment. Park Lofts Tower units may qualify.</div>
+                </div>
+                <div style="background:var(--dark-3); border:1px solid var(--border); border-radius:var(--radius-lg); padding:28px 24px;">
+                    <div style="font-size:1.6rem; font-weight:800; color:var(--gold); letter-spacing:-0.03em; margin-bottom:6px;">3 Years</div>
+                    <div style="font-size:0.72rem; font-weight:700; text-transform:uppercase; letter-spacing:1.5px; color:var(--text-muted); margin-bottom:10px;">To Citizenship</div>
+                    <div style="font-size:0.82rem; color:var(--text-secondary); line-height:1.6;">Permanent residents can apply for Paraguayan citizenship after just 3 years of residency.</div>
+                </div>
+            </div>
+            <a href="https://wa.me/595983524888?text=Hi%2C%20I%27d%20like%20to%20learn%20more%20about%20the%20Paraguay%20Investor%20Pass%20and%20Park%20Lofts%20Tower." class="btn-wa" style="display:inline-flex; font-size:0.9rem;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                Ask About the Investor Pass
+            </a>
         </div>
     </div>
 </section>
 
 <!-- FAQ -->
-<section style="background: var(--dark-2);">
+<section style="background: var(--dark-3);">
     <div class="container">
         <div style="text-align: center;">
             <span class="section-tag reveal">Common Questions</span>
@@ -493,7 +548,7 @@
             </details>
             <details class="faq-item reveal reveal-delay-1">
                 <summary>How much does the last unit cost?</summary>
-                <p>Pricing is available on request — message us on WhatsApp and you'll get full details including the current pre-construction price, payment terms, and projected rental income within minutes.</p>
+                <p>The last unit is priced at $75,000 USD — a pre-construction price that will not be available once this unit sells. Message us on WhatsApp and you'll get full details including payment terms, floor plan, and projected rental income within minutes.</p>
             </details>
             <details class="faq-item reveal">
                 <summary>What rental yield can I expect?</summary>
@@ -502,6 +557,10 @@
             <details class="faq-item reveal reveal-delay-1">
                 <summary>Who is building the tower?</summary>
                 <p>Park Lofts Tower is built by Benitez Bittar — Paraguay's largest construction firm, currently responsible for over 300,000m² under construction across the country, including the country's current tallest building. This is not a startup developer.</p>
+            </details>
+            <details class="faq-item reveal">
+                <summary>What is the Paraguay Investor Pass?</summary>
+                <p>The Paraguay Investor Pass is a new residency-by-investment program launched in April 2026. It offers three routes: $150k via tourism, $200k via real estate (which Park Lofts Tower units may qualify for), or $200k via the Paraguay Stock Exchange. The program grants direct permanent residence — no temporary residence phase required. Citizenship is possible after 3 years.</p>
             </details>
             <details class="faq-item reveal">
                 <summary>Is the process complicated for foreign buyers?</summary>
