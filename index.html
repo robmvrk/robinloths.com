@@ -662,27 +662,28 @@
         :root {
             --gold: #c9a96e;
             --gold-light: #e0c992;
-            --dark: #0a0a0a;
-            --dark-2: #111111;
-            --dark-3: #1a1a1a;
-            --dark-4: #222222;
-            --text: #e8e8e8;
-            --text-muted: #999999;
+            --dark: #000000;
+            --dark-2: #0a0a0a;
+            --dark-3: #111111;
+            --dark-4: #1a1a1a;
+            --text: #f5f5f7;
+            --text-muted: rgba(245,245,247,0.52);
+            --text-secondary: rgba(245,245,247,0.72);
             --green: #2d7a3a;
             --accent: #c9a96e;
         }
 
-        html { scroll-behavior: smooth; }
+        html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
 
         body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Inter", "Helvetica Neue", Arial, sans-serif;
             background: var(--dark);
             color: var(--text);
             line-height: 1.6;
             overflow-x: hidden;
         }
 
-        h1, h2, h3, h4 { font-family: 'Playfair Display', Georgia, serif; font-weight: 500; }
+        h1, h2, h3, h4 { font-weight: 700; letter-spacing: -0.03em; }
 
         a { color: var(--gold); text-decoration: none; transition: all 0.3s ease; }
         a:hover { color: var(--gold-light); }
@@ -759,11 +760,10 @@
             align-items: center;
         }
         .nav-logo {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.5rem;
-            font-weight: 600;
-            color: var(--gold);
-            letter-spacing: 1px;
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: var(--text);
+            letter-spacing: -0.02em;
         }
         .nav-logo span { color: var(--text); font-weight: 300; }
         .nav-links {
@@ -784,10 +784,11 @@
         .nav-cta {
             background: var(--gold);
             color: var(--dark) !important;
-            padding: 10px 24px;
-            border-radius: 4px;
+            padding: 8px 20px !important;
+            border-radius: 980px !important;
             font-weight: 600 !important;
-            letter-spacing: 0.5px !important;
+            letter-spacing: -0.01em !important;
+            font-size: 0.84rem !important;
         }
         .nav-cta:hover { background: var(--gold-light); color: var(--dark) !important; }
 
@@ -982,10 +983,10 @@
         .section-tag {
             font-size: 0.7rem;
             font-weight: 600;
-            letter-spacing: 3px;
+            letter-spacing: 0.1em;
             text-transform: uppercase;
             color: var(--gold);
-            margin-bottom: 16px;
+            margin-bottom: 14px;
             display: block;
         }
         .section-title {
@@ -1114,9 +1115,9 @@
         .property-card {
             background: var(--dark-2);
             border: 1px solid rgba(255,255,255,0.06);
-            border-radius: 12px;
+            border-radius: 20px;
             overflow: hidden;
-            transition: all 0.4s ease;
+            transition: border-color 0.3s, transform 0.3s, box-shadow 0.3s;
             position: relative;
         }
         .property-card:hover {
@@ -1173,8 +1174,8 @@
             font-weight: 700;
             letter-spacing: 1px;
             text-transform: uppercase;
-            padding: 6px 14px;
-            border-radius: 3px;
+            padding: 5px 12px;
+            border-radius: 980px;
         }
         .property-badge.limited {
             background: #c0392b;
@@ -1912,7 +1913,7 @@
                         </div>
                         <div class="property-price">
                             <div>
-                                <span class="price">$70,000</span>
+                                <span class="price">$75.000</span>
                                 <span class="price-label"> &bull; Pre-construction price</span>
                             </div>
                             <a href="#park-lofts" class="property-cta">See It &rarr;</a>
@@ -2060,6 +2061,38 @@
             </div>
         </div>
     </section><!-- end why-paraguay -->
+
+    <!-- INVESTOR PASS SECTION -->
+    <section style="background: var(--dark); padding: 80px 0;">
+        <div class="container">
+            <div class="reveal" style="border: 1px solid rgba(201,169,110,0.18); border-radius: 28px; padding: 52px 56px; background: linear-gradient(135deg, rgba(201,169,110,0.06), rgba(201,169,110,0.01));">
+                <div style="display:flex; align-items:center; gap:12px; margin-bottom:18px; flex-wrap:wrap;">
+                    <span class="section-tag" style="margin:0; display:inline-block;">Breaking · April 2026</span>
+                    <span style="display:inline-block; background:#ff3b30; color:#fff; font-size:0.66rem; font-weight:700; text-transform:uppercase; letter-spacing:0.08em; padding:3px 10px; border-radius:980px;">New</span>
+                </div>
+                <h2 class="section-title" style="margin:0 0 16px; text-align:left;">Paraguay Investor Pass — Direct Permanent Residency</h2>
+                <p style="color:rgba(245,245,247,0.72); font-size:1.05rem; line-height:1.7; max-width:780px; letter-spacing:-0.01em; margin-bottom:36px;">Paraguay's Ministry of Industry and Commerce has launched the Investor Pass: qualified foreign investors receive a <strong style="color:#f5f5f7;">direct permanent residence permit</strong> through real estate investment — no temporary visa stage, no years of waiting, largely electronic processing. Combined with Moody's and S&amp;P Investment Grade (Dec. 2025): Paraguay is now globally institutionally recognized.</p>
+                <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin-bottom:36px;">
+                    <div style="background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.08); border-radius:16px; padding:22px 24px;">
+                        <div style="font-size:1.6rem; font-weight:800; color:#c9a96e; letter-spacing:-0.04em;">$150k</div>
+                        <div style="font-size:0.72rem; font-weight:600; color:rgba(245,245,247,0.52); text-transform:uppercase; letter-spacing:0.08em; margin-top:6px;">Tourism Route</div>
+                    </div>
+                    <div style="background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.08); border-radius:16px; padding:22px 24px;">
+                        <div style="font-size:1.6rem; font-weight:800; color:#c9a96e; letter-spacing:-0.04em;">$200k</div>
+                        <div style="font-size:0.72rem; font-weight:600; color:rgba(245,245,247,0.52); text-transform:uppercase; letter-spacing:0.08em; margin-top:6px;">Real Estate Route</div>
+                    </div>
+                    <div style="background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.08); border-radius:16px; padding:22px 24px;">
+                        <div style="font-size:1.6rem; font-weight:800; color:#c9a96e; letter-spacing:-0.04em;">3 Years</div>
+                        <div style="font-size:0.72rem; font-weight:600; color:rgba(245,245,247,0.52); text-transform:uppercase; letter-spacing:0.08em; margin-top:6px;">to Citizenship</div>
+                    </div>
+                </div>
+                <p style="font-size:0.88rem; color:rgba(245,245,247,0.52); line-height:1.6; margin-bottom:28px; letter-spacing:-0.01em;">0% foreign income tax · 10% flat domestic rate · 8% dividends (vs. regular 15%) · No German citizenship renunciation required · Mercosur residency rights in 8 countries</p>
+                <a href="https://wa.me/595983524888?text=Hello%2C%20I%27m%20interested%20in%20the%20Paraguay%20Investor%20Pass%20and%20real%20estate%20investments." class="btn btn-primary" style="display:inline-flex; text-decoration:none; color:#000;">
+                    Ask about the Investor Pass →
+                </a>
+            </div>
+        </div>
+    </section>
 
     <!-- PARK LOFTS TOWER FEATURE -->
     <section class="feature-section" id="park-lofts">
