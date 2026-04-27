@@ -1841,6 +1841,24 @@
         .placeholder-2 {
             background: linear-gradient(135deg, #2d2d44 0%, #1a1a2e 100%);
         }
+
+        /* ── MOBILE EXTRAS ── */
+        @media (max-width: 768px) {
+            .investor-grid-3 { grid-template-columns: 1fr !important; gap: 12px !important; }
+            .investor-box-home { padding: 16px 20px !important; }
+            .feature-grid { gap: 32px !important; }
+            .financing-grid { gap: 28px !important; }
+            section { padding: 60px 0; }
+        }
+        @media (max-width: 480px) {
+            .hero h1 { font-size: clamp(2rem, 9vw, 2.6rem); }
+            .section-title { font-size: clamp(1.6rem, 6vw, 2rem); }
+            .faq-item summary { font-size: 0.9rem; padding: 16px 20px; }
+            .faq-item p { padding: 0 20px 16px; }
+            .container { padding: 0 18px; }
+            .financing-visual { padding: 32px 20px; }
+            .financing-visual .big-number { font-size: 2.8rem; }
+        }
     </style>
 </head>
 <body>

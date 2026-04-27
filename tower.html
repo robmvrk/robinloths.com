@@ -396,34 +396,72 @@
             nav .nav-cta .nav-cta-label { display: none; }
             .hero-content { padding: 0 24px 64px; }
             .hero h1 { letter-spacing: -0.03em; }
+            .hero-ctas { flex-direction: column; gap: 10px; }
+            .hero-ctas .btn-wa,
+            .hero-ctas .btn-outline-white { width: 100%; justify-content: center; }
             .stats-inner { grid-template-columns: repeat(2, 1fr); }
-            .stat-item { border-right: none; border-bottom: 1px solid var(--border); }
+            .stat-item { border-right: none; border-bottom: 1px solid var(--border); padding: 22px 16px; }
+            /* PITCH SPLIT */
+            .pitch-split { grid-template-columns: 1fr !important; min-height: auto !important; }
+            .pitch-split-img { height: 300px; }
+            .pitch-split-img img { position: static !important; width: 100% !important; height: 100% !important; }
+            .pitch-content { padding: 40px 24px !important; }
+            /* STUDIO */
+            .studio-wrap { padding: 0 20px !important; }
             .gallery-main { grid-template-columns: 1fr 1fr; grid-template-rows: auto; }
-            .gallery-main .g-hero { grid-row: span 1; grid-column: span 2; height: 240px; }
-            .gallery-main .g-sm { height: 170px; }
+            .gallery-main .g-hero { grid-row: span 1; grid-column: span 2; height: 220px; }
+            .gallery-main .g-sm { height: 150px; }
+            /* AERIAL */
+            .aerial-content { padding: 56px 24px; }
+            .aerial-section { min-height: 420px; }
+            /* NUMBERS */
             .pitch-grid, .location-grid { grid-template-columns: 1fr; gap: 32px; }
             .pitch-visual { height: 300px; border-radius: var(--radius-lg); }
             .numbers-grid { grid-template-columns: 1fr; }
             .number-card { border-right: none; border-bottom: 1px solid var(--border); }
+            /* PARAGUAY */
             .paraguay-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
+            /* TAX */
             .tax-callout { grid-template-columns: 1fr; padding: 24px 20px; }
             .tax-col { border-right: none; border-bottom: 1px solid var(--border-gold); padding: 20px 0; }
             .tax-col:last-child { border-bottom: none; }
-            .yield-row { grid-template-columns: 120px 1fr 56px; padding: 12px 16px; }
+            /* YIELD */
+            .yield-row { grid-template-columns: 110px 1fr 52px; padding: 12px 16px; }
+            /* INVESTOR PASS */
+            .investor-grid { grid-template-columns: 1fr !important; gap: 12px !important; }
+            .investor-box { padding: 32px 24px !important; }
+            /* TRUST */
             .trust-strip { padding: 40px 20px; }
             .trust-inner { grid-template-columns: 1fr; gap: 12px; }
+            /* CTA */
             .mid-cta { padding: 40px 24px; }
             .mid-cta-inner { flex-direction: column; align-items: flex-start; }
-            .aerial-content { padding: 64px 24px; }
-            .aerial-section { min-height: 420px; }
+            .mid-cta-inner .btn-wa { width: 100%; justify-content: center; white-space: normal; }
+            /* FINAL CTA */
+            .final-cta { padding: 80px 24px; }
+            .wa-big { width: 100%; justify-content: center; }
+            /* MISC */
             .container { padding: 0 20px; }
-            section { padding: 80px 0; }
+            section { padding: 60px 0; }
             .scarcity-text { font-size: 0.72rem; }
             #scarcity-bar { padding: 8px 16px; }
             .faq-list { margin-top: 40px; }
+            footer { padding: 36px 20px; }
         }
         @media (max-width: 480px) {
             .paraguay-grid { grid-template-columns: 1fr; }
+            .hero-content { padding: 0 20px 52px; }
+            .hero h1 { font-size: clamp(2rem, 9vw, 2.6rem); }
+            .stat-number { font-size: 1.55rem; }
+            .yield-row { grid-template-columns: 88px 1fr 44px; padding: 10px 12px; }
+            .yield-instrument { font-size: 0.73rem; }
+            .yield-pct { font-size: 0.73rem; }
+            .aerial-num { font-size: 1.9rem; min-width: 72px; }
+            .aerial-content { padding: 48px 20px; }
+            .numbers-grid .num { font-size: 2rem; }
+            .final-cta h2 { font-size: clamp(1.8rem, 7vw, 2.4rem); }
+            .faq-list summary { font-size: 0.88rem; padding: 18px 20px; }
+            details.faq-item p { padding: 0 20px 18px; }
         }
     </style>
 </head>
@@ -539,9 +577,9 @@
 
 <!-- ④ THE PITCH -->
 <section style="background: var(--dark); padding: 0; overflow: hidden;">
-    <div style="display:grid; grid-template-columns: 1fr 1fr; min-height: 640px;">
+    <div class="pitch-split" style="display:grid; grid-template-columns: 1fr 1fr; min-height: 640px;">
         <!-- Image — full bleed, no border-radius -->
-        <div style="position:relative; overflow:hidden;">
+        <div class="pitch-split-img" style="position:relative; overflow:hidden;">
             <img src="https://stuttgartcapital.org/images/tower-studio-bedroom.jpg"
                  alt="Tower Apartments Studio Bedroom with City View"
                  loading="lazy"
@@ -549,7 +587,7 @@
             <div style="position:absolute; inset:0; background:linear-gradient(to right, rgba(0,0,0,0) 70%, var(--dark) 100%);"></div>
         </div>
         <!-- Content -->
-        <div style="display:flex; flex-direction:column; justify-content:center; padding: 72px 64px 72px 56px;">
+        <div class="pitch-content" style="display:flex; flex-direction:column; justify-content:center; padding: 72px 64px 72px 56px;">
             <span class="section-tag reveal">The Opportunity</span>
             <h2 class="section-title reveal" style="margin-bottom:20px;">Under Construction.<br>Paraguay's New<br>Landmark.</h2>
             <div style="width:40px; height:2px; background:var(--gold); margin-bottom:24px;" class="reveal"></div>
@@ -592,7 +630,7 @@
 
 <!-- STUDIO RENDERS -->
 <section style="background: var(--dark-2); padding: 0 0 0;">
-    <div style="padding: 0 40px 0; max-width: 1180px; margin: 0 auto;">
+    <div class="studio-wrap" style="padding: 0 40px 0; max-width: 1180px; margin: 0 auto;">
         <div style="padding: 40px 0 12px;">
             <span class="section-tag reveal">Studio Apartment</span>
             <h2 class="section-title reveal">Intelligently Designed.<br>Fully Furnished.</h2>
@@ -821,12 +859,12 @@
             </div>
             <h2 class="section-title" style="margin:0 0 16px;">Paraguay Investor Pass — the biggest news of the year</h2>
             <p style="color:var(--text-muted); font-size:1.05rem; line-height:1.7; max-width:760px;">The Ministry of Industry and Commerce and the National Immigration Directorate have jointly launched a new instrument: qualified foreign investors receive <strong style="color:var(--text)">permanent residency</strong> directly through real estate investment — no temporary phase, no years of waiting, no bank deposit structure.</p>
-            <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:24px; margin-top:36px;">
-                <div style="background:rgba(201,169,110,0.06); border:1px solid rgba(201,169,110,0.15); border-radius:10px; padding:20px 24px;">
+            <div class="investor-grid" style="display:grid; grid-template-columns:repeat(3,1fr); gap:24px; margin-top:36px;">
+                <div class="investor-box" style="background:rgba(201,169,110,0.06); border:1px solid rgba(201,169,110,0.15); border-radius:10px; padding:20px 24px;">
                     <div style="font-size:1.5rem; font-weight:700; color:var(--gold);">$200k</div>
                     <div style="font-size:0.78rem; color:var(--text-muted); text-transform:uppercase; letter-spacing:1px; margin-top:4px;">Real Estate Route</div>
                 </div>
-                <div style="background:rgba(201,169,110,0.06); border:1px solid rgba(201,169,110,0.15); border-radius:10px; padding:20px 24px;">
+                <div class="investor-box" style="background:rgba(201,169,110,0.06); border:1px solid rgba(201,169,110,0.15); border-radius:10px; padding:20px 24px;">
                     <div style="font-size:1.5rem; font-weight:700; color:var(--gold);">3 Jahre</div>
                     <div style="font-size:0.78rem; color:var(--text-muted); text-transform:uppercase; letter-spacing:1px; margin-top:4px;">to citizenship</div>
                 </div>
