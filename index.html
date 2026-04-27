@@ -1747,6 +1747,21 @@
             .financing-grid { grid-template-columns: 1fr; gap: 40px; }
             .amenities-gallery { grid-template-columns: repeat(2, 1fr); }
         }
+        /* ===== TRUST STRIP ===== */
+        .trust-strip { background: var(--dark); border-bottom: 1px solid var(--border); padding: 24px 0; }
+        .trust-strip-inner { display: flex; align-items: center; justify-content: center; gap: 0; flex-wrap: wrap; }
+        .trust-ratings { display: flex; align-items: center; gap: 16px; padding-right: 32px; border-right: 1px solid var(--border); margin-right: 32px; flex-wrap: wrap; justify-content: center; }
+        .trust-paraguay { display: flex; flex-direction: column; gap: 3px; flex-shrink: 0; }
+        .trust-paraguay-name { font-size: 1rem; font-weight: 800; color: var(--text); letter-spacing: 0.3px; line-height: 1; }
+        .trust-paraguay-label { font-size: 0.58rem; font-weight: 600; text-transform: uppercase; letter-spacing: 2px; color: var(--text-muted); line-height: 1; }
+        .trust-badges { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; justify-content: center; }
+        .trust-badge { font-size: 0.92rem; font-weight: 700; color: var(--gold); background: var(--gold-dim); border: 1px solid var(--border-gold); border-radius: 980px; padding: 7px 18px; white-space: nowrap; }
+        .trust-sep { width: 1px; height: 32px; background: var(--border); display: inline-block; flex-shrink: 0; margin-right: 32px; }
+        .trust-press { display: flex; align-items: center; gap: 20px; flex-wrap: wrap; justify-content: center; }
+        .trust-press-label { font-size: 0.58rem; font-weight: 600; text-transform: uppercase; letter-spacing: 2px; color: var(--text-muted); white-space: nowrap; }
+        .trust-press-item { font-size: 1.1rem; font-weight: 700; color: var(--text); text-decoration: none; opacity: 0.65; transition: opacity 0.2s; }
+        .trust-press-item:hover { opacity: 1; }
+
         @media (max-width: 768px) {
             .nav-links { display: none; }
             .nav-links.open {
@@ -1776,6 +1791,12 @@
             .footer-content { flex-direction: column; gap: 16px; text-align: center; }
             .whatsapp-btn { width: 100%; justify-content: center; padding: 18px 24px; }
             section { padding: 60px 0; }
+            /* Trust strip mobile */
+            .trust-strip-inner { flex-direction: column; gap: 20px; }
+            .trust-ratings { border-right: none; padding-right: 0; margin-right: 0; border-bottom: 1px solid var(--border); padding-bottom: 20px; width: 100%; }
+            .trust-paraguay { align-items: center; }
+            .trust-sep { display: none; }
+            .trust-press { width: 100%; }
         }
 
         @media (max-width: 480px) {
@@ -1877,30 +1898,30 @@
     </section>
 
     <!-- RATING + PRESS TRUST STRIP -->
-    <div style="background:var(--dark); border-bottom:1px solid var(--border); padding:24px 0;">
-        <div class="container" style="display:flex; align-items:center; justify-content:center; gap:0; flex-wrap:wrap;">
+    <div class="trust-strip">
+        <div class="container trust-strip-inner">
 
-            <!-- Paraguay label -->
-            <div style="padding:0 28px 0 0; border-right:1px solid var(--border); margin-right:28px; display:flex; flex-direction:column; gap:3px; flex-shrink:0;">
-                <span style="font-size:1rem; font-weight:800; color:var(--text); letter-spacing:0.3px; line-height:1;">Paraguay</span>
-                <span style="font-size:0.58rem; font-weight:600; text-transform:uppercase; letter-spacing:2px; color:var(--text-muted); line-height:1;">Country Rating</span>
+            <!-- Ratings group -->
+            <div class="trust-ratings">
+                <div class="trust-paraguay">
+                    <span class="trust-paraguay-name">Paraguay</span>
+                    <span class="trust-paraguay-label">Country Rating</span>
+                </div>
+                <div class="trust-badges">
+                    <span class="trust-badge">Moody's &nbsp;Baa3 · Investment Grade</span>
+                    <span class="trust-badge">S&amp;P &nbsp;BBB− · Investment Grade</span>
+                </div>
             </div>
 
-            <!-- Moody's badge -->
-            <span style="font-size:0.92rem; font-weight:700; color:var(--gold); background:var(--gold-dim); border:1px solid var(--border-gold); border-radius:980px; padding:7px 18px; white-space:nowrap; margin-right:12px;">Moody's &nbsp;Baa3 · Investment Grade</span>
-
-            <!-- S&P badge -->
-            <span style="font-size:0.92rem; font-weight:700; color:var(--gold); background:var(--gold-dim); border:1px solid var(--border-gold); border-radius:980px; padding:7px 18px; white-space:nowrap;">S&amp;P &nbsp;BBB− · Investment Grade</span>
-
             <!-- Divider -->
-            <span style="width:1px; height:32px; background:var(--border); display:inline-block; flex-shrink:0; margin:0 32px;"></span>
+            <span class="trust-sep"></span>
 
-            <!-- As seen in label -->
-            <span style="font-size:0.58rem; font-weight:600; text-transform:uppercase; letter-spacing:2px; color:var(--text-muted); margin-right:20px; white-space:nowrap;">As seen in</span>
-
-            <!-- Press logos -->
-            <a href="https://www.forbes.com.py/especiales/park-lofts-marca-nuevo-hito-real-estate-local-ambicioso-proyecto-us-10-millones-n75403" target="_blank" rel="noopener" style="font-size:1.1rem; font-weight:700; color:var(--text); text-decoration:none; opacity:0.65; transition:opacity 0.2s; margin-right:20px;" onmouseover="this.style.opacity=1" onmouseout="this.style.opacity=0.65">Forbes<sup style="font-size:0.52rem; font-weight:400;"> PY</sup></a>
-            <span style="font-size:1.1rem; font-weight:700; color:var(--text); opacity:0.65;">5DÍAS</span>
+            <!-- Press group -->
+            <div class="trust-press">
+                <span class="trust-press-label">As seen in</span>
+                <a href="https://www.forbes.com.py/especiales/park-lofts-marca-nuevo-hito-real-estate-local-ambicioso-proyecto-us-10-millones-n75403" target="_blank" rel="noopener" class="trust-press-item" onmouseover="this.style.opacity=1" onmouseout="this.style.opacity=0.65">Forbes<sup style="font-size:0.52rem; font-weight:400;"> PY</sup></a>
+                <span class="trust-press-item">5DÍAS</span>
+            </div>
 
         </div>
     </div>
