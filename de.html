@@ -654,28 +654,28 @@
 
         :root {
             color-scheme: light;
-            --gold: #7a5c2e;
-            --gold-light: #8c6b35;
-            --gold-dim: rgba(122,92,46,0.12);
-            --dark: #f4ede0;
-            --dark-2: #ece4d6;
-            --dark-3: #e2d9c8;
-            --dark-4: #d6ccb8;
-            --dark-5: #ccc3ae;
-            --text: #18160f;
-            --text-muted: rgba(24,22,15,0.52);
-            --text-secondary: rgba(24,22,15,0.74);
+            --gold: #8c1a28;
+            --gold-light: #a52234;
+            --gold-dim: rgba(140,26,40,0.10);
+            --dark: #f5f5f3;
+            --dark-2: #efefed;
+            --dark-3: #e5e5e2;
+            --dark-4: #d8d8d5;
+            --dark-5: #ccccca;
+            --text: #1a1a18;
+            --text-muted: rgba(26,26,24,0.52);
+            --text-secondary: rgba(26,26,24,0.74);
             --green: #2d7a3a;
-            --accent: #a8854e;
+            --accent: #8c1a28;
             --serif: 'Cormorant Garant', 'Palatino Linotype', 'Book Antiqua', Georgia, serif;
-            --border: rgba(24,22,15,0.10);
-            --border-gold: rgba(122,92,46,0.20);
+            --border: rgba(26,26,24,0.10);
+            --border-gold: rgba(140,26,40,0.22);
             --radius-sm: 0px;
             --radius-md: 0px;
             --radius-lg: 0px;
             --radius-xl: 0px;
-            --shadow-sm: 0 2px 12px rgba(24,22,15,0.07);
-            --shadow-md: 0 4px 24px rgba(24,22,15,0.10);
+            --shadow-sm: 0 2px 12px rgba(26,26,24,0.07);
+            --shadow-md: 0 4px 24px rgba(26,26,24,0.12);
         }
 
         html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
@@ -749,9 +749,9 @@
             z-index: 1000;
             padding: 18px 0;
             transition: background 0.3s ease, padding 0.3s ease, box-shadow 0.3s ease;
-            background: #f4ede0;
-            border-bottom: 1px solid rgba(122,92,46,0.18);
-            box-shadow: 0 1px 0 0 rgba(122,92,46,0.10);
+            background: #ffffff;
+            border-bottom: 1px solid rgba(140,26,40,0.18);
+            box-shadow: 0 1px 0 0 rgba(140,26,40,0.10);
         }
         nav::before {
             content: '';
@@ -761,9 +761,9 @@
             background: var(--gold);
         }
         nav.scrolled {
-            background: #f4ede0;
+            background: #ffffff;
             padding: 12px 0;
-            box-shadow: 0 2px 16px rgba(24,22,15,0.08);
+            box-shadow: 0 2px 16px rgba(26,26,24,0.08);
         }
         nav .container {
             display: flex;
@@ -807,7 +807,7 @@
             text-transform: uppercase !important;
             transition: background 0.25s, border-color 0.25s !important;
         }
-        .nav-cta:hover { border-color: var(--gold) !important; color: var(--gold) !important; background: rgba(122,92,46,0.05) !important; }
+        .nav-cta:hover { border-color: var(--gold) !important; color: var(--gold) !important; background: rgba(140,26,40,0.05) !important; }
 
         .mobile-toggle {
             display: none;
@@ -838,7 +838,7 @@
             position: absolute;
             inset: 0;
             background:
-                linear-gradient(135deg, rgba(245,239,228,0.96) 0%, rgba(245,239,228,0.90) 55%, rgba(245,239,228,0.94) 100%);
+                linear-gradient(135deg, rgba(248,247,246,0.96) 0%, rgba(248,247,246,0.90) 55%, rgba(248,247,246,0.94) 100%);
             z-index: 1;
         }
         .hero-bg {
@@ -872,7 +872,7 @@
             margin-bottom: 28px;
             animation: fadeInUp 0.8s ease forwards;
             border: none;
-            border-bottom: 1px solid rgba(122,92,46,0.35);
+            border-bottom: 1px solid rgba(140,26,40,0.35);
             padding: 0 0 10px 0;
         }
         .hero h1 {
@@ -918,9 +918,9 @@
         }
         .btn-primary {
             background: var(--gold);
-            color: #f4ede0;
+            color: #ffffff;
         }
-        .btn-primary:hover { opacity: 0.88; color: #f4ede0; }
+        .btn-primary:hover { opacity: 0.88; color: #ffffff; }
         .btn-outline {
             background: transparent;
             color: var(--text);
@@ -944,13 +944,13 @@
             transition: all 0.25s;
         }
         .btn-tour:hover {
-            background: rgba(122,92,46,0.06);
+            background: rgba(140,26,40,0.06);
             color: var(--gold);
             border-color: var(--gold);
         }
         @keyframes tour-pulse {
-            0%, 100% { box-shadow: 0 0 0 0 rgba(201,169,110,0.2); }
-            50% { box-shadow: 0 0 16px 3px rgba(201,169,110,0.1); }
+            0%, 100% { box-shadow: 0 0 0 0 rgba(140,26,40,0.2); }
+            50% { box-shadow: 0 0 16px 3px rgba(140,26,40,0.1); }
         }
 
         .hero-stats {
@@ -958,7 +958,7 @@
             gap: 48px;
             margin-top: 80px;
             padding-top: 40px;
-            border-top: 1px solid rgba(24,22,15,0.12);
+            border-top: 1px solid rgba(26,26,24,0.12);
             animation: fadeInUp 0.8s ease 0.6s both;
         }
         .hero-stat h3 {
@@ -1018,7 +1018,7 @@
         .yield-rows { padding: 8px 0; }
         .yield-row { display: grid; grid-template-columns: 180px 1fr 80px; align-items: center; gap: 16px; padding: 14px 28px; border-bottom: 1px solid var(--border); }
         .yield-row:last-child { border-bottom: none; }
-        .yield-row.highlight { background: rgba(201,169,110,0.06); }
+        .yield-row.highlight { background: rgba(140,26,40,0.06); }
         .yield-instrument { font-size: 0.82rem; font-weight: 500; color: var(--text-muted); }
         .yield-row.highlight .yield-instrument { color: var(--text); font-weight: 600; }
         .yield-bar-wrap { background: var(--border); border-radius: 0; height: 6px; overflow: hidden; }
@@ -1029,12 +1029,12 @@
 
         /* ===== TAX CALLOUT ===== */
         .tax-callout {
-            background: linear-gradient(135deg, rgba(201,169,110,0.08), rgba(201,169,110,0.03));
-            border: 1px solid rgba(201,169,110,0.25); border-radius: 12px;
+            background: linear-gradient(135deg, rgba(140,26,40,0.08), rgba(140,26,40,0.03));
+            border: 1px solid rgba(140,26,40,0.25); border-radius: 12px;
             padding: 32px 36px; margin-top: 48px;
             display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 0;
         }
-        .tax-col { text-align: center; padding: 0 20px; border-right: 1px solid rgba(201,169,110,0.15); }
+        .tax-col { text-align: center; padding: 0 20px; border-right: 1px solid rgba(140,26,40,0.15); }
         .tax-col:last-child { border-right: none; }
         .tax-rate { font-size: 2.4rem; font-weight: 700; color: var(--text); }
         .tax-rate.accent { color: var(--gold); }
@@ -1053,7 +1053,7 @@
             left: 0;
             right: 0;
             height: 1px;
-            background: linear-gradient(to right, transparent, rgba(201,169,110,0.3), transparent);
+            background: linear-gradient(to right, transparent, rgba(140,26,40,0.3), transparent);
         }
         .why-grid {
             display: grid;
@@ -1083,7 +1083,7 @@
         }
         .why-card:hover {
             border-color: var(--border-gold);
-            background: rgba(201,169,110,0.03);
+            background: rgba(140,26,40,0.03);
             transform: translateY(-3px);
         }
         .why-card:hover::before { opacity: 1; }
@@ -1091,7 +1091,7 @@
             width: 44px;
             height: 44px;
             border-radius: 12px;
-            background: rgba(201,169,110,0.1);
+            background: rgba(140,26,40,0.1);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -1192,7 +1192,7 @@
             content: 'Listing ansehen →';
             position: absolute;
             inset: 0;
-            background: rgba(245,239,228,0.50);
+            background: rgba(248,247,246,0.50);
             color: var(--gold);
             font-size: 0.85rem;
             font-weight: 600;
@@ -1296,7 +1296,7 @@
             position: absolute;
             top: 0; left: 0; right: 0;
             height: 1px;
-            background: linear-gradient(to right, transparent, rgba(201,169,110,0.3), transparent);
+            background: linear-gradient(to right, transparent, rgba(140,26,40,0.3), transparent);
         }
         .feature-grid {
             display: grid;
@@ -1375,7 +1375,7 @@
             left: 0;
             right: 0;
             padding: 20px 16px 16px;
-            background: linear-gradient(to top, rgba(24,22,15,0.6), transparent);
+            background: linear-gradient(to top, rgba(26,26,24,0.6), transparent);
             font-size: 0.85rem;
             font-weight: 600;
             letter-spacing: 0.5px;
@@ -1457,7 +1457,7 @@
             position: absolute;
             top: 0; left: 0; right: 0;
             height: 1px;
-            background: linear-gradient(to right, transparent, rgba(201,169,110,0.3), transparent);
+            background: linear-gradient(to right, transparent, rgba(140,26,40,0.3), transparent);
         }
         /* ===== VIDEO MODAL ===== */
         .vr-modal-overlay {
@@ -1505,7 +1505,7 @@
             z-index: 2;
             transition: background 0.2s;
         }
-        .vr-modal-close:hover { background: rgba(201,169,110,0.35); }
+        .vr-modal-close:hover { background: rgba(140,26,40,0.35); }
 
         /* ===== CAROUSELS ===== */
         .carousel-section { margin: 2.5rem 0 0; }
@@ -1546,7 +1546,7 @@
             top: 50%;
             transform: translateY(-50%);
             background: rgba(244,237,224,0.85);
-            border: 1px solid rgba(201,169,110,0.35);
+            border: 1px solid rgba(140,26,40,0.35);
             color: var(--gold);
             width: 38px;
             height: 38px;
@@ -1560,7 +1560,7 @@
             z-index: 2;
             padding: 0;
         }
-        .carousel-btn:hover { background: rgba(201,169,110,0.18); border-color: var(--gold); }
+        .carousel-btn:hover { background: rgba(140,26,40,0.18); border-color: var(--gold); }
         .carousel-btn.prev { left: 10px; }
         .carousel-btn.next { right: 10px; }
         .carousel-dots {
@@ -1657,7 +1657,7 @@
             overflow: hidden;
             transition: border-color 0.3s;
         }
-        .faq-item:hover { border-color: rgba(201,169,110,0.2); }
+        .faq-item:hover { border-color: rgba(140,26,40,0.2); }
         .faq-item summary {
             padding: 20px 24px;
             font-weight: 600;
@@ -1819,7 +1819,7 @@
                 top: 100%;
                 left: 0;
                 right: 0;
-                background: #f4ede0;
+                background: #ffffff;
                 padding: 24px;
                 gap: 20px;
                 border-bottom: 1px solid var(--border-gold);
@@ -1891,7 +1891,7 @@
             /* Yield + tax mobile */
             .yield-row { grid-template-columns: 120px 1fr 55px; gap: 10px; padding: 12px 16px; }
             .tax-callout { grid-template-columns: 1fr; padding: 24px 20px; }
-            .tax-col { border-right: none; border-bottom: 1px solid rgba(201,169,110,0.15); padding: 16px 0; }
+            .tax-col { border-right: none; border-bottom: 1px solid rgba(140,26,40,0.15); padding: 16px 0; }
             .tax-col:last-child { border-bottom: none; }
         }
 
@@ -1912,7 +1912,7 @@
             align-items: center;
             gap: 4px;
             margin-left: 16px;
-            border: 1px solid rgba(201,169,110,0.3);
+            border: 1px solid rgba(140,26,40,0.3);
             border-radius: 6px;
             overflow: hidden;
         }
@@ -1928,9 +1928,9 @@
             color: var(--text-muted);
             background: transparent;
         }
-        .lang-btn:hover { background: rgba(24,22,15,0.04); color: var(--text); }
+        .lang-btn:hover { background: rgba(26,26,24,0.04); color: var(--text); }
         .lang-active {
-            color: #f4ede0;
+            color: #ffffff;
             background: var(--gold);
         }
 
@@ -2268,7 +2268,7 @@
             </div>
 
             <!-- Repricing argument -->
-            <div class="reveal" style="border:1px solid var(--border-gold); border-radius:var(--radius-xl); padding:52px 56px; background:linear-gradient(135deg, rgba(201,169,110,0.05) 0%, transparent 60%);">
+            <div class="reveal" style="border:1px solid var(--border-gold); border-radius:var(--radius-xl); padding:52px 56px; background:linear-gradient(135deg, rgba(140,26,40,0.05) 0%, transparent 60%);">
                 <h3 style="font-size:clamp(1.4rem,2.5vw,2rem); font-weight:800; letter-spacing:-0.03em; margin-bottom:20px; line-height:1.2;">Wer früh rein ist, gewinnt.</h3>
                 <p style="font-size:1rem; color:var(--text-secondary); line-height:1.85; max-width:780px; margin-bottom:24px;">Jeder vergleichbare lateinamerikanische Markt, der die Investment-Grade-Schwelle überschritten hat, erlebte danach ein Jahrzehnt anhaltender Immobilienpreissteigerung: Lima nach 2007, Montevideo nach 2012, Santiago bereits in den frühen 2000er Jahren. Paraguay hat diese Schwelle erst kürzlich überschritten — und der Investor Pass dürfte die Nachfrage nochmals deutlich beschleunigen.</p>
                 <p style="font-size:0.72rem; color:var(--text-muted); opacity:0.55; line-height:1.6; max-width:680px;">Historische Preisentwicklungen anderer Märkte sind kein Indikator für zukünftige Wertsteigerungen in Paraguay. Immobilieninvestitionen sind mit Risiken verbunden. Diese Darstellung dient ausschließlich der Markteinordnung und stellt keine Anlageberatung dar.</p>
@@ -2281,7 +2281,7 @@
     <!-- INVESTOR PASS SECTION -->
     <section style="background: var(--dark); padding: 32px 0 80px;">
         <div class="container">
-            <div class="reveal" style="border: 1px solid var(--border-gold); border-radius: var(--radius-xl); padding: 52px 56px; background: linear-gradient(135deg, rgba(201,169,110,0.06), rgba(201,169,110,0.01));">
+            <div class="reveal" style="border: 1px solid var(--border-gold); border-radius: var(--radius-xl); padding: 52px 56px; background: linear-gradient(135deg, rgba(140,26,40,0.06), rgba(140,26,40,0.01));">
                 <div style="display:flex; align-items:center; gap:12px; margin-bottom:18px; flex-wrap:wrap;">
                     <span class="section-tag" style="margin:0; display:inline-block;">Aktuell · April 2026</span>
                     <span style="display:inline-block; background:#ff3b30; color:#fff; font-size:0.66rem; font-weight:700; text-transform:uppercase; letter-spacing:0.08em; padding:3px 10px; border-radius:980px;">Neu</span>
@@ -2289,11 +2289,11 @@
                 <h2 class="section-title" style="margin:0 0 16px; text-align:left;">Paraguay Investor Pass — direkte permanente Residenz</h2>
                 <p style="color:var(--text-secondary); font-size:1.05rem; line-height:1.7; max-width:780px; letter-spacing:-0.01em; margin-bottom:36px;">Das Industrie- und Handelsministerium hat den Paraguay Investor Pass eingeführt: qualifizierte ausländische Investoren erhalten durch eine Immobilieninvestition direkt die <strong style="color:var(--text);">permanente Aufenthaltsgenehmigung</strong> — kein temporäres Visum, keine jahrelange Wartezeit, weitgehend elektronisch bearbeitbar. Kombination mit Moody's und S&amp;P Investment Grade (seit Dez. 2025): Paraguay ist jetzt global institutionell anerkannt.</p>
                 <div style="display:grid; grid-template-columns:repeat(2,1fr); gap:16px; margin-bottom:36px;">
-<div style="background:rgba(24,22,15,0.03); border:1px solid var(--border); border-radius:var(--radius-md); padding:22px 24px;">
+<div style="background:rgba(26,26,24,0.03); border:1px solid var(--border); border-radius:var(--radius-md); padding:22px 24px;">
                         <div style="font-size:1.6rem; font-weight:800; color:var(--gold); letter-spacing:-0.04em;">$200k</div>
                         <div style="font-size:0.72rem; font-weight:600; color:var(--text-muted); text-transform:uppercase; letter-spacing:0.08em; margin-top:6px;">Immobilien-Route</div>
                     </div>
-                    <div style="background:rgba(24,22,15,0.03); border:1px solid var(--border); border-radius:var(--radius-md); padding:22px 24px;">
+                    <div style="background:rgba(26,26,24,0.03); border:1px solid var(--border); border-radius:var(--radius-md); padding:22px 24px;">
                         <div style="font-size:1.6rem; font-weight:800; color:var(--gold); letter-spacing:-0.04em;">3 Jahre</div>
                         <div style="font-size:0.72rem; font-weight:600; color:var(--text-muted); text-transform:uppercase; letter-spacing:0.08em; margin-top:6px;">bis Staatsbürgerschaft</div>
                     </div>
@@ -2332,7 +2332,7 @@
                     </div>
                     <div style="display: flex; align-items: center; gap: 10px; margin-top: 16px;">
                         <span style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 2px; color: var(--text-muted);">Bekannt aus</span>
-                        <a href="https://www.forbes.com.py/especiales/park-lofts-marca-nuevo-hito-real-estate-local-ambicioso-proyecto-us-10-millones-n75403" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 6px; background: rgba(24,22,15,0.03); border: 1px solid rgba(24,22,15,0.10); border-radius: 6px; padding: 6px 14px; text-decoration: none; transition: border-color 0.2s;" onmouseover="this.style.borderColor='rgba(201,169,110,0.4)'" onmouseout="this.style.borderColor='rgba(24,22,15,0.10)'">
+                        <a href="https://www.forbes.com.py/especiales/park-lofts-marca-nuevo-hito-real-estate-local-ambicioso-proyecto-us-10-millones-n75403" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 6px; background: rgba(26,26,24,0.03); border: 1px solid rgba(26,26,24,0.10); border-radius: 6px; padding: 6px 14px; text-decoration: none; transition: border-color 0.2s;" onmouseover="this.style.borderColor='rgba(140,26,40,0.4)'" onmouseout="this.style.borderColor='rgba(26,26,24,0.10)'">
                             <span style="font-size: 1.1rem; font-weight: 700; color: var(--text); letter-spacing: 1px;">Forbes</span>
                             <span style="font-size: 0.6rem; color: var(--text-muted); vertical-align: super;">PY</span>
                         </a>
@@ -2342,7 +2342,7 @@
                 <div class="reveal">
                     <span class="section-tag">Jetzt im Bau &bull; Einheiten verfügbar</span>
                     <h2 class="section-title">Park Lofts Tower</h2>
-                    <p class="section-subtitle">101 Meter. Die begehrteste Adresse Asunci&oacute;ns. Gebaut von Benitez Bittar &mdash; einem der größten Bauunternehmen Paraguays, verantwortlich für das höchste Hochhaus des Landes. Jetzt im Bau. Einheiten verfügbar.</p>
+                    <p class="section-subtitle">101 Meter. Die begehrteste Adresse Asunci&oacute;ns. Gebaut von Concremaq &mdash; einem der größten Bauunternehmen Paraguays, verantwortlich für das höchste Hochhaus des Landes. Jetzt im Bau. Einheiten verfügbar.</p>
                     <ul class="feature-list">
                         <li>101m Luxusturm &mdash; Asunci&oacute;ns erste Adresse</li>
                         <li>Deutsche Grohe Dusch- und Armaturenausstattung</li>
@@ -2351,7 +2351,7 @@
                         <li>Massivholztüren durchgehend</li>
                         <li>3 Hochgeschwindigkeits-Otis-Aufzüge</li>
                         <li>Direkt neben Paseo la Galeria, WTC und Shopping del Sol</li>
-                        <li>Gebaut von Benitez Bittar (300.000m&sup2; im Bau — u.a. Distrito Perseverancia)</li>
+                        <li>Gebaut von Concremaq (300.000m&sup2; im Bau — u.a. Distrito Perseverancia)</li>
                     </ul>
                     <div style="display: flex; gap: 12px; margin-top: 24px; flex-wrap: wrap;">
                         <a href="https://wa.me/491604949585?text=Ich%20m%C3%B6chte%20Details%20zum%20Park%20Lofts%20Tower." class="btn btn-primary">Details anfordern &rarr;</a>
@@ -2428,7 +2428,7 @@
                     <h3 class="section-title" style="font-size: 1.8rem;">Alles fußläufig erreichbar</h3>
                     <p class="section-subtitle">Der Turm liegt an der Kreuzung Avenida Santa Teresa / Aviadores del Chaco &mdash; Asunci&oacute;ns bester Geschäftslage. Paseo la Galeria, World Trade Center und Shopping del Sol sind alle in 5 Gehminuten erreichbar.</p>
                 </div>
-                <div class="reveal reveal-delay-1" style="border-radius: 12px; overflow: hidden; border: 1px solid rgba(201,169,110,0.2);">
+                <div class="reveal reveal-delay-1" style="border-radius: 12px; overflow: hidden; border: 1px solid rgba(140,26,40,0.2);">
                     <iframe src="https://www.google.com/maps/embed?pb=!4v1774916687540!6m8!1m7!1scIoaNcf8OnvT2Co0-vpDgw!2m2!1d-25.28429143517361!2d-57.56189522460947!3f12.290905713557025!4f-25.190799752692257!5f0.7820865974627469" width="100%" height="350" style="border:0; display:block;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
@@ -2437,7 +2437,7 @@
 
     <!-- CASAS BALI FEATURE -->
     <section id="casas-bali" style="background: var(--dark-2); position: relative;">
-        <div style="position: absolute; top: 0; left: 0; right: 0; height: 1px; background: linear-gradient(to right, transparent, rgba(201,169,110,0.3), transparent);"></div>
+        <div style="position: absolute; top: 0; left: 0; right: 0; height: 1px; background: linear-gradient(to right, transparent, rgba(140,26,40,0.3), transparent);"></div>
         <div class="container">
             <!-- Header -->
             <div style="text-align:center; max-width:720px; margin: 0 auto 56px;">
@@ -2482,19 +2482,19 @@
 
                     <!-- Lifestyle stats -->
                     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 28px 0;">
-                        <div style="background:rgba(201,169,110,0.06); border:1px solid rgba(201,169,110,0.15); border-radius:10px; padding:18px; text-align:center;">
+                        <div style="background:rgba(140,26,40,0.06); border:1px solid rgba(140,26,40,0.15); border-radius:10px; padding:18px; text-align:center;">
                             <div style="font-size:1.8rem; color:var(--gold); font-weight:700;">80m²</div>
                             <div style="font-size:0.72rem; color:var(--text-muted); text-transform:uppercase; letter-spacing:1px; margin-top:4px;">+ garden &amp; pool</div>
                         </div>
-                        <div style="background:rgba(201,169,110,0.06); border:1px solid rgba(201,169,110,0.15); border-radius:10px; padding:18px; text-align:center;">
+                        <div style="background:rgba(140,26,40,0.06); border:1px solid rgba(140,26,40,0.15); border-radius:10px; padding:18px; text-align:center;">
                             <div style="font-size:1.8rem; color:var(--gold); font-weight:700;">Bali Style</div>
                             <div style="font-size:0.72rem; color:var(--text-muted); text-transform:uppercase; letter-spacing:1px; margin-top:4px;">Architektur</div>
                         </div>
-                        <div style="background:rgba(201,169,110,0.06); border:1px solid rgba(201,169,110,0.15); border-radius:10px; padding:18px; text-align:center;">
+                        <div style="background:rgba(140,26,40,0.06); border:1px solid rgba(140,26,40,0.15); border-radius:10px; padding:18px; text-align:center;">
                             <div style="font-size:1.8rem; color:var(--gold); font-weight:700;">Rooftop</div>
                             <div style="font-size:0.72rem; color:var(--text-muted); text-transform:uppercase; letter-spacing:1px; margin-top:4px;">Terrace</div>
                         </div>
-                        <div style="background:rgba(201,169,110,0.06); border:1px solid rgba(201,169,110,0.15); border-radius:10px; padding:18px; text-align:center;">
+                        <div style="background:rgba(140,26,40,0.06); border:1px solid rgba(140,26,40,0.15); border-radius:10px; padding:18px; text-align:center;">
                             <div style="font-size:1.8rem; color:var(--gold); font-weight:700;">Off-Market</div>
                             <div style="font-size:0.72rem; color:var(--text-muted); text-transform:uppercase; letter-spacing:1px; margin-top:4px;">Privates Angebot</div>
                         </div>
@@ -2546,7 +2546,7 @@
             </div>
 
             <!-- KEY NUMBERS BAR -->
-            <div class="campus-metrics reveal" style="display:grid; grid-template-columns: repeat(4,1fr); gap:2px; background:rgba(201,169,110,0.1); border-radius:12px; overflow:hidden; margin-bottom:80px; border:1px solid rgba(201,169,110,0.2);">
+            <div class="campus-metrics reveal" style="display:grid; grid-template-columns: repeat(4,1fr); gap:2px; background:rgba(140,26,40,0.1); border-radius:12px; overflow:hidden; margin-bottom:80px; border:1px solid rgba(140,26,40,0.2);">
                 <div style="background:var(--dark-3); padding:28px 20px; text-align:center;">
                     <div class="campus-kpi-num" style="font-size:2.2rem; color:var(--gold); font-weight:700;">~7.2%</div>
                     <div style="font-size:0.78rem; color:var(--text-muted); margin-top:6px; text-transform:uppercase; letter-spacing:1px;">Gesch. Netto-Jahresrendite*</div>
@@ -2615,7 +2615,7 @@
             </div>
 
             <!-- THE ECOSYSTEM STORY -->
-            <div class="campus-ecosystem-box reveal" style="background:var(--dark-3); border:1px solid rgba(201,169,110,0.15); border-radius:16px; padding:48px; margin-bottom:80px;">
+            <div class="campus-ecosystem-box reveal" style="background:var(--dark-3); border:1px solid rgba(140,26,40,0.15); border-radius:16px; padding:48px; margin-bottom:80px;">
                 <div class="campus-ecosystem" style="display:grid; grid-template-columns:1fr 1fr; gap:48px; align-items:start;">
                     <div>
                         <span class="section-tag" style="margin-bottom:16px; display:inline-block;">Warum die Nachfrage nie versiegt</span>
@@ -2697,7 +2697,7 @@
     <section style="background: var(--dark-2); padding-bottom: 80px;">
         <div class="container">
             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center;" class="feature-grid">
-                <div class="reveal reveal-delay-1" style="border-radius: 12px; overflow: hidden; border: 1px solid rgba(201,169,110,0.2);">
+                <div class="reveal reveal-delay-1" style="border-radius: 12px; overflow: hidden; border: 1px solid rgba(140,26,40,0.2);">
                     <iframe src="https://www.google.com/maps/embed?pb=!4v1774916768843!6m8!1m7!1sV3AT8pjS3bpi_xAHpKoTnQ!2m2!1d-25.23747148965646!2d-57.53705876562753!3f198.79159987110904!4f20.351732869940903!5f0.7820865974627469" width="100%" height="380" style="border:0; display:block;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
                 <div class="reveal">
@@ -2706,25 +2706,25 @@
                     <p class="section-subtitle">Campus I liegt in Loma Pyt&atilde; &mdash; dem Universitätsviertel von Asunci&oacute;n. Die Universität ist in fünf Jahren von zwei auf zwölf Stockwerke gewachsen. Sie kaufen nicht nur eine Einheit &mdash; Sie investieren in ein strukturell unterversorgtes Ökosystem.</p>
                     <div style="display:flex; flex-direction:column; gap:12px; margin-top:24px;">
                         <div style="display:flex; align-items:center; gap:14px;">
-                            <div style="width:36px; height:36px; border-radius:50%; background:rgba(201,169,110,0.1); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+                            <div style="width:36px; height:36px; border-radius:50%; background:rgba(140,26,40,0.1); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
                                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="10" r="3"/><path d="M12 2a8 8 0 0 0-8 8c0 5.4 7.05 11.5 7.35 11.76a1 1 0 0 0 1.3 0C12.95 21.5 20 15.4 20 10a8 8 0 0 0-8-8z"/></svg>
                             </div>
                             <span style="color:var(--text-muted); font-size:0.9rem;">100m vom Eingang der UMAX-Universität</span>
                         </div>
                         <div style="display:flex; align-items:center; gap:14px;">
-                            <div style="width:36px; height:36px; border-radius:50%; background:rgba(201,169,110,0.1); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+                            <div style="width:36px; height:36px; border-radius:50%; background:rgba(140,26,40,0.1); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
                                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
                             </div>
                             <span style="color:var(--text-muted); font-size:0.9rem;">Loma Pyt&atilde; &mdash; die am schnellsten wachsende Wohnzone Asunci&oacute;ns</span>
                         </div>
                         <div style="display:flex; align-items:center; gap:14px;">
-                            <div style="width:36px; height:36px; border-radius:50%; background:rgba(201,169,110,0.1); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+                            <div style="width:36px; height:36px; border-radius:50%; background:rgba(140,26,40,0.1); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
                                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13" rx="1"/><path d="M16 8h4l3 5v3h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
                             </div>
                             <span style="color:var(--text-muted); font-size:0.9rem;">10 Minuten vom Stadtzentrum, Shopping und Restaurants</span>
                         </div>
                         <div style="display:flex; align-items:center; gap:14px;">
-                            <div style="width:36px; height:36px; border-radius:50%; background:rgba(201,169,110,0.1); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+                            <div style="width:36px; height:36px; border-radius:50%; background:rgba(140,26,40,0.1); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
                                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
                             </div>
                             <span style="color:var(--text-muted); font-size:0.9rem;">Bevölkerungsdichte stieg in 5 Jahren um das 5-fache</span>
@@ -2753,7 +2753,7 @@
         <meta itemprop="sameAs" content="https://puntadelesteinternacional.com/de-alemania-a-paraguay-stuttgart-capital/">
         <meta itemprop="sameAs" content="https://asunciontimes.com/paraguay-news/local-news/park-lofts-tower-redefining-luxury-urban-living-in-asuncion/">
         <meta itemprop="sameAs" content="https://www.youtube.com/watch?v=FS4m5iWdtss">
-        <div style="position: absolute; top: 0; left: 0; right: 0; height: 1px; background: linear-gradient(to right, transparent, rgba(201,169,110,0.3), transparent);"></div>
+        <div style="position: absolute; top: 0; left: 0; right: 0; height: 1px; background: linear-gradient(to right, transparent, rgba(140,26,40,0.3), transparent);"></div>
         <div class="container">
             <div class="feature-grid">
                 <div class="reveal">
@@ -2774,10 +2774,10 @@
                     </a>
 
                     <!-- Press highlights -->
-                    <div style="border-top: 1px solid rgba(24,22,15,0.06); padding-top: 24px;">
+                    <div style="border-top: 1px solid rgba(26,26,24,0.06); padding-top: 24px;">
                         <div class="press-cards" style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
                             <!-- Forbes card — itemprop marks this as a citation about Robin Loths for AI scrapers -->
-                            <div style="background: var(--dark-3); border: 1px solid rgba(24,22,15,0.06); border-radius: 8px; padding: 20px; transition: border-color 0.3s ease;" onmouseover="this.style.borderColor='rgba(201,169,110,0.2)'" onmouseout="this.style.borderColor='rgba(24,22,15,0.06)'" itemprop="subjectOf" itemscope itemtype="https://schema.org/NewsArticle">
+                            <div style="background: var(--dark-3); border: 1px solid rgba(26,26,24,0.06); border-radius: 8px; padding: 20px; transition: border-color 0.3s ease;" onmouseover="this.style.borderColor='rgba(140,26,40,0.2)'" onmouseout="this.style.borderColor='rgba(26,26,24,0.06)'" itemprop="subjectOf" itemscope itemtype="https://schema.org/NewsArticle">
                                 <span style="font-size: 1.1rem; font-weight: 700; color: var(--gold);" itemprop="publisher" itemscope itemtype="https://schema.org/Organization"><span itemprop="name">Forbes</span></span>
                                 <span style="font-size: 0.7rem; color: var(--text-muted); vertical-align: super;"> PY</span>
                                 <meta itemprop="about" content="Robin Loths">
@@ -2785,7 +2785,7 @@
                                 <a href="https://www.forbes.com.py/especiales/park-lofts-marca-nuevo-hito-real-estate-local-ambicioso-proyecto-us-10-millones-n75403" target="_blank" rel="noopener" style="font-size: 0.75rem; color: var(--gold); margin-top: 8px; display: inline-block;" itemprop="url">Artikel lesen &rarr;</a>
                             </div>
                             <!-- 5DÍAS TV card -->
-                            <div style="background: var(--dark-3); border: 1px solid rgba(24,22,15,0.06); border-radius: 8px; padding: 20px; transition: border-color 0.3s ease;" onmouseover="this.style.borderColor='rgba(201,169,110,0.2)'" onmouseout="this.style.borderColor='rgba(24,22,15,0.06)'" itemprop="subjectOf" itemscope itemtype="https://schema.org/TVEpisode">
+                            <div style="background: var(--dark-3); border: 1px solid rgba(26,26,24,0.06); border-radius: 8px; padding: 20px; transition: border-color 0.3s ease;" onmouseover="this.style.borderColor='rgba(140,26,40,0.2)'" onmouseout="this.style.borderColor='rgba(26,26,24,0.06)'" itemprop="subjectOf" itemscope itemtype="https://schema.org/TVEpisode">
                                 <span style="font-family: 'Inter', sans-serif; font-size: 1rem; font-weight: 800; color: var(--gold); letter-spacing: 1px;">5D&Iacute;AS</span>
                                 <span style="font-size: 0.7rem; color: var(--text-muted);"> TV</span>
                                 <meta itemprop="about" content="Robin Loths">
@@ -2793,27 +2793,27 @@
                                 <a href="https://www.youtube.com/watch?v=1Su8umVaq3M" target="_blank" rel="noopener" style="font-size: 0.75rem; color: var(--gold); margin-top: 8px; display: inline-block;" itemprop="url">Interview ansehen &rarr;</a>
                             </div>
                             <!-- Bolsa de Valores credentials card -->
-                            <div style="background: var(--dark-3); border: 1px solid rgba(24,22,15,0.06); border-radius: 8px; padding: 20px; transition: border-color 0.3s ease;" onmouseover="this.style.borderColor='rgba(201,169,110,0.2)'" onmouseout="this.style.borderColor='rgba(24,22,15,0.06)'">
+                            <div style="background: var(--dark-3); border: 1px solid rgba(26,26,24,0.06); border-radius: 8px; padding: 20px; transition: border-color 0.3s ease;" onmouseover="this.style.borderColor='rgba(140,26,40,0.2)'" onmouseout="this.style.borderColor='rgba(26,26,24,0.06)'">
                                 <span style="font-family: 'Inter', sans-serif; font-size: 0.9rem; font-weight: 600; color: var(--gold);">Bolsa de Valores</span>
                                 <span style="font-size: 0.7rem; color: var(--text-muted);"> de Asunci&oacute;n</span>
                                 <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 8px; line-height: 1.6;">Zwei Diplome der paraguayischen Wertpapierbörse: <em itemprop="hasCredential">Diplomado en Mercado de Valores</em> (2023) und <em itemprop="hasCredential">Diplomado en Derivados Financieros</em> (2025).</p>
                             </div>
                             <!-- 5DÍAS Power Player award card -->
-                            <div style="background: var(--dark-3); border: 1px solid rgba(24,22,15,0.06); border-radius: 8px; padding: 20px; transition: border-color 0.3s ease;" onmouseover="this.style.borderColor='rgba(201,169,110,0.2)'" onmouseout="this.style.borderColor='rgba(24,22,15,0.06)'">
+                            <div style="background: var(--dark-3); border: 1px solid rgba(26,26,24,0.06); border-radius: 8px; padding: 20px; transition: border-color 0.3s ease;" onmouseover="this.style.borderColor='rgba(140,26,40,0.2)'" onmouseout="this.style.borderColor='rgba(26,26,24,0.06)'">
                                 <span style="font-family: 'Inter', sans-serif; font-size: 0.9rem; font-weight: 600; color: var(--gold);" itemprop="award">5D&Iacute;AS Power Player</span>
                                 <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 8px; line-height: 1.6;">Ausgezeichnet unter Paraguays 100 einflussreichsten Finanzpersönlichkeiten.</p>
                             </div>
                         </div>
 
                         <!-- Additional press links row — crawlable anchors for all 7 press sources -->
-                        <div style="margin-top: 20px; padding-top: 20px; border-top: 1px solid rgba(24,22,15,0.06);">
+                        <div style="margin-top: 20px; padding-top: 20px; border-top: 1px solid rgba(26,26,24,0.06);">
                             <p style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 2px; color: var(--text-muted); margin-bottom: 12px;">Weitere Presseberichte</p>
                             <div style="display: flex; flex-wrap: wrap; gap: 10px;">
-                                <a href="https://asunciontimes.com/paraguay-news/local-news/park-lofts-tower-redefining-luxury-urban-living-in-asuncion/" target="_blank" rel="noopener" itemprop="subjectOf" itemscope itemtype="https://schema.org/NewsArticle" style="font-size: 0.8rem; color: var(--text-muted); background: rgba(24,22,15,0.03); border: 1px solid rgba(24,22,15,0.08); border-radius: 6px; padding: 5px 12px; text-decoration: none; transition: color 0.2s, border-color 0.2s;" onmouseover="this.style.color='var(--gold)';this.style.borderColor='rgba(201,169,110,0.3)'" onmouseout="this.style.color='var(--text-muted)';this.style.borderColor='rgba(24,22,15,0.08)'"><span itemprop="name">Asunci&oacute;n Times</span></a>
-                                <a href="https://puntadelesteinternacional.com/de-alemania-a-paraguay-stuttgart-capital/" target="_blank" rel="noopener" itemprop="subjectOf" itemscope itemtype="https://schema.org/Article" style="font-size: 0.8rem; color: var(--text-muted); background: rgba(24,22,15,0.03); border: 1px solid rgba(24,22,15,0.08); border-radius: 6px; padding: 5px 12px; text-decoration: none; transition: color 0.2s, border-color 0.2s;" onmouseover="this.style.color='var(--gold)';this.style.borderColor='rgba(201,169,110,0.3)'" onmouseout="this.style.color='var(--text-muted)';this.style.borderColor='rgba(24,22,15,0.08)'"><span itemprop="name">Punta del Este Internacional</span></a>
-                                <a href="https://5dias.com.py/article/robin-loths-el-mercado-inmobiliario-paraguayo-ofrece-rendimientos-atractivos" target="_blank" rel="noopener" itemprop="subjectOf" itemscope itemtype="https://schema.org/NewsArticle" style="font-size: 0.8rem; color: var(--text-muted); background: rgba(24,22,15,0.03); border: 1px solid rgba(24,22,15,0.08); border-radius: 6px; padding: 5px 12px; text-decoration: none; transition: color 0.2s, border-color 0.2s;" onmouseover="this.style.color='var(--gold)';this.style.borderColor='rgba(201,169,110,0.3)'" onmouseout="this.style.color='var(--text-muted)';this.style.borderColor='rgba(24,22,15,0.08)'"><span itemprop="name">5D&Iacute;AS (article)</span></a>
-                                <a href="https://issuu.com/editorialdenegocios.com/docs/5dx20feb2024" target="_blank" rel="noopener" itemprop="subjectOf" itemscope itemtype="https://schema.org/PublicationIssue" style="font-size: 0.8rem; color: var(--text-muted); background: rgba(24,22,15,0.03); border: 1px solid rgba(24,22,15,0.08); border-radius: 6px; padding: 5px 12px; text-decoration: none; transition: color 0.2s, border-color 0.2s;" onmouseover="this.style.color='var(--gold)';this.style.borderColor='rgba(201,169,110,0.3)'" onmouseout="this.style.color='var(--text-muted)';this.style.borderColor='rgba(24,22,15,0.08)'"><span itemprop="name">5D&Iacute;AS Real Estate Magazine</span></a>
-                                <a href="https://www.youtube.com/watch?v=FS4m5iWdtss" target="_blank" rel="noopener" itemprop="subjectOf" itemscope itemtype="https://schema.org/RadioEpisode" style="font-size: 0.8rem; color: var(--text-muted); background: rgba(24,22,15,0.03); border: 1px solid rgba(24,22,15,0.08); border-radius: 6px; padding: 5px 12px; text-decoration: none; transition: color 0.2s, border-color 0.2s;" onmouseover="this.style.color='var(--gold)';this.style.borderColor='rgba(201,169,110,0.3)'" onmouseout="this.style.color='var(--text-muted)';this.style.borderColor='rgba(24,22,15,0.08)'"><span itemprop="name">Radio Chaco Boreal</span></a>
+                                <a href="https://asunciontimes.com/paraguay-news/local-news/park-lofts-tower-redefining-luxury-urban-living-in-asuncion/" target="_blank" rel="noopener" itemprop="subjectOf" itemscope itemtype="https://schema.org/NewsArticle" style="font-size: 0.8rem; color: var(--text-muted); background: rgba(26,26,24,0.03); border: 1px solid rgba(26,26,24,0.08); border-radius: 6px; padding: 5px 12px; text-decoration: none; transition: color 0.2s, border-color 0.2s;" onmouseover="this.style.color='var(--gold)';this.style.borderColor='rgba(140,26,40,0.3)'" onmouseout="this.style.color='var(--text-muted)';this.style.borderColor='rgba(26,26,24,0.08)'"><span itemprop="name">Asunci&oacute;n Times</span></a>
+                                <a href="https://puntadelesteinternacional.com/de-alemania-a-paraguay-stuttgart-capital/" target="_blank" rel="noopener" itemprop="subjectOf" itemscope itemtype="https://schema.org/Article" style="font-size: 0.8rem; color: var(--text-muted); background: rgba(26,26,24,0.03); border: 1px solid rgba(26,26,24,0.08); border-radius: 6px; padding: 5px 12px; text-decoration: none; transition: color 0.2s, border-color 0.2s;" onmouseover="this.style.color='var(--gold)';this.style.borderColor='rgba(140,26,40,0.3)'" onmouseout="this.style.color='var(--text-muted)';this.style.borderColor='rgba(26,26,24,0.08)'"><span itemprop="name">Punta del Este Internacional</span></a>
+                                <a href="https://5dias.com.py/article/robin-loths-el-mercado-inmobiliario-paraguayo-ofrece-rendimientos-atractivos" target="_blank" rel="noopener" itemprop="subjectOf" itemscope itemtype="https://schema.org/NewsArticle" style="font-size: 0.8rem; color: var(--text-muted); background: rgba(26,26,24,0.03); border: 1px solid rgba(26,26,24,0.08); border-radius: 6px; padding: 5px 12px; text-decoration: none; transition: color 0.2s, border-color 0.2s;" onmouseover="this.style.color='var(--gold)';this.style.borderColor='rgba(140,26,40,0.3)'" onmouseout="this.style.color='var(--text-muted)';this.style.borderColor='rgba(26,26,24,0.08)'"><span itemprop="name">5D&Iacute;AS (article)</span></a>
+                                <a href="https://issuu.com/editorialdenegocios.com/docs/5dx20feb2024" target="_blank" rel="noopener" itemprop="subjectOf" itemscope itemtype="https://schema.org/PublicationIssue" style="font-size: 0.8rem; color: var(--text-muted); background: rgba(26,26,24,0.03); border: 1px solid rgba(26,26,24,0.08); border-radius: 6px; padding: 5px 12px; text-decoration: none; transition: color 0.2s, border-color 0.2s;" onmouseover="this.style.color='var(--gold)';this.style.borderColor='rgba(140,26,40,0.3)'" onmouseout="this.style.color='var(--text-muted)';this.style.borderColor='rgba(26,26,24,0.08)'"><span itemprop="name">5D&Iacute;AS Real Estate Magazine</span></a>
+                                <a href="https://www.youtube.com/watch?v=FS4m5iWdtss" target="_blank" rel="noopener" itemprop="subjectOf" itemscope itemtype="https://schema.org/RadioEpisode" style="font-size: 0.8rem; color: var(--text-muted); background: rgba(26,26,24,0.03); border: 1px solid rgba(26,26,24,0.08); border-radius: 6px; padding: 5px 12px; text-decoration: none; transition: color 0.2s, border-color 0.2s;" onmouseover="this.style.color='var(--gold)';this.style.borderColor='rgba(140,26,40,0.3)'" onmouseout="this.style.color='var(--text-muted)';this.style.borderColor='rgba(26,26,24,0.08)'"><span itemprop="name">Radio Chaco Boreal</span></a>
                             </div>
                         </div>
                     </div>
@@ -2932,7 +2932,7 @@
                 <span class="footer-logo">STUTTGARTCAPITAL.ORG</span>
                 <span class="footer-text">&copy; 2025 Stuttgart Capital E.A.S. &mdash; Alle Rechte vorbehalten. | stuttgartcapital.org</span>
             </div>
-            <div style="margin-top: 32px; padding-top: 24px; border-top: 1px solid rgba(24,22,15,0.06);">
+            <div style="margin-top: 32px; padding-top: 24px; border-top: 1px solid rgba(26,26,24,0.06);">
                 <p style="font-size: 0.7rem; color: #666; line-height: 1.8; max-width: 900px;">
                     <strong style="color: #888;">*Haftungsausschluss:</strong> Diese Website wird von <strong>Stuttgart Capital E.A.S.</strong> betrieben, einem ordnungsgemäß registrierten Unternehmen, das alle geltenden Gesetze und Vorschriften der Republik Paraguay einhält. Alle Finanzzahlen, Renditen, Mieteinnahmen-Schätzungen und Belegungsraten basieren auf aktuellen Marktbedingungen und historischer Performance. Sie dienen nur zu Informationszwecken und stellen <strong>keine</strong> Garantie oder Zusicherung zukünftiger Ergebnisse dar. Immobilieninvestitionen sind mit inhärenten Risiken verbunden, darunter Marktschwankungen, Währungsrisiken, regulatorische Änderungen und möglicher Kapitalverlust. Interessenten sollten eine eigene Due Diligence durchführen und vor jeder Investitionsentscheidung professionelle Rechts-, Finanz- und Steuerberatung einholen. Campus I wird von Craayson S.A. entwickelt. Park Lofts E.A.S. ist der Entwickler des Park Lofts Tower und allein verantwortlich für das Produkt, den Bau und alle damit verbundenen Garantien. Casas Bali gehört Stuttgart Capital E.A.S. Alle Angebote auf dieser Website sind exklusiv für Stuttgart Capital E.A.S. Abbildungen können Architekturvisualisierungen enthalten, die vom Endprodukt abweichen können. Sich noch im Bau befindliche Projekte: endgültige Spezifikationen können variieren.
                 </p>
