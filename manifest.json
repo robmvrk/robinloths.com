@@ -4,8 +4,8 @@
   "description": "Buy turnkey apartments in Asunción, Paraguay from $55,000 with ~7% estimated net yield.",
   "start_url": "/",
   "display": "browser",
-  "background_color": "#0a0a0a",
-  "theme_color": "#0a0a0a",
+  "background_color": "#f5efe4",
+  "theme_color": "#f5efe4",
   "lang": "en",
   "icons": [
     {
