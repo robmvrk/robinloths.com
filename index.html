@@ -766,16 +766,23 @@
             left: 0;
             right: 0;
             z-index: 1000;
-            padding: 20px 0;
-            transition: all 0.4s ease;
-            background: transparent;
+            padding: 18px 0;
+            transition: background 0.3s ease, padding 0.3s ease, box-shadow 0.3s ease;
+            background: #f4ede0;
+            border-bottom: 1px solid rgba(122,92,46,0.18);
+            box-shadow: 0 1px 0 0 rgba(122,92,46,0.10);
+        }
+        nav::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 3px;
+            background: var(--gold);
         }
         nav.scrolled {
-            background: rgba(245, 239, 228, 0.96);
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
+            background: #f4ede0;
             padding: 12px 0;
-            border-bottom: 1px solid rgba(201, 169, 110, 0.15);
+            box-shadow: 0 2px 16px rgba(24,22,15,0.08);
         }
         nav .container {
             display: flex;
