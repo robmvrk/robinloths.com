@@ -153,8 +153,7 @@
             "Epidemiology",
             "Good Clinical Practice (GCP)",
             "Clinical Trials",
-            "Surgical Medicine",
-            "Design Thinking"
+            "Surgical Medicine"
         ],
         "hasCredential": [
             {
@@ -246,21 +245,6 @@
                 "description": "Universidad de los Andes (Colombia) course on multinational business strategy and corporate operations in Latin America.",
                 "recognizedBy": {"@type": "Organization", "name": "Universidad de los Andes"},
                 "dateCreated": "2020-05"
-            },
-            {
-                "@type": "EducationalOccupationalCredential",
-                "name": "Börsenführerschein — Stock Exchange License",
-                "credentialCategory": "certificate",
-                "description": "German stock market certification awarded by Bundesverband der Börsenvereine an deutschen Hochschulen (BVH) in cooperation with Kreditwirtschaftliches Colloquium Hohenheim. Covers: Börse/Kapitalmarkt/Handel, Aktien/Renten/Fonds, Optionen/Zertifikate, Anlagephilosophien/Börsenpsychologie. Awarded mit besonderem Erfolg.",
-                "recognizedBy": {"@type": "Organization", "name": "Bundesverband der Börsenvereine an deutschen Hochschulen (BVH)"}
-            },
-            {
-                "@type": "EducationalOccupationalCredential",
-                "name": "Design Thinking — Innovations- und Kreativitätsmethode",
-                "credentialCategory": "certificate",
-                "description": "Universität Hohenheim seminar on design thinking, innovation methodology, and creative problem solving (FIT Programm).",
-                "recognizedBy": {"@type": "Organization", "name": "Universität Hohenheim"},
-                "dateCreated": "2018-12"
             },
             {
                 "@type": "EducationalOccupationalCredential",
@@ -660,15 +644,13 @@
             content: '';
             position: absolute;
             inset: 0;
-            background:
-                linear-gradient(135deg, rgba(248,247,246,0.94) 0%, rgba(248,247,246,0.88) 55%, rgba(248,247,246,0.93) 100%);
+            background: transparent;
             z-index: 1;
         }
         .hero-bg {
             position: absolute;
             inset: 0;
-            background: url('images/drone-edificio-b.jpg') center/cover no-repeat;
-            background-color: #e5e5e2;
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
         }
         .hero-bg::after {
             content: '';
@@ -685,6 +667,13 @@
             padding-top: 100px;
             padding-bottom: 72px;
         }
+        /* Hero text overrides for dark gradient background */
+        .hero h1 { color: #ffffff; }
+        .hero h1 em { color: #e8c97e; }
+        .hero .hero-tag { color: rgba(255,255,255,0.65); border-bottom-color: rgba(255,255,255,0.2); }
+        .hero .hero-sub { color: rgba(255,255,255,0.75); }
+        .hero .btn-outline { color: rgba(255,255,255,0.8); border-color: rgba(255,255,255,0.3); }
+        .hero .btn-outline:hover { border-color: #e8c97e; color: #e8c97e; }
         .hero-tag {
             display: inline-block;
             font-size: 0.68rem;
@@ -1124,7 +1113,7 @@
                 <div class="reveal reveal-delay-1">
                     <span class="section-tag">The Founder</span>
                     <h2 class="section-title" itemprop="name">Robin Loths</h2>
-                    <p style="margin-bottom: 16px; color: var(--text-secondary); font-size: 1rem; line-height: 1.75;" itemprop="description">German-born entrepreneur and medical student based in Asunci&oacute;n, Paraguay. Founder of Stuttgart Capital E.A.S. and Park Lofts, which grew from zero to eight figures of revenue in less than one year, with five buildings sold out. Former advisor to Vierci Development (2023&ndash;2024).</p>
+                    <p style="margin-bottom: 16px; color: var(--text-secondary); font-size: 1rem; line-height: 1.75;" itemprop="description">German-born entrepreneur and medical student based in Asunci&oacute;n, Paraguay. Founder of Stuttgart Capital E.A.S. and developer of Park Lofts Tower, a US$10 million luxury residential project in Asunci&oacute;n. Former advisor to Vierci Development (2023&ndash;2024).</p>
                     <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.7; margin-bottom: 28px;">Currently M2 medical student at <strong style="color: var(--text);">Universidad Mar&iacute;a Auxiliadora (UMAX)</strong>, Asunci&oacute;n (GPA&nbsp;4.8/5, Feb 2026&ndash;Feb 2032). Educated in economics at the <strong style="color: var(--text);">University of Hohenheim</strong>, Germany (2016&ndash;2020). Holds two diplomas from the <strong style="color: var(--text);">Bolsa de Valores de Asunci&oacute;n</strong>. Volunteer at <strong style="color: var(--text);">Cruz Roja Paraguaya</strong>. Featured in <strong style="color: var(--text);">Forbes Paraguay</strong> and named a <strong style="color: var(--text);">5D&Iacute;AS Power Player</strong> among Paraguay&rsquo;s top 100 financial executives.</p>
                     <a href="https://www.linkedin.com/in/robinloths/" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 8px; color: var(--gold); font-size: 0.9rem; font-weight: 600; margin-bottom: 32px;" itemprop="sameAs">
                         <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
@@ -1135,30 +1124,52 @@
                     <div id="press" style="border-top: 1px solid rgba(26,26,24,0.07); padding-top: 24px;">
                         <span class="section-tag" style="margin-bottom: 16px;">Press &amp; Recognition</span>
                         <div class="press-cards" style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
-                            <!-- Forbes card -->
-                            <div style="background: var(--dark); border: 1px solid rgba(26,26,24,0.07); border-radius: 0; padding: 20px; transition: border-color 0.3s ease;" onmouseover="this.style.borderColor='rgba(140,26,40,0.2)'" onmouseout="this.style.borderColor='rgba(26,26,24,0.07)'" itemprop="subjectOf" itemscope itemtype="https://schema.org/NewsArticle">
-                                <span style="font-size: 1.1rem; font-weight: 700; color: var(--gold);" itemprop="publisher" itemscope itemtype="https://schema.org/Organization"><span itemprop="name">Forbes</span></span>
-                                <span style="font-size: 0.7rem; color: var(--text-muted); vertical-align: super;"> PY</span>
-                                <meta itemprop="about" content="Robin Loths">
-                                <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 8px; line-height: 1.6;" itemprop="headline">&ldquo;Park Lofts marks a new milestone in local real estate with an ambitious US$&nbsp;10 million project&rdquo;</p>
-                                <a href="https://www.forbes.com.py/especiales/park-lofts-marca-nuevo-hito-real-estate-local-ambicioso-proyecto-us-10-millones-n75403" target="_blank" rel="noopener" style="font-size: 0.75rem; color: var(--gold); margin-top: 8px; display: inline-block;" itemprop="url">Read article &rarr;</a>
+                            <!-- Forbes — FEATURED (full width) -->
+                            <div style="grid-column: 1 / -1; background: var(--dark); border: 2px solid rgba(140,26,40,0.25); padding: 28px; transition: border-color 0.3s ease; position: relative;" onmouseover="this.style.borderColor='rgba(140,26,40,0.5)'" onmouseout="this.style.borderColor='rgba(140,26,40,0.25)'" itemprop="subjectOf" itemscope itemtype="https://schema.org/NewsArticle">
+                                <div style="position: absolute; top: 0; left: 0; width: 4px; height: 100%; background: var(--gold);"></div>
+                                <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px; flex-wrap: wrap;">
+                                    <span style="font-size: 1.5rem; font-weight: 700; color: var(--gold);" itemprop="publisher" itemscope itemtype="https://schema.org/Organization"><span itemprop="name">Forbes</span></span>
+                                    <span style="font-size: 0.65rem; color: var(--text-muted); vertical-align: super;">PY</span>
+                                    <span style="font-size: 0.58rem; background: var(--gold); color: #fff; padding: 3px 10px; letter-spacing: 2px; text-transform: uppercase; margin-left: 4px;">FEATURED</span>
+                                </div>
+                                <p style="font-size: 1rem; font-style: italic; font-family: var(--serif); color: var(--text-secondary); margin-bottom: 12px; line-height: 1.65;" itemprop="headline">&ldquo;Park Lofts marks a new milestone in local real estate with an ambitious US$&nbsp;10 million project&rdquo;</p>
+                                <p style="font-size: 0.82rem; color: var(--text-muted); margin-bottom: 16px; line-height: 1.6;">Park Lofts Tower featured in Forbes Paraguay as a transformative luxury residential development redefining Asunci&oacute;n&rsquo;s real estate landscape.</p>
+                                <a href="https://www.forbes.com.py/especiales/park-lofts-marca-nuevo-hito-real-estate-local-ambicioso-proyecto-us-10-millones-n75403" target="_blank" rel="noopener" style="font-size: 0.78rem; color: var(--gold); font-weight: 600; display: inline-flex; align-items: center; gap: 6px;" itemprop="url">Read Forbes article &rarr;</a>
                             </div>
-                            <!-- 5DÍAS TV card -->
-                            <div style="background: var(--dark); border: 1px solid rgba(26,26,24,0.07); border-radius: 0; padding: 20px; transition: border-color 0.3s ease;" onmouseover="this.style.borderColor='rgba(140,26,40,0.2)'" onmouseout="this.style.borderColor='rgba(26,26,24,0.07)'" itemprop="subjectOf" itemscope itemtype="https://schema.org/TVEpisode">
-                                <span style="font-family: 'Inter', sans-serif; font-size: 1rem; font-weight: 800; color: var(--gold); letter-spacing: 1px;">5D&Iacute;AS</span>
-                                <span style="font-size: 0.7rem; color: var(--text-muted);"> TV</span>
-                                <meta itemprop="about" content="Robin Loths">
-                                <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 8px; line-height: 1.6;" itemprop="description">&ldquo;Investments: From Europe to Paraguay&rdquo; &mdash; featured as a key voice on international capital flows.</p>
-                                <a href="https://www.youtube.com/watch?v=1Su8umVaq3M" target="_blank" rel="noopener" style="font-size: 0.75rem; color: var(--gold); margin-top: 8px; display: inline-block;" itemprop="url">Watch interview &rarr;</a>
+                            <!-- 5DÍAS — Magazine Cover -->
+                            <div style="background: var(--dark); border: 1px solid rgba(26,26,24,0.07); overflow: hidden; transition: border-color 0.3s ease;" onmouseover="this.style.borderColor='rgba(140,26,40,0.2)'" onmouseout="this.style.borderColor='rgba(26,26,24,0.07)'" itemprop="subjectOf" itemscope itemtype="https://schema.org/PublicationIssue">
+                                <div style="height: 180px; overflow: hidden;">
+                                    <img src="images/robin-magazine.jpg" alt="Robin Loths on the cover of 5D&Iacute;AS Real Estate magazine, Paraguay" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; object-position: center 5%; transition: transform 0.4s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                                </div>
+                                <div style="padding: 20px;">
+                                    <span style="font-family: 'Inter', sans-serif; font-size: 1rem; font-weight: 800; color: var(--gold); letter-spacing: 1px;">5D&Iacute;AS</span>
+                                    <span style="font-size: 0.7rem; color: var(--text-muted);"> Real Estate Magazine</span>
+                                    <meta itemprop="about" content="Robin Loths">
+                                    <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 8px; line-height: 1.6;" itemprop="description">Cover feature: &ldquo;Robin Loths: El mercado inmobiliario paraguayo ofrece rendimientos atractivos&rdquo; &mdash; February 2024 print issue.</p>
+                                    <a href="https://issuu.com/editorialdenegocios.com/docs/5dx20feb2024" target="_blank" rel="noopener" style="font-size: 0.75rem; color: var(--gold); margin-top: 10px; display: inline-block;" itemprop="url">Read magazine &rarr;</a>
+                                </div>
+                            </div>
+                            <!-- 5DÍAS — TV Interview -->
+                            <div style="background: var(--dark); border: 1px solid rgba(26,26,24,0.07); overflow: hidden; transition: border-color 0.3s ease;" onmouseover="this.style.borderColor='rgba(140,26,40,0.2)'" onmouseout="this.style.borderColor='rgba(26,26,24,0.07)'" itemprop="subjectOf" itemscope itemtype="https://schema.org/TVEpisode">
+                                <div style="height: 180px; overflow: hidden;">
+                                    <img src="images/robin-tv.jpg" alt="Robin Loths interviewed on 5D&Iacute;as TV Paraguay &mdash; Inversiones: De Europa a Paraguay" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; object-position: 28% center; transition: transform 0.4s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                                </div>
+                                <div style="padding: 20px;">
+                                    <span style="font-family: 'Inter', sans-serif; font-size: 1rem; font-weight: 800; color: var(--gold); letter-spacing: 1px;">5D&Iacute;AS</span>
+                                    <span style="font-size: 0.7rem; color: var(--text-muted);"> TV Interview</span>
+                                    <meta itemprop="about" content="Robin Loths">
+                                    <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 8px; line-height: 1.6;" itemprop="description">&ldquo;Investments: From Europe to Paraguay&rdquo; &mdash; featured as a key voice on international capital flows into Latin America.</p>
+                                    <a href="https://www.youtube.com/watch?v=1Su8umVaq3M" target="_blank" rel="noopener" style="font-size: 0.75rem; color: var(--gold); margin-top: 10px; display: inline-block;" itemprop="url">Watch interview &rarr;</a>
+                                </div>
                             </div>
                             <!-- Bolsa de Valores credentials card -->
-                            <div style="background: var(--dark); border: 1px solid rgba(26,26,24,0.07); border-radius: 0; padding: 20px; transition: border-color 0.3s ease;" onmouseover="this.style.borderColor='rgba(140,26,40,0.2)'" onmouseout="this.style.borderColor='rgba(26,26,24,0.07)'">
+                            <div style="background: var(--dark); border: 1px solid rgba(26,26,24,0.07); padding: 20px; transition: border-color 0.3s ease;" onmouseover="this.style.borderColor='rgba(140,26,40,0.2)'" onmouseout="this.style.borderColor='rgba(26,26,24,0.07)'">
                                 <span style="font-family: 'Inter', sans-serif; font-size: 0.9rem; font-weight: 600; color: var(--gold);">Bolsa de Valores</span>
                                 <span style="font-size: 0.7rem; color: var(--text-muted);"> de Asunci&oacute;n</span>
                                 <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 8px; line-height: 1.6;">Two diplomas: <em itemprop="hasCredential">Diplomado en Mercado de Valores</em> (2023) and <em itemprop="hasCredential">Diplomado en Derivados Financieros</em> (2025).</p>
                             </div>
                             <!-- 5DÍAS Power Player award card -->
-                            <div style="background: var(--dark); border: 1px solid rgba(26,26,24,0.07); border-radius: 0; padding: 20px; transition: border-color 0.3s ease;" onmouseover="this.style.borderColor='rgba(140,26,40,0.2)'" onmouseout="this.style.borderColor='rgba(26,26,24,0.07)'">
+                            <div style="background: var(--dark); border: 1px solid rgba(26,26,24,0.07); padding: 20px; transition: border-color 0.3s ease;" onmouseover="this.style.borderColor='rgba(140,26,40,0.2)'" onmouseout="this.style.borderColor='rgba(26,26,24,0.07)'">
                                 <span style="font-family: 'Inter', sans-serif; font-size: 0.9rem; font-weight: 600; color: var(--gold);" itemprop="award">5D&Iacute;AS Power Player</span>
                                 <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 8px; line-height: 1.6;">Recognised among Paraguay&rsquo;s top 100 financial executives.</p>
                             </div>
@@ -1171,7 +1182,6 @@
                                 <a href="https://asunciontimes.com/paraguay-news/local-news/park-lofts-tower-redefining-luxury-urban-living-in-asuncion/" target="_blank" rel="noopener" itemprop="subjectOf" itemscope itemtype="https://schema.org/NewsArticle" style="font-size: 0.8rem; color: var(--text-muted); background: rgba(26,26,24,0.05); border: 1px solid rgba(26,26,24,0.09); padding: 5px 12px; text-decoration: none; transition: color 0.2s, border-color 0.2s;" onmouseover="this.style.color='var(--gold)';this.style.borderColor='rgba(140,26,40,0.3)'" onmouseout="this.style.color='var(--text-muted)';this.style.borderColor='rgba(26,26,24,0.09)'"><span itemprop="name">Asunci&oacute;n Times</span></a>
                                 <a href="https://puntadelesteinternacional.com/de-alemania-a-paraguay-stuttgart-capital/" target="_blank" rel="noopener" itemprop="subjectOf" itemscope itemtype="https://schema.org/Article" style="font-size: 0.8rem; color: var(--text-muted); background: rgba(26,26,24,0.05); border: 1px solid rgba(26,26,24,0.09); padding: 5px 12px; text-decoration: none; transition: color 0.2s, border-color 0.2s;" onmouseover="this.style.color='var(--gold)';this.style.borderColor='rgba(140,26,40,0.3)'" onmouseout="this.style.color='var(--text-muted)';this.style.borderColor='rgba(26,26,24,0.09)'"><span itemprop="name">Punta del Este Internacional</span></a>
                                 <a href="https://5dias.com.py/article/robin-loths-el-mercado-inmobiliario-paraguayo-ofrece-rendimientos-atractivos" target="_blank" rel="noopener" itemprop="subjectOf" itemscope itemtype="https://schema.org/NewsArticle" style="font-size: 0.8rem; color: var(--text-muted); background: rgba(26,26,24,0.05); border: 1px solid rgba(26,26,24,0.09); padding: 5px 12px; text-decoration: none; transition: color 0.2s, border-color 0.2s;" onmouseover="this.style.color='var(--gold)';this.style.borderColor='rgba(140,26,40,0.3)'" onmouseout="this.style.color='var(--text-muted)';this.style.borderColor='rgba(26,26,24,0.09)'"><span itemprop="name">5D&Iacute;AS (article)</span></a>
-                                <a href="https://issuu.com/editorialdenegocios.com/docs/5dx20feb2024" target="_blank" rel="noopener" itemprop="subjectOf" itemscope itemtype="https://schema.org/PublicationIssue" style="font-size: 0.8rem; color: var(--text-muted); background: rgba(26,26,24,0.05); border: 1px solid rgba(26,26,24,0.09); padding: 5px 12px; text-decoration: none; transition: color 0.2s, border-color 0.2s;" onmouseover="this.style.color='var(--gold)';this.style.borderColor='rgba(140,26,40,0.3)'" onmouseout="this.style.color='var(--text-muted)';this.style.borderColor='rgba(26,26,24,0.09)'"><span itemprop="name">5D&Iacute;AS Real Estate Magazine</span></a>
                             </div>
                         </div>
                     </div>
@@ -1209,7 +1219,7 @@
                 <div class="work-card reveal reveal-delay-1">
                     <span class="work-card-role">President &amp; Founder &mdash; Aug 2024&ndash;Sep 2025</span>
                     <h3>Park Lofts</h3>
-                    <p>Founded and led Park Lofts, developing a state-of-the-art skyscraper (101&thinsp;m) in Asunci&oacute;n&rsquo;s premier corporate corridor. Grew from zero to eight figures of revenue in less than one year. Five buildings sold out, including Park Lofts Tower and Park Lofts Recoleta (89 units). Featured in Forbes Paraguay.</p>
+                    <p>Developer and Founder of Park Lofts Tower, a US$10 million luxury residential project in Asunci&oacute;n, Paraguay. Featured in Forbes Paraguay as a new milestone in the local real estate market.</p>
                 </div>
                 <div class="work-card reveal reveal-delay-2">
                     <span class="work-card-role">Advisor &mdash; Sep 2023&ndash;Aug 2024</span>
@@ -1236,12 +1246,12 @@
                 <div class="edu-card reveal reveal-delay-1">
                     <span class="edu-card-org">University of Hohenheim</span>
                     <h4>Wirtschaftswissenschaften (Economics &amp; Business)</h4>
-                    <p>2016&ndash;2020, Stuttgart, Germany. Includes Börsenführerschein (German Stock Exchange Licence, <em>mit besonderem Erfolg</em>), Design Thinking seminar, and Bloomberg Market Concepts certification.</p>
+                    <p>2016&ndash;2020, Stuttgart, Germany. Includes Bloomberg Market Concepts certification.</p>
                 </div>
                 <div class="edu-card reveal reveal-delay-2">
                     <span class="edu-card-org">Bolsa de Valores de Asunci&oacute;n</span>
                     <h4>Diplomado en Mercado de Valores &amp; Derivados Financieros</h4>
-                    <p>Two professional diplomas from Paraguay&rsquo;s official stock exchange: Securities Markets (2023) and Financial Derivatives (2025). 60 hours each.</p>
+                    <p>Two professional diplomas from Paraguay&rsquo;s official stock exchange: Securities Markets (2023) and Financial Derivatives (2025).</p>
                 </div>
                 <div class="edu-card reveal reveal-delay-3">
                     <span class="edu-card-org">Yale &bull; Johns Hopkins &bull; Novartis &bull; ACS &bull; Bloomberg</span>
