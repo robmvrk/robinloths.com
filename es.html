@@ -74,7 +74,7 @@ a{color:inherit}
 .hero{padding:24px 0 56px}
 .hero-grid{display:grid;grid-template-columns:1fr;gap:32px;align-items:center}
 .hero-photo{background:#E8E6EE;border-radius:4px;overflow:hidden;aspect-ratio:4/5;max-height:64vh;max-height:64svh;width:100%;margin:0 auto}
-.hero-photo img{width:100%;height:100%;object-fit:cover;object-position:50% 30%}
+.hero-photo img{width:100%;height:100%;object-fit:cover;object-position:50% 20%}
 .hero h1{font-family:var(--sans);font-size:13px;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:var(--brass);margin:14px 0 18px}
 .lead{font-family:var(--serif);font-weight:500;font-size:34px;line-height:1.15;color:var(--navy);margin-bottom:22px}
 .lead em{font-style:italic;color:var(--teal)}
@@ -85,12 +85,12 @@ a{color:inherit}
 /* press */
 .press{background:var(--paper)}
 .sec.press{padding-bottom:28px}
-.feat{display:grid;grid-template-columns:1fr;gap:0;border:1px solid var(--line);text-decoration:none;color:inherit;margin-bottom:28px}
+.feat{display:grid;grid-template-columns:38% 1fr;gap:0;border:1px solid var(--line);text-decoration:none;color:inherit;margin-bottom:28px;align-items:stretch}
 .feat-img{background:#f1f1f1}
 .feat-img{background:#fff}
-.feat-img img{width:100%;height:100%;object-fit:cover;object-position:50% 0;aspect-ratio:4/5}
-.feat-txt{padding:28px 24px;display:flex;flex-direction:column;justify-content:center;gap:14px}
-.feat-title{font-family:var(--serif);font-size:27px;line-height:1.22;font-weight:500;color:var(--navy)}
+.feat-img img{width:100%;height:auto;display:block}
+.feat-txt{padding:20px 18px;display:flex;flex-direction:column;justify-content:center;gap:10px}
+.feat-title{font-family:var(--serif);font-size:22px;line-height:1.22;font-weight:500;color:var(--navy)}
 .note{font-size:14px;font-weight:300;color:var(--body)}
 .more-link{font-size:12px;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--brass);text-decoration:none;display:inline-flex;gap:8px;align-items:center}
 .more-link::after{content:'\2192';transition:transform .2s}
@@ -162,13 +162,11 @@ footer a:hover{color:var(--navy)}
   .lead{font-size:46px}
   .sec{padding:96px 0}
   .sec-h{font-size:36px;margin-bottom:48px}
-  .feat{grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr)}
-  .feat-img{max-height:480px;overflow:hidden}
-  .feat-img img{aspect-ratio:auto;height:480px;object-position:50% 0}
-  .feat-txt{padding:48px 52px}
+  .feat-img img{height:480px;width:auto}
+  .feat-txt{padding:48px 56px;gap:14px}
   .feat-title{font-size:34px}
   .duo{grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);align-items:start;gap:40px}
-  .feat{grid-template-columns:minmax(0,.7fr) minmax(0,1.3fr)}
+  .feat{grid-template-columns:auto 1fr}
   .cols{grid-template-columns:1fr 1fr;gap:56px}
   .strip{padding-top:20px}
   .sec.press{padding-bottom:44px}
@@ -191,7 +189,7 @@ footer a:hover{color:var(--navy)}
 
 <main>
 <section class="hero"><div class="wrap hero-grid">
-  <figure class="hero-photo"><img src="images/robin-hero.jpg?v=c2" alt="Robin Loths, estudiante de Medicina" width="1160" height="1450" fetchpriority="high"></figure>
+  <figure class="hero-photo"><img src="images/robin-hero.jpg?v=c3" alt="Robin Loths, estudiante de Medicina" width="1200" height="1500" fetchpriority="high"></figure>
   <div>
     <p class="kicker">Medicina &middot; Empresa</p>
     <h1>Robin Loths</h1>
@@ -205,7 +203,7 @@ footer a:hover{color:var(--navy)}
   <h2 class="sec-h">Prensa</h2>
 
   <a class="feat" href="https://www.forbes.com.py/especiales/park-lofts-marca-nuevo-hito-real-estate-local-ambicioso-proyecto-us-10-millones-n75403" target="_blank" rel="noopener">
-    <div class="feat-img"><img src="images/robin-forbes-feature.jpg?v=1" width="720" height="1280" alt="Robin Loths en Forbes Paraguay" loading="lazy"></div>
+    <div class="feat-img"><img src="images/robin-forbes-feature.jpg?v=2" width="596" height="1320" alt="Robin Loths en Forbes Paraguay" loading="lazy"></div>
     <div class="feat-txt">
       <p class="kicker">Forbes Paraguay</p>
       <p class="feat-title">Park Lofts marca nuevo hito en el real estate local</p>
@@ -261,7 +259,7 @@ footer a:hover{color:var(--navy)}
     <div><h3>Medicina</h3><ul class="cl"><li><span><span class="n">Stop the Bleed</span><span class="i">American College of Surgeons</span></span><span class="y">2026</span></li><li><span><span class="n">Tactical Emergency Casualty Care</span><span class="i">Consejo Sudamericano de Medicina T&aacute;ctica</span></span><span class="y">2026</span></li><li><span><span class="n">Introduction to the Biology of Cancer</span><span class="i">Johns Hopkins School of Medicine</span></span><span class="y">2026</span></li><li><span><span class="n">Introducci&oacute;n al quir&oacute;fano</span><span class="i">Universidad An&aacute;huac</span></span><span class="y">2026</span></li><li><span><span class="n">Anatomy of the Upper and Lower Extremities</span><span class="i">Yale University</span></span><span class="y">2026</span></li><li><span><span class="n">Outbreaks and Epidemics</span><span class="i">Johns Hopkins University</span></span><span class="y">2026</span></li><li><span><span class="n">Clinical Trials: Good Clinical Practice</span><span class="i">Novartis</span></span><span class="y">2026</span></li></ul></div>
     <div><h3>Finanzas</h3><ul class="cl"><li><span><span class="n">Diplomado en Derivados Financieros</span><span class="i">Bolsa de Valores de Asunci&oacute;n</span></span><span class="y">2025</span></li><li><span><span class="n">Diplomado en Mercado de Valores</span><span class="i">Bolsa de Valores de Asunci&oacute;n</span></span><span class="y">2023</span></li><li><span><span class="n">Financial Markets</span><span class="i">Yale University</span></span><span class="y">2020</span></li><li><span><span class="n">Bloomberg Market Concepts</span><span class="i">Bloomberg</span></span><span class="y">2020</span></li></ul></div>
   </div>
-  <p class="langs"><strong>Idiomas</strong>Alem&aacute;n, ingl&eacute;s, espa&ntilde;ol y portugu&eacute;s; nociones de lat&iacute;n y mandar&iacute;n.</p>
+  <p class="langs"><strong>Idiomas</strong>Alem&aacute;n, ingl&eacute;s, espa&ntilde;ol y portugu&eacute;s.</p>
 </div></section>
 </main>
 
