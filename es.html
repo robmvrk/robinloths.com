@@ -117,6 +117,13 @@ a:hover .more-link::after{transform:translateX(4px)}
 .coverage .ttl{font-family:var(--serif);font-size:18px;color:var(--ink);line-height:1.35}
 .coverage a:hover .ttl{color:var(--navy);text-decoration:underline;text-underline-offset:3px}
 
+/* photo strip */
+.strip{padding-top:8px;border-top:none;background:var(--paper)}
+.strip-row{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;margin:0 -22px;padding:0 22px 6px;scrollbar-width:none}
+.strip-row::-webkit-scrollbar{display:none}
+.strip figure{flex:0 0 78%;scroll-snap-align:start}
+.strip img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:2px;background:var(--mint)}
+.strip figcaption{margin-top:10px;font-size:12px;letter-spacing:.04em;color:var(--muted);line-height:1.5}
 /* timeline */
 .tl{list-style:none;border-left:1px solid var(--line);margin-left:4px}
 .tl li{position:relative;padding:0 0 34px 24px}
@@ -160,6 +167,9 @@ footer a:hover{color:var(--navy)}
   .duo{grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);align-items:start;gap:40px}
   .feat{grid-template-columns:minmax(0,.7fr) minmax(0,1.3fr)}
   .cols{grid-template-columns:1fr 1fr;gap:56px}
+  .strip{padding-top:16px}
+  .strip-row{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;overflow:visible;margin:0;padding:0}
+  .strip figure{flex:none}
   .tl li{display:grid;grid-template-columns:140px 1fr;gap:24px;padding-left:28px}
   .tl .yr{padding-top:6px}
 }
@@ -230,6 +240,10 @@ footer a:hover{color:var(--navy)}
     </div>
     </div>
   </div>
+</div></section>
+
+<section class="sec strip" aria-label="Photos"><div class="wrap">
+  <div class="strip-row"><figure><img src="images/strip-site-600.jpg" srcset="images/strip-site-600.jpg 600w, images/strip-site-1000.jpg 1000w" sizes="(min-width:760px) 320px, 78vw" width="600" height="750" alt="Robin Loths en una obra de Park Lofts en Asunción" loading="lazy" decoding="async"><figcaption>Park Lofts, en obra en Asunci&oacute;n</figcaption></figure><figure><img src="images/strip-coat-600.jpg" srcset="images/strip-coat-600.jpg 600w, images/strip-coat-1000.jpg 1000w" sizes="(min-width:760px) 320px, 78vw" width="600" height="750" alt="Robin Loths con bata blanca y libros de medicina" loading="lazy" decoding="async"><figcaption>Estudiante de Medicina desde 2026</figcaption></figure><figure><img src="images/strip-award-600.jpg" srcset="images/strip-award-600.jpg 600w, images/strip-award-1000.jpg 1000w" sizes="(min-width:760px) 320px, 78vw" width="600" height="750" alt="Distinción de la UMAX por el segundo puesto en Histología Humana, junio de 2026" loading="lazy" decoding="async"><figcaption>Segundo puesto, Histolog&iacute;a Humana, junio de 2026</figcaption></figure></div>
 </div></section>
 
 <section class="sec" id="path"><div class="wrap">
