@@ -1,95 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>https://robinloths.com/</loc>
-    <lastmod>2026-03-31</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-    <!-- Hero / drone shots -->
-    <image:image>
-      <image:loc>https://robinloths.com/images/drone-edificio-b.jpg</image:loc>
-      <image:title>Aerial view of Asunción Paraguay skyline — real estate investment</image:title>
-      <image:caption>Drone aerial of Asunción, Paraguay — Park Lofts Tower location</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://robinloths.com/images/drone-edificio-c.jpg</image:loc>
-      <image:title>Asunción Paraguay city view — buy property in Paraguay</image:title>
-    </image:image>
-    <!-- Park Lofts Tower -->
-    <image:image>
-      <image:loc>https://robinloths.com/images/tower-exterior-top.jpg</image:loc>
-      <image:title>Park Lofts Tower exterior — luxury apartments Asunción Paraguay</image:title>
-      <image:caption>Park Lofts Tower — 101m landmark luxury residential tower in Asunción</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://robinloths.com/images/tower-exterior-full.jpg</image:loc>
-      <image:title>Park Lofts Tower full building render — pre-construction apartments Paraguay</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://robinloths.com/images/tower-rooftop-pool.jpg</image:loc>
-      <image:title>Park Lofts Tower rooftop infinity pool — luxury amenities Asunción</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://robinloths.com/images/tower-cowork.jpg</image:loc>
-      <image:title>Park Lofts Tower co-working space — premium amenities</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://robinloths.com/images/tower-restaurant.jpg</image:loc>
-      <image:title>Park Lofts Tower rooftop restaurant — luxury living Asunción</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://robinloths.com/images/tower-lounge.jpg</image:loc>
-      <image:title>Park Lofts Tower sky lounge — rooftop entertainment Asunción</image:title>
-    </image:image>
-    <!-- Casas Bali -->
-    <image:image>
-      <image:loc>https://robinloths.com/images/bali-pool-exterior.jpg</image:loc>
-      <image:title>Casas Bali private pool villa — buy villa with pool Paraguay</image:title>
-      <image:caption>Casas Bali — private Bali-inspired villas with pool in Asunción, Paraguay</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://robinloths.com/images/bali-exterior-aerial.jpg</image:loc>
-      <image:title>Casas Bali aerial view — private villas Paraguay</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://robinloths.com/images/bali-living.jpg</image:loc>
-      <image:title>Casas Bali interior living room — tropical villa Paraguay</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://robinloths.com/images/bali-bathroom.jpg</image:loc>
-      <image:title>Casas Bali spa bathroom — luxury villa amenities Paraguay</image:title>
-    </image:image>
-    <!-- Campus I -->
-    <image:image>
-      <image:loc>https://robinloths.com/images/campus-pool.jpg</image:loc>
-      <image:title>Campus I student housing pool — investment apartments Asunción Paraguay</image:title>
-      <image:caption>Campus I — turnkey student housing investment near UMAX university, Asunción</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://robinloths.com/images/campus-bedroom.jpg</image:loc>
-      <image:title>Campus I apartment bedroom — furnished student housing Paraguay</image:title>
-    </image:image>
-    <!-- Robin Loths personal photos — for Google Images & personal brand SEO -->
-    <image:image>
-      <image:loc>https://robinloths.com/images/robin-portrait.jpg</image:loc>
-      <image:title>Robin Loths — entrepreneur and real estate investor, Asunción Paraguay</image:title>
-      <image:caption>Robin Loths, German-born entrepreneur, founder of Stuttgart Capital E.A.S. and developer of Park Lofts Tower in Asunción, Paraguay. Featured in Forbes Paraguay.</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://robinloths.com/images/robin-construction.jpg</image:loc>
-      <image:title>Robin Loths at Park Lofts Tower construction site — Asunción Paraguay</image:title>
-      <image:caption>Robin Loths visiting the Park Lofts Tower construction site in Asunción, Paraguay. A US$10 million luxury development by Stuttgart Capital E.A.S.</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://robinloths.com/images/robin-tv.jpg</image:loc>
-      <image:title>Robin Loths on 5Días TV — Inversiones: De Europa a Paraguay</image:title>
-      <image:caption>Robin Loths interviewed on 5Días television in Paraguay discussing European investment flows into Latin America.</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://robinloths.com/images/robin-magazine.jpg</image:loc>
-      <image:title>Robin Loths on 5DÍAS Real Estate magazine cover — 5DÍAS Power Player Paraguay</image:title>
-      <image:caption>Robin Loths featured on the cover of 5DÍAS Real Estate magazine. Named a 5DÍAS Power Player among Paraguay's top 100 financial executives.</image:caption>
-    </image:image>
+    <loc>https://stuttgartcapital.org/</loc>
+    <lastmod>2026-11-18</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://stuttgartcapital.org/de.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stuttgartcapital.org/"/>
+    <image:image><image:loc>https://stuttgartcapital.org/images/robin-hero.jpg</image:loc><image:title>Robin Loths</image:title></image:image>
+    <image:image><image:loc>https://stuttgartcapital.org/images/robin-magazine.jpg</image:loc><image:title>Robin Loths on the cover of 5DÍAS Real Estate</image:title></image:image>
+    <image:image><image:loc>https://stuttgartcapital.org/images/robin-tv.jpg</image:loc><image:title>Robin Loths, 5DÍAS TV interview</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://stuttgartcapital.org/de.html</loc>
+    <lastmod>2026-11-18</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://stuttgartcapital.org/de.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stuttgartcapital.org/"/>
   </url>
 </urlset>
