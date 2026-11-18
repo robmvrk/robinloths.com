@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Datenschutzerkl&auml;rung | Robin Loths</title>
+<meta name="robots" content="noindex, follow">
+<link rel="canonical" href="https://robinloths.de/datenschutz.html">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-lion-32.png">
+<meta name="theme-color" content="#F7F8F7">
+<style>
+@font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:500;font-display:swap;src:url(/fonts/cormorant-garamond-latin-500-normal.woff2) format('woff2')}
+@font-face{font-family:'Cormorant Garamond';font-style:italic;font-weight:500;font-display:swap;src:url(/fonts/cormorant-garamond-latin-500-italic.woff2) format('woff2')}
+@font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:600;font-display:swap;src:url(/fonts/cormorant-garamond-latin-600-normal.woff2) format('woff2')}
+@font-face{font-family:'Inter';font-style:normal;font-weight:300;font-display:swap;src:url(/fonts/inter-latin-300-normal.woff2) format('woff2')}
+@font-face{font-family:'Inter';font-style:normal;font-weight:400;font-display:swap;src:url(/fonts/inter-latin-400-normal.woff2) format('woff2')}
+@font-face{font-family:'Inter';font-style:normal;font-weight:500;font-display:swap;src:url(/fonts/inter-latin-500-normal.woff2) format('woff2')}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#F7F8F7; --paper:#FFFFFF; --ink:#18232E; --body:#45505A; --muted:#7D878F;
+  --navy:#1D3A55; --teal:#2E6B66; --mint:#DCE9E6; --line:#DDE3E1; --brass:#8A7356;
+  --serif:'Cormorant Garamond',Georgia,'Times New Roman',serif;
+  --sans:'Inter',system-ui,-apple-system,sans-serif;
+}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;text-size-adjust:100%}
+a{-webkit-tap-highlight-color:rgba(29,58,85,.08)}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+.wrap{width:100%;max-width:1040px;margin:0 auto;padding:0 max(22px,env(safe-area-inset-right)) 0 max(22px,env(safe-area-inset-left))}
+
+/* nav */
+.nav{position:sticky;top:0;z-index:10;background:rgba(247,248,247,.94);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:56px}
+.brand{font-family:var(--serif);font-weight:600;font-size:15px;letter-spacing:.2em;text-transform:uppercase;color:var(--navy);text-decoration:none;white-space:nowrap}
+.nav-r{display:flex;align-items:center;gap:18px}
+.nav-r a{font-size:12px;letter-spacing:.12em;color:var(--muted);text-decoration:none;display:flex;align-items:center}
+.nav-r a:hover{color:var(--navy)}
+.nav-r > a{padding:15px 0 15px 6px}
+
+.lang-sw{display:flex;gap:10px}
+.lang-sw a{font-size:11.5px;letter-spacing:.1em;color:var(--muted);text-decoration:none;padding:14px 3px;min-width:24px;text-align:center}
+.lang-sw a.on{color:var(--navy);font-weight:500}
+@media (max-width:420px){.tile.pp .tx{padding:18px 16px}.brand{font-size:13px;letter-spacing:.14em}.nav-r{gap:12px}.lang-sw{gap:8px}}
+/* labels */
+.kicker{font-size:11px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--teal)}
+.sec{padding:48px 0;border-top:1px solid var(--line)}
+.sec-h{font-family:var(--serif);font-weight:500;font-size:30px;color:var(--navy);margin-bottom:26px;line-height:1.2}
+
+/* hero */
+.hero{padding:24px 0 44px}
+.hero-grid{display:grid;grid-template-columns:1fr;gap:32px;align-items:center}
+.hero-photo{background:#E8E6EE;border-radius:4px;overflow:hidden;aspect-ratio:4/5;max-height:64vh;max-height:64svh;width:100%;margin:0 auto}
+.hero-photo img{width:100%;height:100%;object-fit:cover;object-position:50% 20%}
+.hero h1{font-family:var(--sans);font-size:13px;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:var(--brass);margin:14px 0 18px}
+.lead{font-family:var(--serif);font-weight:500;font-size:34px;line-height:1.15;color:var(--navy);margin-bottom:22px}
+.lead em{font-style:italic;color:var(--teal)}
+.bio{font-size:16px;font-weight:300;color:var(--body);max-width:34em;margin-bottom:28px}
+.btn{display:inline-flex;align-items:center;gap:9px;padding:11px 20px;border:1px solid var(--navy);color:var(--navy);text-decoration:none;font-size:12px;font-weight:500;letter-spacing:.12em;text-transform:uppercase;transition:background .2s,color .2s}
+.btn:hover{background:var(--navy);color:#fff}
+
+/* press */
+.press{background:var(--paper)}
+.sec.press{padding-bottom:28px}
+.feat{display:grid;grid-template-columns:38% 1fr;gap:0;border:1px solid var(--line);text-decoration:none;color:inherit;margin-bottom:28px;align-items:stretch}
+.feat-img{background:#f1f1f1}
+.feat-img{background:#fff}
+.feat-img img{width:100%;height:auto;display:block}
+.feat-txt{padding:20px 18px;display:flex;flex-direction:column;justify-content:center;gap:10px}
+.feat-title{font-family:var(--serif);font-size:22px;line-height:1.22;font-weight:500;color:var(--navy)}
+.note{font-size:14px;font-weight:300;color:var(--body)}
+.more-link{font-size:12px;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--brass);text-decoration:none;display:inline-flex;gap:8px;align-items:center}
+.more-link::after{content:'\2192';transition:transform .2s}
+a:hover .more-link::after{transform:translateX(4px)}
+
+.duo{display:grid;grid-template-columns:1fr;gap:28px}
+.tile{display:flex;flex-direction:column;border:1px solid var(--line);text-decoration:none;color:inherit;background:var(--paper)}
+.tile .ph{overflow:hidden;background:#111}
+.tile .ph img{width:100%}
+.tile.cover .ph{background:#0b0b0b}
+.tile.cover .ph img{aspect-ratio:3/4;object-fit:cover;object-position:top}
+.tile.tv .ph img{aspect-ratio:16/9;object-fit:cover}
+.tile .tx{padding:22px 22px 26px;display:flex;flex-direction:column;gap:10px}
+.tile-title{font-family:var(--serif);font-size:22px;line-height:1.25;font-weight:500;color:var(--navy)}
+
+.tile.pp{flex-direction:row}
+.tile.pp .ph{flex:0 0 38%;background:#1b2a1f}
+.tile.pp .ph img{height:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 20%}
+.tile.pp .tx{justify-content:center}
+.stack{display:flex;flex-direction:column;gap:28px;min-width:0}
+.coverage{margin-top:8px}
+.coverage h3{font-size:11px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-bottom:12px}
+.coverage ul{list-style:none;border-top:1px solid var(--line)}
+.coverage li{border-bottom:1px solid var(--line)}
+.coverage a{display:flex;flex-direction:column;gap:2px;padding:14px 0;text-decoration:none}
+.coverage .src{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--teal)}
+.coverage .ttl{font-family:var(--serif);font-size:18px;color:var(--ink);line-height:1.35}
+.coverage a:hover .ttl{color:var(--navy);text-decoration:underline;text-underline-offset:3px}
+
+/* photo strip */
+.strip{padding-top:8px;border-top:none;background:var(--paper)}
+.strip-row{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding-inline:22px;-webkit-overflow-scrolling:touch;margin:0 -22px;padding:0 22px 6px;scrollbar-width:none}
+.strip-row::-webkit-scrollbar{display:none}
+.strip figure{flex:0 0 70%;scroll-snap-align:start}
+.strip img{width:100%;aspect-ratio:2/3;object-fit:cover;border-radius:2px;background:var(--mint)}
+.strip figcaption{margin-top:10px;font-size:12px;letter-spacing:.04em;color:var(--muted);line-height:1.5}
+/* timeline */
+.tl{list-style:none;border-left:1px solid var(--line);margin-left:4px}
+.tl li{position:relative;padding:0 0 34px 24px}
+.tl li:last-child{padding-bottom:0}
+.tl li::before{content:'';position:absolute;left:-5px;top:8px;width:9px;height:9px;border-radius:50%;background:var(--bg);border:1px solid var(--teal)}
+.tl li:first-child::before{background:var(--teal)}
+.tl .yr{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.tl .role{font-family:var(--serif);font-size:23px;font-weight:500;color:var(--navy);line-height:1.25;margin-top:2px}
+.tl .org{font-size:14px;color:var(--teal);margin-bottom:6px}
+.tl p.sc{margin-top:10px;font-size:13px;color:var(--muted);line-height:1.7;max-width:40em}
+.tl p.d{font-size:15px;font-weight:300;color:var(--body);max-width:40em}
+
+/* further */
+.cols{display:grid;grid-template-columns:1fr;gap:36px}
+.cols h3{font-size:11px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--teal);margin-bottom:10px}
+.cl{list-style:none;border-top:1px solid var(--line)}
+.cl li{display:flex;justify-content:space-between;gap:16px;padding:11px 0;border-bottom:1px solid var(--line);font-size:14px}
+.cl .n{color:var(--ink)}
+.cl .i{display:block;color:var(--muted);font-size:12.5px;font-weight:300}
+.cl .y{color:var(--muted);font-size:12.5px;white-space:nowrap}
+.langs{margin-top:44px;font-size:15px;font-weight:300;color:var(--body)}
+.langs strong{display:block;font-size:11px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--teal);margin-bottom:6px}
+
+footer{border-top:1px solid var(--line);padding:28px 0 calc(40px + env(safe-area-inset-bottom));font-size:12px;color:var(--muted)}
+footer .wrap{display:flex;flex-wrap:wrap;gap:10px 24px;justify-content:space-between;align-items:center}
+footer a{text-decoration:none;display:inline-flex;gap:7px;align-items:center}
+footer a:hover{color:var(--navy)}
+.foot-r{display:flex;gap:20px;align-items:center;flex-wrap:wrap}
+.legal{max-width:720px}
+.legal h1{font-family:var(--serif);font-weight:500;font-size:34px;color:var(--navy);margin-bottom:28px}
+.legal h2{font-family:var(--serif);font-weight:500;font-size:22px;color:var(--navy);margin:32px 0 8px}
+.legal p,.legal li{font-size:15px;font-weight:300;color:var(--body);margin-bottom:10px}
+.legal ul{padding-left:20px}
+.legal a{color:var(--navy)}
+
+@media (min-width:760px){
+  .wrap{padding:0 40px}
+  .hero{padding:56px 0 56px}
+  .hero-grid{grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:64px}
+  .hero-photo{order:2;max-height:none;margin:0}
+  .lead{font-size:46px}
+  .sec{padding:64px 0}
+  .sec-h{font-size:36px;margin-bottom:32px}
+  .feat-img img{height:480px;width:auto}
+  .feat-txt{padding:48px 56px;gap:14px}
+  .feat-title{font-size:34px}
+  .duo{grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);align-items:start;gap:40px}
+  .feat{grid-template-columns:auto 1fr}
+  .cols{grid-template-columns:1fr 1fr;gap:56px}
+  .strip{padding-top:20px}
+  .sec.press{padding-bottom:44px}
+  .strip-row{display:grid;grid-template-columns:repeat(3,1fr);gap:28px 24px;overflow:visible;margin:0;padding:0}
+  .strip figure{flex:none}
+  .tl li{display:grid;grid-template-columns:140px 1fr;gap:24px;padding-left:28px}
+  .tl .yr{padding-top:6px}
+}
+</style>
+</head>
+<body>
+<header class="nav"><div class="wrap">
+  <a class="brand" href="/de.html">Robin Loths</a>
+  <nav class="nav-r"><span class="lang-sw"><a href="/">EN</a><a href="/de.html">DE</a><a href="/es.html">ES</a><a href="/pt.html">PT</a></span></nav>
+</div></header>
+<main><section class="sec" style="border-top:none"><div class="wrap legal">
+<h1>Datenschutzerkl&auml;rung</h1>
+<h2>1. Verantwortlicher</h2>
+<p>Robin Loths<br>Edificio Eminent, Torre 1<br>Avenida Santa Teresa<br>Asunci&oacute;n<br>Paraguay<br>E-Mail: kontakt&#64;robinloths&#46;de</p>
+<h2>2. Grunds&auml;tzliches</h2>
+<p>Diese Website ist ein pers&ouml;nliches Profil. Sie setzt keine Cookies, verwendet keine Analyse- oder Tracking-Werkzeuge und l&auml;dt keine Inhalte von Drittanbietern. Schriftarten werden lokal von diesem Server geladen.</p>
+<h2>3. Hosting und Server-Logfiles</h2>
+<p>Die Website wird &uuml;ber GitHub Pages bereitgestellt (GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA). Beim Aufruf der Seiten verarbeitet GitHub technisch notwendige Daten, insbesondere IP-Adresse, Datum und Uhrzeit des Zugriffs, aufgerufene Seite, Referrer sowie Browser- und Betriebssystemangaben, um die Website auszuliefern und deren Sicherheit zu gew&auml;hrleisten.</p>
+<p>Rechtsgrundlage ist Art.&nbsp;6 Abs.&nbsp;1 lit.&nbsp;f DSGVO (berechtigtes Interesse an einer sicheren und funktionsf&auml;higen Bereitstellung). Eine &Uuml;bermittlung in die USA erfolgt auf Grundlage des EU-US Data Privacy Framework bzw. von Standardvertragsklauseln der EU-Kommission. Weitere Informationen: <a href="https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener">Datenschutzerkl&auml;rung von GitHub</a>.</p>
+<h2>4. Kontakt per E-Mail</h2>
+<p>Wenn Sie per E-Mail Kontakt aufnehmen, werden Ihre Angaben ausschlie&szlig;lich zur Bearbeitung der Anfrage verarbeitet (Art.&nbsp;6 Abs.&nbsp;1 lit.&nbsp;f DSGVO) und gel&ouml;scht, sobald sie daf&uuml;r nicht mehr erforderlich sind und keine gesetzlichen Aufbewahrungspflichten bestehen.</p>
+<h2>5. Externe Links</h2>
+<p>Diese Website verlinkt auf Angebote Dritter (z.&nbsp;B. LinkedIn, Forbes Paraguay, 5D&Iacute;AS, YouTube, issuu). Daten werden an diese Anbieter erst &uuml;bertragen, wenn Sie einen Link anklicken. Es gelten dann die Datenschutzbestimmungen des jeweiligen Anbieters.</p>
+<h2>6. Ihre Rechte</h2>
+<p>Sie haben das Recht auf Auskunft (Art.&nbsp;15 DSGVO), Berichtigung (Art.&nbsp;16), L&ouml;schung (Art.&nbsp;17), Einschr&auml;nkung der Verarbeitung (Art.&nbsp;18), Daten&uuml;bertragbarkeit (Art.&nbsp;20) und Widerspruch gegen Verarbeitungen auf Grundlage von Art.&nbsp;6 Abs.&nbsp;1 lit.&nbsp;f DSGVO (Art.&nbsp;21). Wenden Sie sich dazu an die oben genannte E-Mail-Adresse. Zudem k&ouml;nnen Sie sich bei einer Datenschutz-Aufsichtsbeh&ouml;rde beschweren (Art.&nbsp;77 DSGVO).</p>
+<p>Stand: November 2026</p>
+
+</div></section></main>
+<footer><div class="wrap">
+  <span>&copy; 2026 Stuttgart Capital E.A.S.</span>
+  <span class="foot-r"><a href="/impressum.html">Impressum</a><a href="/datenschutz.html">Datenschutz</a></span>
+</div></footer>
+</body>
+</html>

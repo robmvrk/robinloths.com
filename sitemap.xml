@@ -3,38 +3,38 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>https://stuttgartcapital.org/</loc>
+    <loc>https://robinloths.de/</loc>
     <lastmod>2026-11-18</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://stuttgartcapital.org/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://stuttgartcapital.org/de.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://stuttgartcapital.org/es.html"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://stuttgartcapital.org/pt.html"/>
-    <image:image><image:loc>https://stuttgartcapital.org/images/robin-hero.jpg</image:loc><image:title>Robin Loths</image:title></image:image>
-    <image:image><image:loc>https://stuttgartcapital.org/images/robin-magazine.jpg</image:loc><image:title>Robin Loths, 5DÍAS Real Estate cover</image:title></image:image>
-    <image:image><image:loc>https://stuttgartcapital.org/images/robin-tv.jpg</image:loc><image:title>Robin Loths, 5DÍAS TV</image:title></image:image>
+    <xhtml:link rel="alternate" hreflang="en" href="https://robinloths.de/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://robinloths.de/de.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://robinloths.de/es.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://robinloths.de/pt.html"/>
+    <image:image><image:loc>https://robinloths.de/images/robin-hero.jpg</image:loc><image:title>Robin Loths</image:title></image:image>
+    <image:image><image:loc>https://robinloths.de/images/robin-magazine.jpg</image:loc><image:title>Robin Loths, 5DÍAS Real Estate cover</image:title></image:image>
+    <image:image><image:loc>https://robinloths.de/images/robin-tv.jpg</image:loc><image:title>Robin Loths, 5DÍAS TV</image:title></image:image>
   </url>
   <url>
-    <loc>https://stuttgartcapital.org/de.html</loc>
+    <loc>https://robinloths.de/de.html</loc>
     <lastmod>2026-11-18</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://stuttgartcapital.org/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://stuttgartcapital.org/de.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://stuttgartcapital.org/es.html"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://stuttgartcapital.org/pt.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://robinloths.de/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://robinloths.de/de.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://robinloths.de/es.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://robinloths.de/pt.html"/>
   </url>
   <url>
-    <loc>https://stuttgartcapital.org/es.html</loc>
+    <loc>https://robinloths.de/es.html</loc>
     <lastmod>2026-11-18</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://stuttgartcapital.org/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://stuttgartcapital.org/de.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://stuttgartcapital.org/es.html"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://stuttgartcapital.org/pt.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://robinloths.de/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://robinloths.de/de.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://robinloths.de/es.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://robinloths.de/pt.html"/>
   </url>
   <url>
-    <loc>https://stuttgartcapital.org/pt.html</loc>
+    <loc>https://robinloths.de/pt.html</loc>
     <lastmod>2026-11-18</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://stuttgartcapital.org/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://stuttgartcapital.org/de.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://stuttgartcapital.org/es.html"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://stuttgartcapital.org/pt.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://robinloths.de/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://robinloths.de/de.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://robinloths.de/es.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://robinloths.de/pt.html"/>
   </url>
 </urlset>
