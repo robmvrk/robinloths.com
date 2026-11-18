@@ -5,16 +5,36 @@
   <url>
     <loc>https://stuttgartcapital.org/</loc>
     <lastmod>2026-11-18</lastmod>
-    <xhtml:link rel="alternate" hreflang="de" href="https://stuttgartcapital.org/de.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://stuttgartcapital.org/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://stuttgartcapital.org/de.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://stuttgartcapital.org/es.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://stuttgartcapital.org/pt.html"/>
     <image:image><image:loc>https://stuttgartcapital.org/images/robin-hero.jpg</image:loc><image:title>Robin Loths</image:title></image:image>
-    <image:image><image:loc>https://stuttgartcapital.org/images/robin-magazine.jpg</image:loc><image:title>Robin Loths on the cover of 5DÍAS Real Estate</image:title></image:image>
-    <image:image><image:loc>https://stuttgartcapital.org/images/robin-tv.jpg</image:loc><image:title>Robin Loths, 5DÍAS TV interview</image:title></image:image>
+    <image:image><image:loc>https://stuttgartcapital.org/images/robin-magazine.jpg</image:loc><image:title>Robin Loths, 5DÍAS Real Estate cover</image:title></image:image>
+    <image:image><image:loc>https://stuttgartcapital.org/images/robin-tv.jpg</image:loc><image:title>Robin Loths, 5DÍAS TV</image:title></image:image>
   </url>
   <url>
     <loc>https://stuttgartcapital.org/de.html</loc>
     <lastmod>2026-11-18</lastmod>
-    <xhtml:link rel="alternate" hreflang="de" href="https://stuttgartcapital.org/de.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://stuttgartcapital.org/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://stuttgartcapital.org/de.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://stuttgartcapital.org/es.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://stuttgartcapital.org/pt.html"/>
+  </url>
+  <url>
+    <loc>https://stuttgartcapital.org/es.html</loc>
+    <lastmod>2026-11-18</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stuttgartcapital.org/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://stuttgartcapital.org/de.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://stuttgartcapital.org/es.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://stuttgartcapital.org/pt.html"/>
+  </url>
+  <url>
+    <loc>https://stuttgartcapital.org/pt.html</loc>
+    <lastmod>2026-11-18</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stuttgartcapital.org/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://stuttgartcapital.org/de.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://stuttgartcapital.org/es.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://stuttgartcapital.org/pt.html"/>
   </url>
 </urlset>

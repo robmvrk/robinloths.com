@@ -9,5 +9,5 @@ Featured in Forbes Paraguay and 5DÍAS.
 
 /* SITE */
 Last update: 2026-11-18
-Language: English, German
+Language: English, German, Spanish, Portuguese
 Standards: HTML5, Schema.org
