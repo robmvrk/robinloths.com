@@ -96,7 +96,8 @@ a:hover .more-link::after{transform:translateX(4px)}
 .tile .tx{padding:22px 22px 26px;display:flex;flex-direction:column;gap:10px}
 .tile-title{font-family:var(--serif);font-size:22px;line-height:1.25;font-weight:500;color:var(--navy)}
 
-.coverage{margin-top:44px}
+.stack{display:flex;flex-direction:column;gap:28px;min-width:0}
+.coverage{margin-top:8px}
 .coverage h3{font-size:11px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-bottom:12px}
 .coverage ul{list-style:none;border-top:1px solid var(--line)}
 .coverage li{border-bottom:1px solid var(--line)}
@@ -141,10 +142,12 @@ footer a:hover{color:var(--navy)}
   .sec{padding:96px 0}
   .sec-h{font-size:36px;margin-bottom:48px}
   .feat{grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr)}
-  .feat-img img{aspect-ratio:auto;min-height:100%}
+  .feat-img{max-height:480px;overflow:hidden}
+  .feat-img img{aspect-ratio:auto;height:480px;object-position:50% 12%}
   .feat-txt{padding:48px 52px}
   .feat-title{font-size:34px}
-  .duo{grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);align-items:start}
+  .duo{grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);align-items:start;gap:40px}
+  .feat{grid-template-columns:minmax(0,.7fr) minmax(0,1.3fr)}
   .cols{grid-template-columns:1fr 1fr;gap:56px}
   .tl li{display:grid;grid-template-columns:140px 1fr;gap:24px;padding-left:28px}
   .tl .yr{padding-top:6px}
@@ -163,7 +166,7 @@ footer a:hover{color:var(--navy)}
 
 <main>
 <section class="hero"><div class="wrap hero-grid">
-  <figure class="hero-photo"><img src="images/robin-hero.jpg" alt="Robin Loths, medical student" width="1200" height="1272" fetchpriority="high"></figure>
+  <figure class="hero-photo"><img src="images/robin-hero.jpg?v=4fc56f6" alt="Robin Loths, medical student" width="1200" height="1272" fetchpriority="high"></figure>
   <div>
     <p class="kicker">Medicine &middot; Enterprise</p>
     <h1>Robin Loths</h1>
@@ -177,7 +180,7 @@ footer a:hover{color:var(--navy)}
   <h2 class="sec-h">Press</h2>
 
   <a class="feat" href="https://www.forbes.com.py/especiales/park-lofts-marca-nuevo-hito-real-estate-local-ambicioso-proyecto-us-10-millones-n75403" target="_blank" rel="noopener">
-    <div class="feat-img"><img src="images/robin-forbes-portrait.jpg" alt="Robin Loths in Forbes Paraguay" loading="lazy"></div>
+    <div class="feat-img"><img src="images/robin-forbes-portrait.jpg?v=4fc56f6" alt="Robin Loths in Forbes Paraguay" loading="lazy"></div>
     <div class="feat-txt">
       <p class="kicker">Forbes Paraguay</p>
       <p class="feat-title">Park Lofts marca nuevo hito en el real estate local con ambicioso proyecto de US$&nbsp;10&nbsp;millones</p>
@@ -188,7 +191,7 @@ footer a:hover{color:var(--navy)}
 
   <div class="duo">
     <a class="tile cover" href="https://issuu.com/editorialdenegocios.com/docs/5dx20feb2024" target="_blank" rel="noopener">
-      <div class="ph"><img src="images/robin-magazine.jpg" alt="Robin Loths on the cover of 5DÍAS Real Estate, February 2024" width="900" height="1232" loading="lazy"></div>
+      <div class="ph"><img src="images/robin-magazine.jpg?v=4fc56f6" alt="Robin Loths on the cover of 5DÍAS Real Estate, February 2024" width="900" height="1232" loading="lazy"></div>
       <div class="tx">
         <p class="kicker">5D&Iacute;AS Real Estate &middot; Cover, February 2024</p>
         <p class="tile-title">&ldquo;Paraguay est&aacute; fortaleciendo su posici&oacute;n en el escenario internacional&rdquo;</p>
@@ -196,8 +199,9 @@ footer a:hover{color:var(--navy)}
         <span class="more-link">View the issue</span>
       </div>
     </a>
+    <div class="stack">
     <a class="tile tv" href="https://www.youtube.com/watch?v=1Su8umVaq3M" target="_blank" rel="noopener">
-      <div class="ph"><img src="images/robin-tv.jpg" alt="Robin Loths in the 5DÍAS TV interview" width="1200" height="680" loading="lazy"></div>
+      <div class="ph"><img src="images/robin-tv.jpg?v=4fc56f6" alt="Robin Loths in the 5DÍAS TV interview" width="1200" height="680" loading="lazy"></div>
       <div class="tx">
         <p class="kicker">5D&Iacute;AS TV &middot; February 2024</p>
         <p class="tile-title">Inversiones: De Europa a Paraguay</p>
@@ -205,11 +209,11 @@ footer a:hover{color:var(--navy)}
         <span class="more-link">Watch the interview</span>
       </div>
     </a>
-  </div>
-
-  <div class="coverage">
-    <h3>Further coverage</h3>
-    <ul><li><a href="https://www.5dias.com.py/2024/11/park-lofts-nuevos-horizontes-para-el-mercado-inmobiliario/" target="_blank" rel="noopener"><span class="src">5DÍAS</span><span class="ttl">Park Lofts: nuevos horizontes para el mercado inmobiliario</span></a></li><li><a href="https://asunciontimes.com/paraguay-news/local-news/park-lofts-tower-redefining-luxury-urban-living-in-asuncion/" target="_blank" rel="noopener"><span class="src">Asunción Times</span><span class="ttl">Park Lofts Tower: Redefining Luxury Urban Living in Asunción</span></a></li><li><a href="https://puntadelesteinternacional.com/de-alemania-a-paraguay-stuttgart-capital/" target="_blank" rel="noopener"><span class="src">Punta del Este Internacional</span><span class="ttl">De Alemania a Paraguay — Stuttgart Capital</span></a></li></ul>
+    <div class="coverage">
+      <h3>Further coverage</h3>
+      <ul><li><a href="https://www.5dias.com.py/2024/11/park-lofts-nuevos-horizontes-para-el-mercado-inmobiliario/" target="_blank" rel="noopener"><span class="src">5DÍAS</span><span class="ttl">Park Lofts: nuevos horizontes para el mercado inmobiliario</span></a></li><li><a href="https://asunciontimes.com/paraguay-news/local-news/park-lofts-tower-redefining-luxury-urban-living-in-asuncion/" target="_blank" rel="noopener"><span class="src">Asunción Times</span><span class="ttl">Park Lofts Tower: Redefining Luxury Urban Living in Asunción</span></a></li><li><a href="https://puntadelesteinternacional.com/de-alemania-a-paraguay-stuttgart-capital/" target="_blank" rel="noopener"><span class="src">Punta del Este Internacional</span><span class="ttl">De Alemania a Paraguay — Stuttgart Capital</span></a></li></ul>
+    </div>
+    </div>
   </div>
 </div></section>
 
